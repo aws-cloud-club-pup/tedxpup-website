@@ -17,4 +17,5 @@ Official website of TEDxPUP, developed to present event details for attendees an
 - FAQs
 - Get Tickets (Typeform)
 
+---
 **Independent TEDx event operated under license from TED**
