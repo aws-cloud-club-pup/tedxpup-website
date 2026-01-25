@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+
+# Build / output
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*  
+!.env.example
+
+# Editor / IDE files
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Optional: coverage if using Jest
+coverage/
+*.lcov
