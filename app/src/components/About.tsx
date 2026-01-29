@@ -4,7 +4,7 @@ import aboutBlurSpotlight from "../assets/about/blur-spotlight.svg"
 const About = () => {
 
   return (
-    <section id="about" className="relative px-6 bg-black text-white">
+    <section id="about" className="relative px-6 bg-black text-white overflow-hidden">
       <div className="relative container py-24 pt-52 max-w-7xl mx-auto text-right">
         <h2 className="font-outfit text-2xl md:text-3xl mb-8 tracking-tighter">About <span className="text-4xl md:text-5xl"><em className="text-tedx-red not-italic">TEDx</em>PUP</span> 2025</h2>
         <div className="flex flex-col gap-4 md:items-end  text-lg leading-relaxed">
@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Background Assets */}
-        <img className="absolute bottom-20 right-[46rem]" alt="" src={aboutBlurSpotlight}/>
+        <img className="absolute bottom-20 right-[46rem] hidden md:block" alt="" src={aboutBlurSpotlight}/>
         <img className="absolute bottom-0 invisible md:visible md:-left-48 xl:-left-10 h-full" alt="" src={aboutAccent} />
         <h1
           style={{ WebkitTextStrokeWidth: '1.29px', WebkitTextStrokeColor: 'rgba(255, 255, 255, 0.25)' }}
