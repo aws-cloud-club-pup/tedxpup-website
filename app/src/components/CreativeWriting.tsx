@@ -26,7 +26,7 @@ const CreativeWriting = () => {
             <Link 
               key={piece.id} 
               to={`/creative-writing/${piece.slug}`}
-              className="group relative p-6 md:p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-500 ease-in-out hover:border-tedx-red/50 hover:bg-white/[0.07] block"
+              className="group relative p-6 md:p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-500 ease-in-out hover:bg-black hover:border-tedx-red/50 hover:shadow-[inset_0_-80px_60px_-20px_rgba(230,43,31,0.2)] block"
             >
               <div className="flex flex-col md:flex-row gap-6 justify-between items-start">
                 <div className="space-y-4 flex-1">
@@ -47,12 +47,10 @@ const CreativeWriting = () => {
                   </div>
 
                   {/* Content Preview */}
-                  <div className="relative overflow-hidden max-h-24 opacity-80">
+                  <div className="relative overflow-hidden max-h-24 opacity-80 [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)]">
                      <p className="text-gray-300 whitespace-pre-wrap leading-relaxed font-light text-lg line-clamp-3">
                        {piece.content}
                      </p>
-                     
-                     <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/90 to-transparent pointer-events-none"></div>
                   </div>
 
                   {/* Action Button */}
