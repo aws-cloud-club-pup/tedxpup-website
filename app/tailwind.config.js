@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif']
       },
       colors: {
         'tedx-red': '#e62b1f',
