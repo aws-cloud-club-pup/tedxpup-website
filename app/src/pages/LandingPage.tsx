@@ -9,7 +9,21 @@ import Partners from '../components/features/Partners';
 import FAQs from '../components/features/FAQs';
 import Footer from '../components/features/Footer';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 const LandingPage = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
+
   return (
     <>
       <Navbar />
