@@ -1,12 +1,13 @@
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Location from '../components/Location';
-import Speakers from '../components/Speakers';
-import ProgramFlow from '../components/ProgramFlow';
-import CreativeWriting from '../components/CreativeWriting';
-import Partners from '../components/Partners';
-import FAQs from '../components/FAQs';
+import Navbar from '../components/features/Navbar';
+import Hero from '../components/features/Hero';
+import About from '../components/features/About';
+import Location from '../components/features/Location';
+import Speakers from '../components/features/Speakers';
+import ProgramFlow from '../components/features/ProgramFlow';
+import CreativeWriting from '../components/features/CreativeWriting';
+import Partners from '../components/features/Partners';
+import FAQs from '../components/features/FAQs';
+import Footer from '../components/features/Footer';
 
 const LandingPage = () => {
   return (
@@ -22,6 +23,7 @@ const LandingPage = () => {
         <Partners />
         <FAQs />
       </main>
+      <Footer />
     </>
   );
 };

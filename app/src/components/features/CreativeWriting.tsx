@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { creativePieces } from '../data/creativeWritingData';
+import { creativePieces } from '../../data/creativeWritingData';
 
 const CreativeWriting = () => {
   return (

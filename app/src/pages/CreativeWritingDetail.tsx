@@ -1,9 +1,9 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/features/Navbar';
 import { creativePieces } from '../data/creativeWritingData';
 import { useEffect } from 'react';
 
-import XBackground from '../components/XBackground';
+import XBackground from '../components/ui/XBackground';
 
 const CreativeWritingDetail = () => {
   const { slug } = useParams();

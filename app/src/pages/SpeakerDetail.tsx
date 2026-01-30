@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/features/Navbar';
 
 const SpeakerDetail = () => {
   const { slug } = useParams();
