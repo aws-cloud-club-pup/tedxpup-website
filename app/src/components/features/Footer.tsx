@@ -1,21 +1,30 @@
 
 import type { FC } from 'react';
 
+const NAV_LINKS = [
+  { label: 'About', href: '#about' },
+  { label: 'Speakers', href: '#speakers' },
+  { label: 'Program', href: '#program' },
+  { label: 'Creative Writing Entries', href: '#creative-writing-entries' },
+  { label: 'Partners', href: '#partners' },
+  { label: 'FAQs', href: '#faqs' },
+];
+
 const Footer: FC = () => {
     return (
         <footer className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans border-t border-white/10 relative">
             {/* Top Content */}
             <div className="container mx-auto px-6 md:px-12 relative z-10 mb-24">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 justify-items-start">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12 justify-items-start">
                     
                     {/* Brand Column (Left) */}
                     <div className="col-span-2 md:col-span-1 flex flex-col space-y-6">
-                        <div className="flex items-baseline space-x-1">
+                        <div className="flex items-baseline space-x-1 -ml-3">
                             <img src="/logo-white.webp" alt="TEDxPUP" className="h-12 w-auto object-contain" />
                         </div>
                         
                         {/* Social Icons */}
-                        <div className="flex items-center space-x-4 ml-3">
+                        <div className="flex items-center space-x-4">
                             {/* Twitter / X */}
                             <a href="#" className="hover:text-tedx-red transition-colors" aria-label="Twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
@@ -50,41 +59,33 @@ const Footer: FC = () => {
                             </a>
                         </div>
                         
-                        <div className="text-sm text-gray-400 ml-3">
+                        <div className="text-sm text-gray-400">
                             All rights reserved
                         </div>
                     </div>
 
-                    {/* TED Links */}
+                    {/* Navigation */}
                     <div className="flex flex-col space-y-4">
-                        <h3 className="text-tedx-red font-semibold text-base mb-2">TED Links</h3>
+                        <h3 className="text-tedx-red font-semibold text-base mb-2">Navigation</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">Terms of use</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Privacy Notice</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Cookie Policy</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Code of Conduct</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Refer a friend FAQ</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Premium services terms</a></li>
+                            {NAV_LINKS.map((link) => (
+                                <li key={link.label}>
+                                    <a href={link.href} className="hover:text-white transition-colors">
+                                        {link.label}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
+
                     </div>
 
-                    {/* Resources */}
-                    <div className="flex flex-col space-y-4">
-                        <h3 className="text-tedx-red font-semibold text-base mb-2">Resources</h3>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Contact us</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Media</a></li>
-                        </ul>
-                    </div>
-
-                    {/* Contact Us */}
+                    {/* Contact / Socials */}
                     <div className="col-span-2 md:col-span-1 flex flex-col space-y-4">
-                        <h3 className="text-tedx-red font-semibold text-base mb-2">Contact us</h3>
+                        <h3 className="text-tedx-red font-semibold text-base mb-2">Contact / Socials</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li>+63 - 9876543210</li>
-                            <li><a href="mailto:tedxpup@gmail.com" className="hover:text-white transition-colors">tedxpup@gmail.com</a></li>
+                            <li>Facebook: <a href="https://facebook.com/TEDXPUP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TEDXPUP</a></li>
+                            <li>Tiktok and Instagram: <a href="https://instagram.com/tedxpup" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@tedxpup</a></li>
+                            <li>Email: <a href="mailto:tedxpup@gmail.com" className="hover:text-white transition-colors">tedxpup@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -101,7 +102,7 @@ const Footer: FC = () => {
 
             {/* Bottom Copyright */}
             <div className="text-center text-xs text-gray-100 border-t border-white/5 pt-4 pb-4 relative z-10 w-full">
-                @2026 TEDxPUP. All rights reserved.
+                This independent TEDx event is operated under license from TED.
             </div>
         </footer>
     );
