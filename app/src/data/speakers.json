@@ -1,0 +1,282 @@
+﻿[
+  {
+    "id": "speaker-1",
+    "name": "Chanelle Peru",
+    "topic": "Topic Title 1",
+    "role": "Legal Management & Economics Student, Aspiring Lawyer, Creative Marketer",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "Student: De La Salle University (DLSU) - BS in Applied Economics and BS in Legal Management",
+      "Intern: Romulo Mabanta Buenaventura Sayoc & de los Angeles (Romulo Law) - Corporate & Legal Intern",
+      "Intern: SyCip Salazar Hernandez & Gatmaitan (SyCipLaw)",
+      "Previous: Marketing & Creatives roles (various student organizations/projects)"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/chanelle-peru-423128276/" },
+      { "name": "Facebook", "url": "https://www.facebook.com/chanelle.peru?_rdc=1&_rdr#" },
+      { "name": "Instagram", "url": "https://www.instagram.com/chanelle.peru?fbclid=IwY2xjawOWdtZleHRuA2FlbQIxMABicmlkETFhZUtrQ1dSUDJvVDdEUTByc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHth4xeMQ9NYxPJY-yFwh9Z9JRapjCZgs4XYcvIkO0-lwhsy52lTJ0V18Hrt9_aem_sreZKJsQzwWq-ZQ5qjf85A" },
+      { "name": "Tiktok", "url": "https://www.tiktok.com/@chanelle.peru?fbclid=IwY2xjawOWduZleHRuA2FlbQIxMABicmlkETFhZUtrQ1dSUDJvVDdEUTByc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlbIuOh8rBn8jtnr_A5nVki1zWapF4U4f6yI1Aag7s_yeTdf6QIxu_mLSXo7_aem_AhAgAZUSaTKaFbBnZTF3uQ" }
+    ],
+    "bio": "Chanelle Peru represents the dynamic future of the Filipino workforce—highly academic, creatively driven, and socially conscious. Currently pursuing a demanding double degree in Applied Economics and Legal Management at De La Salle University, she has consistently demonstrated academic excellence and leadership.\n\nHer journey is defined by a unique intersection of disciplines. On one hand, she is deeply immersed in the corporate and legal world, having secured internships with the Philippines' leading law firms, including Romulo Mabanta Buenaventura Sayoc & de los Angeles and SyCip Salazar Hernandez & Gatmaitan. Here, she gained firsthand experience in corporate law and economic policy.\n\nOn the other hand, Chanelle is a creative soul with a background in marketing and a deep passion for fashion. She believes that \"style and substance\" are not mutually exclusive. By integrating her creative interests with her legal studies, she advocates for \"Purpose-Driven Leadership\"—a management style that values empathy, creativity, and authenticity just as much as policy and profit. Chanelle aims to launch ventures that bridge these worlds, aspiring to be an entrepreneur who can navigate complex legal landscapes while building brands that resonate with the youth.",
+    "achievements": ["Legal Internships: Selected for competetive internships at the country's top law firms (Romula Law and SyCipLaw), gaining early exposure to high-level corporate practice",
+    "Academic Excellence: Consistently maintaining high standing in a rigorous double-degree program (LGL-ECO) at DLSU",
+    "Creative Leadership: successfully led marketing and creative initiatives for university organizations, blending branding strategies with student advocacy.", 
+    "Advocacy: Proponent of \"Fashion with Purpose,\" using personal style as a tool for empowerment and professional branding."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-2",
+    "name": "Eva Le Queen",
+    "topic": "Topic Title 2",
+    "role": "Drag Artist, Content Creator, CEO",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "CEO, Drag Playhouse PH",
+      "Finalist, Drag Race Philippines Season 1",
+      "Cast Member, RuPaul's Drag Race Global All Stars"
+    ],
+    "socials": [
+      { "name": "Facebook", "url": "https://web.facebook.com/Ms.EvaLeQueen" },
+      { "name": "Instagram", "url": "https://www.instagram.com/eva_lequeen/" },
+      { "name": "Youtube", "url": "http://youtube.com/@evalequeen?si=LvbvnZ4xc_mayYpY&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnX-aTAVNF2_Ttx5gZSJFvUhYYvInhnp7-rMCGtM0Tl1Mze7n8B7G0kw8oBl0_aem_-LMl3xJ8pvGjTazYLabE6g"},
+      { "name": "X", "url": "https://x.com/eva_lequeen"},
+      { "name": "Tiktok", "url": "https://www.tiktok.com/@evalequeen?lang=en" }
+    ],
+    "bio": "Eva Le Queen (Jace Lamban) is a force in the Asian drag scene. Before donning the wig, she worked in corporate HR and project management—skills she now utilizes as the CEO of Drag Playhouse PH, a drag talent agency and production house. She rose to international fame representing the Philippines in the inaugural season of Drag Race Philippines, where her intellect and advocacy for \"Drag is Political\" won her a legion of fans. She later competed on the global stage in RuPaul's Drag Race Global All Stars.\n\nEva's work transcends entertainment; she uses her platform to discuss LGBTQ+ rights, mental health, and the economic viability of queer art. She challenges the \"stereotype\" of drag queens by blending corporate acumen with campy performance, proving that queer artists are also astute business leaders.",
+    "achievements": ["Drag Race Pioneer: Finalist on Drag Race Philippines Season 1 and the first Filipino drag artist to compete in RuPaul’s Drag Race Global All Stars.", "CEO & Founder: Established Drag Playhouse PH, a premier drag talent agency and content production house that professionalizes drag entertainment in the Philippines.", "Advocacy: A vocal champion for the \"Drag is Political\" movement, she uses her platform to advocate for LGBTQ+ rights, fair labor practices for queer artists, and mental health awareness in the creative industry."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-3",
+    "name": "Haven Mosquito",
+    "topic": "Topic Title 3",
+    "role": "Debater, Adjudicator, Student Leader",
+    "pronouns": "Him/Them",
+    "affiliations": [
+      "n/a",
+      "n/a"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/havenmosquito/" },
+      { "name": "Facebook", "url": "https://www.facebook.com/pook.lamok" },
+      { "name": "Instagram", "url": "https://www.instagram.com/pook.lamok" },
+      { "name": "Youtube", "url": "https://www.youtube.com/@pooklamok" }
+    ],
+    "bio": "Lorem Ipsum",
+    "achievements": ["Lorem Ipsum Dunking Donut Choco Butter Coconut", "Krispy Kreme Glazed"],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-4",
+    "name": "Isaeus \"Asi\" Guiang",
+    "topic": "Topic Title 4",
+    "role": " Cloud Computing Leader, Cybersecurity Advocate, Community Builder",
+    "pronouns": "He/Him",
+    "affiliations": [
+      "Regional Captain, AWS Cloud Clubs Philippines",
+      "Lead, Build Club AI (Manila)",
+      "Student, Polytechnic University of the Philippines (PUP) - BS Computer Science"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "http://linkedin.com/in/isaeus-guiang/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9dhiFVi3R9ijXOR05MT%2FCw%3D%3D"},
+      { "name": "Facebook", "url": "https://web.facebook.com/isaeus2003" },
+      { "name": "Instagram", "url": "#" },
+      { "name": "Website", "url": "https://asiguiang.com/"},
+      { "name": "Mail", "url": "https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=iguiang.business@gmail.com&hl=en"}
+    ],
+    "bio": "Isaeus (Asi) Guiang thrives at the intersection of technology, strategy, and leadership. As the Regional Captain of AWS Cloud Clubs Philippines, he leads a nationwide movement of student builders, overseeing 22+ university chapters and over 4,000 members. His mission is to democratize access to cloud technology, ensuring that Filipino students are not just consumers of tech but active creators of it.\n\nWith a strong background in risk assessment and cloud security, Asi goes beyond theory. He has served as an AWS re/Start Instructor and Mentor, designing hands-on modules that integrate core AWS services (EC2, VPC, IAM, S3) to help students build cloud-hosted applications from scratch. His tenure as an intern at industry giants like Globe and Tutorials Dojo gave him the practical expertise he now passes on to his peers.\n\nCurrently, Asi is also a Lead at Build Club AI, a community for AI builders and founders, where he champions the safe and strategic adoption of artificial intelligence. He embodies the \"Think Big\" leadership principle, evident in his orchestration of large-scale engagements like the Innovation Cup 2024, which secured internships for winners at top firms. Whether speaking at community days, writing technical blogs on cybersecurity, or mentoring future professionals, Asi's goal remains constant: to create impact, drive change, and redefine what is possible for the Filipino youth in tech.",
+    "achievements": ["Regional Captain, AWS Cloud Clubs PH: Successfully scaled the community to over 22 chapters and 4,000+ members, fostering a nationwide network of cloud enthusiasts.", "Orchestrator, Innovation Cup 2024: Led a high-stakes competition that connected student innovators with top industry firms, resulting in internship placements for the winners.", "AWS Student Community Day 2024: Played a pivotal leadership role in organizing the first-ever AWS Student Community Day in the Philippines, bringing together industry experts and student leaders.", "Tech Educator & Mentor:  Personally mentored hundreds of students in cloud computing, helping them achieve AWS certifications and guiding them through the AWS re/Start program at Edukasyon.ph.", "Technical Writer: Publishes educational content on cybersecurity and cloud architecture on DEV.to and Tutorials Dojo, simplifying complex topics like \"Zero-Trust Architecture\" and \"Malware Detection\" for beginners."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-5",
+    "name": "Joy Mayanne Barcoma",
+    "topic": "Topic Title 5",
+    "role": "Beauty Queen, Disaster Resilience Consultant, Mental Health Advocate",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "Miss Philippines Earth 2025 (Winner)",
+      "Miss Earth 2025 (Runner-up / Top 8)",
+      "Region IV-A Head, Youth for Mental Health (Y4MH) Coalition",
+      "Abassador, LoveYourself Inc.", "Consultant, City Goverment of Bacoor (Social & Civic Programs)"
+    ],
+    "socials": [
+      { "name": "Facebook", "url": "https://web.facebook.com/Joymayanneee" },
+      { "name": "Instagram", "url": "https://www.instagram.com/joymayanne/?hl=en" },
+      { "name": "X", "url": "https://x.com/Joymayanne?fbclid=IwY2xjawOWgPhleHRuA2FlbQIxMABicmlkETFSWlhqMnFhQzBMdDllb25hc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHr22dN0vgbV-XsBQUL2l9sTyLLKPSh5Mnmz4wu2cSSTaHTP7oQ6s7JRCkjaa_aem_8JmGMiiuwzDsKLMZIMds2Q"}
+    ],
+    "bio": "Joy Mayanne Barcoma has redefined what it means to be a beauty queen in the modern era. Crowned Miss Philippines Earth 2025 in August and finishing as a runner-up (Top 8) on the international stage in November 2025, Joy used her global platform not just to model, but to mobilize.\n\nA proud Iskolar ng Bayan, she graduated with a degree in Broadcast Communication from the Polytechnic University of the Philippines (PUP). Her communication background is the backbone of her advocacy work. Unlike traditional environmental campaigns, Joy focuses on the intersection of climate change and human survival: Disaster Risk Reduction and Management (DRRM). She has collaborated with tech firms to develop mobile command centers and disaster alert apps (including work recognized by EOSC's Handa Pilipinas), ensuring that communities in her hometown of Bacoor—and across the Philippines—are prepared for the realities of the climate crisis.\n\nBeyond the environment, Joy is a fierce mental health advocate. She serves as the Region IV-A Head of the Youth for Mental Health Coalition and an ambassador for LoveYourself, an organization dedicated to HIV awareness and self-empowerment. She believes that resilience is holistic: protecting the mind is just as vital as protecting the planet.\n\nOn social media, she launched #SustainabilityIn60Seconds, a video series that breaks down complex Sustainable Development Goals (SDGs) into bite-sized, relatable content for the Filipino youth. Whether she is walking a runway or lobbying for better flood control policies, Joy Barcoma carries herself with \"humor, courage, and purpose,\" proving that the most beautiful thing a woman can do is serve her people.",
+    "achievements": ["Miss Philippines Earth 2025: Winner of the prestigious national title, besting 35 other candidates.", "Miss Earth 2025 (Top 8): Represented the Philippines on the international stage, finishing as a runner-up.", "Tech For Good: Collaborated on the development of a critical communications app and mobile command vehicle for disaster response.", "Youth Leadership: Appointed Head of the Youth for Mental Health Coalition in Calabarzon (Region IV-A).", "Digital Advocacy: Creator of the viral educational series #SustainabilityIn60Seconds.", "Miss World Philippines 2021: Previously placed in the Top 24 and won the \"Beauty with a Purpose\" challenge."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-6",
+    "name": "Kristine Jane Atienza",
+    "topic": "Topic Title 6",
+    "role": "Public Health Nutritionist, Analog Astronaut, Space Nutrition Researcher",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "Analog Astronaut, HI-SEAS (Hawaii Space Exploration Analog and Simulation)",
+      "Registered Nutritionist-Dietitian (RND)",
+      "Former Consultant/Specialist: World Food Programme (WFP), Action Against Hunger, World Vision"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/tintinatienza/?originalSubdomain=ph" },
+      { "name": "Instagram", "url": "https://www.instagram.com/tintinatienza/?hl=en" }
+    ],
+    "bio": "Kristine Jane Atienza represents the future of interdisciplinary science. By profession, she is a Public Health Nutritionist with a deep track record in development work. She has spent nearly a decade working with vulnerable communities in the Philippines, partnering with heavyweights like the World Food Programme, Action Against Hunger, and various government agencies. Her work is policy-driven and practical; she contributed to the Manual on the Management of Moderate Acute Malnutrition and advocated for vital legislation like The Philippine Milk Code and RA 11037 (Masustansyang Pagkain para sa Batang Pilipino Act).\n\nHowever, Kristine's laboratory extends beyond the Earth. Driven by a lifelong passion for astronomy, she pivoted to become a researcher in Space Nutrition. She made history as the crew nutritionist for a mission at HI-SEAS (Hawaii Space Exploration Analog and Simulation), where she lived in a habitat simulating life on Mars. There, she researched how to keep humans healthy and fed in deep space—an environment that shares striking similarities with the resource-scarce disaster zones she manages in her humanitarian work.\n\nKristine believes that \"innovation in space solves problems on Earth.\" She actively works to bridge these two worlds, advocating that the technology developed to feed astronauts can be adapted to ensure food security for remote farmers and malnourished children. A true explorer, Kristine inspires the next generation of STEM leaders to look up at the stars while keeping their feet firmly planted in service to their communities.",
+    "achievements": ["First Filipina Analog Astronaut: Successfully completed an analog space mission at HI-SEAS, serving as the Crew Nutritionist to simulate life on Mars.",
+    "Policy Architect: Contributed to the formulation and implementation of RA 11037 (National Feeding Program) and The Philippine Milk Code, key laws protecting Filipino children’s health.", 
+    "Humanitarian Leader: Managed high-impact nutrition programs during emergencies for the World Food Programme and Action Against Hunger, focusing on maternal and child health.", 
+    "Technical Author: Key contributor to the Manual on the Management of Moderate Acute Malnutrition, a critical resource for health workers in the Philippines.",
+    "Space Advocate:  A vocal proponent for Space Nutrition, conducting research on sustainable food systems in extreme environments."],
+
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-7",
+    "name": "Laraine Zyreen Marcelo",
+    "topic": "Topic Title 7",
+    "role": "Chief Learning Officer, Head of Sales, Organizational Development Consultant",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "Chief Learning Officer & Head of Sales, Learning Just Made Better (LJMB)",
+      "LinkedIn Top Voice / Creator (Leadership & Personal Branding)",
+      "Certified Six Sigma Green Belt(CSSGB-T)"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/larainezyreenmarcelo/" },
+      { "name": "Mail", "url": "https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=larainezyreen@gmail.com&hl=en"}
+    ],
+    "bio": "Laraine Zyreen Marcelo stands at the forefront of organizational transformation in the Philippines. As a dual-focused leader in operations and commercial strategy, she currently serves as the Chief Learning Officer and Head of Sales for Learning Just Made Better (LJMB). Her resume is a testament to prolific impact: she has successfully steered over 3,000 consulting projects and facilitated 3,500+ training days for more than 500 global clients across 22 diverse industries.\n\nLaraine's expertise lies in \"Humanizing the Grind.\" She specializes in taking complex subject matter and transforming it into scalable, digestible learning systems that drive real behavioral change. Her work covers the full spectrum of talent management — from Organizational Leadership and Strategic Operations to Culture Building and AI-Driven Learning Solutions.\n\nBeyond the boardroom, Laraine is a digital thought leader. As a LinkedIn Philippines Top Creator, she uses her platform to mentor thousands of professionals on leadership development and career growth. She holds a Master's in Public Management (MPM) and is a Certified Six Sigma Green Belt, combining rigorous process improvement methodologies with a deep understanding of human psychology. Whether she is training C-suite executives or entry-level staff, Laraine's mission remains constant: to build cultures where people are empowered to perform at their peak, ensuring that businesses grow because their people grow first.",
+    "achievements": ["Scale & Impact: Successfully led over 3,000 consulting projects and delivered 3,500+ training days for major global and local companies across 22 industries (including Banking, Pharma, BPO, and Energy).",
+    "LinkedIn Top Voice: Recognized as one of the most influential creators on LinkedIn Philippines for her consistent, high-value content on Leadership and Personal Branding.",
+    "Educational Leadership: Holds a Master’s in Public Management (MPM) and Six Sigma Certification, integrating data-driven process improvement with soft-skills training.",
+    "Business Growth: As Head of Sales at LJMB, she has been instrumental in scaling the firm's client portfolio to include over 500 global clients, proving her ability to merge L&D with revenue generation."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-8",
+    "name": "Nabbe Francisco",
+    "topic": "Topic Title 8",
+    "role": "Digital Marketing, Graphic Design, Community Leadership",
+    "pronouns": "He/Him",
+    "affiliations": [
+      "Founder / Owner: Uno Graphiko",
+      "Founder / Head Administrator: Filipino Graphic Designers (Facebook Community)",
+      "Organizer: IMPRINT 2025: Graphic Communications Upskilling Fair"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/nabbefrancisco/?originalSubdomain=ph" },
+      { "name": "Facebook", "url": "https://www.facebook.com/nabbe.francisco.33/?_rdc=2&_rdr#" },
+      { "name": "Instagram", "url": "https://www.instagram.com/unographiko/?hl=en"},
+      { "name": "Website", "url": "https://www.behance.net/nabbefrancisco01?fbclid=IwY2xjawOWd19leHRuA2FlbQIxMABicmlkETFSWlhqMnFhQzBMdDllb25hc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjGhVobafHT0NFScumNZREFFuqkZjv6TYFWqrnR2DJuRGklQdPrIZzkmAyoJ_aem_1eln3q4waJN7VY_BWLk_0w"}
+    ],
+    "bio": "Nabbe Francisco is a defining voice in the Philippine creative economy. As a \"multi-hyphenate creative,\" he seamlessly bridges the gap between artistic expression and strategic digital marketing. He is the founder and owner of Uno Graphiko, an emerging agency that manages diverse brands remotely, celebrated for its ability to convert creative visuals into tangible business growth. His personal following of over 36,000 designers looks to him for mentorship on social media marketing and freelance survival. However, Nabbe’s most significant contribution is his leadership of the Filipino Graphic Designers (FGD) community. What started as a small support group has exploded into a thriving ecosystem of over 180,000 members—making it one of the largest and most active creative collectives in the Philippines. This group serves as a lifeline for Filipino creatives, offering a space for collaboration, job opportunities, and technical exchange. Under his direction, the community launched IMPRINT 2025: Graphic Communications Upskilling Fair. This landmark event gathered over 500 attendees, including industry leaders and government representatives, to professionalize the freelance sector and emphasize continuous learning. Nabbe’s excellence is rooted in strong academic foundations; he graduated Magna Cum Laude with a Bachelor’s degree in Advertising and Public Relations from the Polytechnic University of the Philippines (PUP). His work and advocacy have been featured in PhilStar L!fe, ScoutMag, Village Pipol, and PageOne. Today, he continues to shape the future of the industry, advocating for a landscape where Filipino creativity is valued, protected, and compensated fairly.",
+    "achievements": ["Community Leadership: Built and manages the Filipino Graphic Designers community, growing it to a massive 180,000+ active members, creating one of the most vital support networks for PH creatives. ",
+    "Event Organizer (IMPRINT 2025): Successfully launched and directed the inaugural IMPRINT 2025, a large-scale upskilling fair attended by 500+ designers and supported by government agencies.",
+    "Media Recognition: Featured in top-tier lifestyle and business publications including PhilStar L!fe, ScoutMag, Village Pipol, and PageOne for his contributions to the gig economy. ",
+    "Academic Excellence: Graduated Magna Cum Laude from PUP (Advertising and Public Relations), setting a standard for academic and professional rigor.",
+    "Agency Growth: Scaled Uno Graphiko into a recognized agency managing seven brands remotely, demonstrating the viability of the \"work-from-anywhere\" agency model."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-9",
+    "name": "Nicole Redding Wilhem",
+    "topic": "Topic Title 9",
+    "role": "Author",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "Mental Real Estate"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/nicolerwilhelm/" },
+      { "name": "Facebook", "url": "https://www.facebook.com/MsNicoleRedding/" },
+      { "name": "Instagram", "url": "https://www.instagram.com/nicolereddingwilhelm/"},
+      { "name": "Website", "url": "http://mentalrealestate.com"}
+    ],
+    "bio" : "Lorem Ipsum",
+    "achievements" : ["###", "###"],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-10",
+    "name": "Paul John Hernandez",
+    "topic": "Topic Title 10",
+    "role": " Educator, Cultural Worker, Heritage Advocate, Textbook Writer",
+    "pronouns": "He/Him",
+    "affiliations": [
+      "Founder: The Traveling Salakot",
+      "Faculty: Colegio San Agustin-Makati (Humanities and Social Sciences)",
+      "Module Writer: National Commission for Culture and the Arts (NCCA) / Rex Publishing House",
+      "Member: Heritage Conservation Society (HCS), International Council on Monuments and Sites (ICOMOS) Philippines, Knights of Rizal"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/paul-john-hernandez-40a5378b/?originalSubdomain=ph" },
+      { "name": "Facebook", "url": "https://web.facebook.com/jpaulhernandez/?_rdc=1&_rdr#"},
+      { "name": "Mail", "url": "https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=jpaulhernandez@feastortigasdistrict.com&hl=en"}
+    ],
+    "bio": "PJ Hernandez is a dedicated champion of Filipino identity, blending his role as an academic with his passion for fieldwork.\nHe holds a degree in Social Sciences and has spent nearly a decade teaching Humanities at Colegio San Agustin-Makati.\nBeyond the four walls of the classroom, he is best known as the man behind \"The Traveling Salakot,\" a grassroots initiative he founded to democratize access to Philippine history.\nWhat started as a personal project to wear a salakot while traveling the country has evolved into a recognized cultural partner of the National Parks Development Committee (NPDC), offering free guided tours in Luneta and organizing creative heritage events.\n\nHis advocacy extends to policy and preservation.\nHe is an active member of the Heritage Conservation Society (HCS) and ICOMOS Philippines, working to protect built heritage from urban encroachment.\nHis leadership in the sector was solidified when he was selected as a LEAD Fellow under the YouthLed program of The Asia Foundation and USAID.\n\nPJ’s work has garnered international and local acclaim.\nHe was honored as an Outstanding UNESCO Young Professional in 2017 and received the HWPL Award for Community Service in Seoul, South Korea.\nLocally, he was the inaugural recipient of the Gat Ciriaco Contreras Leadership Award in his hometown of Meycauayan, Bulacan.\nIn 2024, he was knighted into the Order of the Knights of Rizal, further cementing his commitment to the values of the national hero.\n\nWhether writing textbooks or leading walking tours, PJ’s mission remains the same: to ensure that the next generation inherits not just the structures of the past, but the stories that make them meaningful.",
+    "achievements": ["Outstanding UNESCO Young Professional (2017): Recognized by the UNESCO National Commission of the Philippines.",
+    "Knight of Rizal (2024): Inducted at the International Headquarters for his contributions to promoting Rizal’s ideals.",
+    "Teacher’s Month Honoree (2023): Recognized by the Salute to the Clean Flag Movement and the National Historical Commission of the Philippines (NHCP).",
+    "Gat Ciriaco Contreras Leadership Award (2020): Inaugural recipient honored by the Local Government of Meycauayan, Bulacan.",
+    "HWPL Award for Community Service (2015): Awarded in Seoul, South Korea, for peace-building and cultural advocacy.", 
+    "LEAD Fellow: Leadership and Democracy Fellow under The Asia Foundation and USAID’s YouthLed program."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-11",
+    "name": "Riyan Portugez",
+    "topic": "Topic Title 11",
+    "role": "Clinical Psychology, Mental Health Advocacy, Digital Content Creation",
+    "pronouns": "She/Her/Siya",
+    "affiliations": [
+      "CEO, YMP Learning and Development Solutions OPC",
+      "Instructor, University of Santo Tomas (UST) Department of Psychology",
+      "Consultant Psychologist, Wellbridge Health, Inc.",
+      "Co-Chairperson, LGBT Psychology Special Interest Group (Psychological Association of the Philippines)"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "http://linkedin.com/in/riyan-portuguez-mp-rpm-rpsy-chra-b3b8946a?originalSubdomain=ph" },
+      { "name": "Facebook", "url": "https://web.facebook.com/yourmillennialpsychologist/?_rdc=1&_rdr#"},
+      { "name": "Instagram", "url": "https://www.instagram.com/yourmillennialpsychologist/"},
+      { "name": "Youtube", "url": "https://www.youtube.com/@yourmillennialpsychologist?utm_source=facebook&utm_medium=confirmed_link_feature&fbclid=IwY2xjawOVZYlleHRuA2FlbQIxMABicmlkETFqbjU1NXg5U2N6a3kyZXhsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlqnCFyPF_oXnnZj_tGl1QGeh0fIiR_K6-AGoH20DtMyXY4_j6-GlSuivz7n_aem_bG-CM9PUVrNTBw99Q1ScVQ"},
+      { "name": "X", "url": "https://x.com/riyanportuguez?fbclid=IwY2xjawOVZZ9leHRuA2FlbQIxMABicmlkETFqbjU1NXg5U2N6a3kyZXhsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlfD5PVaFCTeaxjhEY020wU1d41u16eB7TmUOW3i48X47hu5vMgxEJQ_qGPl_aem_5ynrDwXkOOHj63960x0eSQ"},
+      { "name": "Tiktok", "url": "http://tiktok.com/@yourmillennialpsych"},
+      { "name": "Mail", "url": "https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=yourmillennialpsychologist@gmail.com&hl=en"}
+    ],
+    "bio": "Riyan Portuguez is a pioneering figure in the Philippine mental health landscape, bridging the gap between clinical practice and social media.\nShe holds both a Bachelor’s and a Master’s degree in Psychology from the Polytechnic University of the Philippines (PUP).\nAs a Registered Psychologist and Psychometrician, she has served as a college instructor, a clinician, and a resource speaker for various national organizations.\n\nRecognizing the barriers many Filipinos face in accessing mental healthcare, Riyan established her digital brand, \"Your Millennial Psychologist.\"\nThrough this platform, she breaks down complex psychological theories into digestible content, tackling taboo topics such as burnout, toxic family dynamics, and suicide prevention.\nHer approach is deeply rooted in Sikolohiyang Pilipino (Filipino Psychology), ensuring that her interventions resonate with the local cultural context.\n\nBeyond content creation, she is a leader in the field.\nShe serves as the Co-Chairperson of the LGBT Psychology Special Interest Group of the Psychological Association of the Philippines (PAP), advocating for gender-affirmative care.\nShe is also a core member of #MentalHealthPH, a nonprofit organization driving national awareness.\nRiyan is also the CEO of YMP Learning and Development Solutions, a consulting firm focused on organizational well-being.\n\nPerhaps her most powerful tool is her vulnerability; Riyan openly discusses her diagnosis of Bipolar II Disorder, using her lived experience to validate the struggles of her community.\nBy humanizing the therapist, she empowers thousands of Filipinos to seek help without shame, proving that even healers need healing.",
+    "achievements": ["TEDx Speaker: Delivered a talk for TEDxMiriamCollege (2022) on unpacking social awareness and mental health.",
+    "Media Features: Frequently featured as a subject matter expert on major networks including CNN Philippines, GMA News, and Rappler, discussing issues ranging from pandemic anxiety to seasonal depression.",
+    "Digital Influence: Built a massive following across Facebook, TikTok, and YouTube, creating one of the largest mental health-focused communities in the Philippines.",
+    "Leadership: Appointed Co-Chairperson for the PAP LGBT Psychology Special Interest Group, influencing policy and practice for gender-inclusive therapy in the country."],
+    "image": "/speakers/speaker-1.jpg"
+  },
+  {
+    "id": "speaker-12",
+    "name": "Renee Louise Co",
+    "topic": "Topic Title 12",
+    "role": "Lawyer, Youth Leader, Writer",
+    "pronouns": "She/Her",
+    "affiliations": [
+      "Lawyer (Recently admitted to the Philippine Bar)",
+      "Former Student Regent (39th), University of the Philippines System (2021–2022)",
+      "Alumna, UP College of Law",
+      "Member, KAISA UP"
+    ],
+    "socials": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/renee-louise-co/?originalSubdomain=ph" },
+      { "name": "Facebook", "url": "https://web.facebook.com/reneelco"},
+      { "name": "Instagram", "url": "https://www.instagram.com/renee.issance/?hl=en"},
+      { "name": "X", "url": "https://x.com/renee_co_"},
+      { "name": "Mail", "url": "https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=Werk@theplayhouse.ph&hl=en"}
+    ],
+    "bio": "Renee Louise Co represents the intersection of creative passion and uncompromising political will.\nBefore entering the legal profession, she served as the 39th Student Regent of the University of the Philippines (UP) System—the highest student official in the premier state university.\nHer term (2021-2022) was defined by unprecedented challenges: the remote learning crisis brought by COVID-19 and threats to the UP-DND Accord.\nRenee was at the forefront of these battles, negotiating with the Board of Regents to ensure that no student was left behind by the digital divide and fiercely opposing the red-tagging of student activists.\n\nHer leadership is rooted in a deep love for the arts and humanities.\nPrior to law school, she was an active figure in the campus literary scene and student governance through her political party, KAISA UP.\nShe believes that \"the mass line is not a straight line,\" often using her writing to explore the complexities of service and struggle.\n\nNow a full-fledged lawyer, Atty. Co continues her advocacy beyond the campus.\nShe focuses on human rights and public interest law, using her degree to empower marginalized sectors.\nShe remains a powerful voice for the youth, constantly reminding them that their education is a tool not just for personal gain, but for national survival.\nHer journey from student leader to lawyer serves as a blueprint for young Filipinos who aspire to turn their idealism into tangible, systemic change.",
+    "achievements": ["UP Student Regent (2021-2022): Served as the sole student representative on the UP Board of Regents, successfully lobbying for academic easing policies (e.g., \"No Fail Policy\") during the height of the pandemic.",
+    "Bar Passer: Successfully passed the Philippine Bar Examinations, transitioning from student activism to legal practice.",
+    "Defender of Academic Freedom: Led the student body in protests and dialogues to uphold the UP-DND Accord, protecting the university's status as a safe haven for free speech.",
+    "Writer: Published essays and creative works that document the student movement, bridging the gap between literary art and political commentary."],
+    "image": "/speakers/speaker-1.jpg"
+  }
+]
