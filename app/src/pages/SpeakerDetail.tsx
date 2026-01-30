@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/features/Navbar';
 import speakersData from '../data/speakers.json';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaGlobe, FaSquareXTwitter, FaYoutube } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';

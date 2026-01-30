@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import speakersData from '../data/speakers.json';
+import speakersData from '../../data/speakers.json';
 
 const Speakers = () => {
   return (

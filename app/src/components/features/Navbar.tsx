@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from './Button';
+import Button from '../ui/Button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +13,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 px-8 py-6 bg-black/60 backdrop-blur-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.08)]">
         <div className="container max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-end leading-none select-none relative z-50">
-            <span className="text-tedx-red font-black text-3xl tracking-tighter">TED<sup className="text-xl relative -top-2">x</sup></span>
-            <span className="text-white font-bold text-3xl ml-1 tracking-tight">PUP</span>
-          </div>
+          <img src="/logo-white.webp" alt="TEDxPUP" className="h-12 md:h-14 w-auto object-contain -ml-3" />
 
           {/* Mobile Menu Button */}
           <button 

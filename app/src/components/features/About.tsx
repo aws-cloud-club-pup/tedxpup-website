@@ -1,5 +1,5 @@
-import aboutAccent from "../assets/about/about-accent.svg"
-import aboutBlurSpotlight from "../assets/about/blur-spotlight.svg"
+import aboutAccent from "../../assets/about/about-accent.svg"
+import aboutBlurSpotlight from "../../assets/about/blur-spotlight.svg"
 
 const About = () => {
 
