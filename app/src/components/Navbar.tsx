@@ -36,7 +36,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a 
                 key={link} 
-                href={`#${link.toLowerCase().replace(/ /g, '-')}`} 
+                href={`/#${link.toLowerCase().replace(/ /g, '-')}`} 
                 className="text-white text-sm font-medium hover:text-tedx-red transition-colors tracking-wide"
               >
                 {link}
@@ -56,7 +56,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a 
               key={link} 
-              href={`#${link.toLowerCase().replace(/ /g, '-')}`} 
+              href={`/#${link.toLowerCase().replace(/ /g, '-')}`} 
               onClick={() => setIsOpen(false)}
               className="text-white text-xl font-medium hover:text-tedx-red transition-colors tracking-wide text-center w-full py-2 border-b border-white/10 last:border-0"
             >
