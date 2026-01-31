@@ -1,5 +1,14 @@
+
+
 const FAQs = () => {
-  const faqData = [
+  const faqData: FAQ[] = [
+    {
+      question: 'Where can I get updates or ask questions?',
+      answer: 'You may join our official subreddit: r/BosesNgPUP.\n\nThis subreddit serves as our central community hub, where you can ask questions, raise concerns, and interact with the organizing team before, during, and after the event.',
+      hasButton: true,
+      buttonText: 'Visit r/BosesNgPUP',
+      buttonLink: 'https://www.reddit.com/r/BosesNgPUP/',
+    },
     {
       question: 'Who may attend?',
       answer: 'TEDxPUP is open to students, faculty, alumni, and members of the public who register in advance. Priority may be given to PUP-affiliated applicants if seating is limited.'
@@ -37,6 +46,16 @@ const FAQs = () => {
               </summary>
               <div className="transition-all p-6 pt-0 text-gray-400 leading-relaxed border-t border-white/5">
                 {faq.answer}
+                {faq.hasButton && (
+                  <a 
+                    href={faq.buttonLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block mt-4 px-6 py-3 bg-tedx-red text-white font-medium rounded-lg hover:bg-tedx-red/90 transition-colors w-fit"
+                  >
+                    {faq.buttonText}
+                  </a>
+                )}
               </div>
             </details>
           ))}
