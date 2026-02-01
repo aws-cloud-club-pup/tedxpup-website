@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="relative px-6 bg-black text-white overflow-hidden">
       <div className="relative container py-24 pt-52 max-w-7xl mx-auto text-right">
-        <h2 className="font-outfit text-2xl md:text-3xl mb-8 tracking-tighter">About <span className="text-4xl md:text-5xl"><em className="text-tedx-red not-italic">TEDx</em>PUP</span> 2025</h2>
+        <h2 className="text-2xl md:text-3xl mb-8 tracking-tighter">About <span className="text-4xl md:text-5xl"><em className="text-tedx-red not-italic">TEDx</em>PUP</span> 2025</h2>
         <div className="flex flex-col gap-4 md:items-end  text-lg leading-relaxed">
           <p className="md:w-1/2">
             TEDxPUP 2025 marks the very first TEDx event at the Polytechnic University of the Philippines. As a newly licensed TEDx initiative, it represents a bold step in bringing “ideas worth spreading” to our campus community and beyond. This debut event serves as a starting point for a tradition of dialogue, discovery, and innovation within PUP.
@@ -24,7 +24,7 @@ const About = () => {
         <img className="absolute bottom-0 invisible md:visible md:-left-48 xl:-left-10 h-full" alt="" src={aboutAccent} />
         <h1
           style={{ WebkitTextStrokeWidth: '1.29px', WebkitTextStrokeColor: 'rgba(255, 255, 255, 0.25)' }}
-          className="absolute top-20 -left-20 invisible md:visible rotate-90 text-9xl text-transparent font-roboto"
+          className="absolute top-20 -left-20 invisible md:visible rotate-90 text-9xl text-transparent"
         >
           TED<sup>x</sup>
         </h1>

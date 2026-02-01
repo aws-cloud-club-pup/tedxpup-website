@@ -49,7 +49,7 @@ const FAQs = () => {
   return (
     <section id="faqs" className="py-24 px-6 bg-black text-white border-t border-white/10">
       <div className="container lg:flex justify-between max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-medium font-outfit mb-12 "><em className="not-italic text-tedx-red">Frequently</em> Asked Questions</h2>
+        <h2 className="text-4xl md:text-5xl font-medium mb-12 "><em className="not-italic text-tedx-red">Frequently</em> Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqData.map((faq, id) => (
             <details key={id} className="max-w-3xl group border-b-2 border-white/10 overflow-hidden">
