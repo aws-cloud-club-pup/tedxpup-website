@@ -10,24 +10,53 @@ const FAQs = () => {
       buttonLink: 'https://www.reddit.com/r/BosesNgPUP/',
     },
     {
-      question: 'Who may attend?',
-      answer: 'TEDxPUP is open to students, faculty, alumni, and members of the public who register in advance. Priority may be given to PUP-affiliated applicants if seating is limited.'
+      question: 'Who can attend TEDxPUP?',
+      answer: 'TEDxPUP is open to students, faculty members, alumni, and invited guests. Attendance may be limited due to venue capacity, so registration and confirmation are required.'
     },
     {
-      question: 'Will there be a participation fee?',
-      answer: 'No. The event is free to attend, but registration is required — and seats are limited.'
+      question: 'Is TEDxPUP free to attend?',
+      answer: 'Yes. TEDxPUP is free to attend.'
     },
     {
-      question: 'Will the talks be recorded and posted online?',
-      answer: 'Yes. Selected talks will be uploaded to the TEDxPUP and TEDx YouTube channels after editorial review, following TEDx quality guidelines.'
+      question: 'Can a non-PUPian attend the event?',
+      answer: 'Yes. Non-PUPians are welcome to attend, subject to registration approval and seat availability.'
     },
     {
-      question: 'Are there opportunities to present student projects?',
-      answer: 'Yes — there will be an exhibit area for student projects during the lunch break. Exhibitors must apply by October 15.'
+      question: 'How can I register for the event?',
+      answer: 'Registration details will be announced through our official website and social media channels. Participants may be required to complete an online registration form and comply with specific event guidelines.'
     },
     {
-      question: 'Can I bring guests?',
-      answer: 'Each registrant may indicate up to 1 guest during registration, subject to availability.'
+      question: 'Can I become a speaker at TEDxPUP?',
+      answer: (
+        <>
+          Speaker selection follows a curated and application-based process in line with TEDx guidelines.<br /><br />
+          For TEDxPUP 2026, the speaker lineup has already been finalized, and we are unable to accommodate additional speakers for this event cycle.
+        </>
+      ),
+    },
+    {
+      question: 'Can partners or sponsors also be speakers?',
+      answer: 'No. In accordance with TEDx guidelines, there is a clear distinction between partners/sponsors and speakers. These roles cannot coexist to ensure that all talks remain non-promotional and idea-focused.'
+    },
+    {
+      question: 'Is TEDxPUP affiliated with TED??',
+      answer: 'TEDxPUP is an independently organized TEDx event, officially licensed by TED. While it adheres to TEDx rules and standards, it is planned and executed by a local organizing team.'
+    },
+    {
+      question: 'What should I bring on the day of the event?',
+      answer: 'Registered participants are advised to bring a valid ID and their registration confirmation (digital or printed). Additional reminders and instructions will be sent prior to the event.'
+    },
+    {
+      question: 'Is the event recorded or livestreamed?',
+      answer: 'The event will not be livestreamed. However, the talks will be recorded and published on the official TEDx YouTube channel after the event.'
+    },
+    {
+      question: 'Can I transfer my slot to someone else?',
+      answer: 'Slot transfers may be subject to approval. Please follow official announcements or contact the organizing team through our official platforms for guidance.'
+    },
+    {
+      question: 'Are walk-ins allowed?',
+      answer: 'No. Walk-in attendees are not allowed. Only participants with confirmed registration will be admitted due to venue capacity and event guidelines.'
     },
   ]
 
