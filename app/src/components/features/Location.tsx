@@ -1,6 +1,6 @@
 const Location = () => {
   return (
-    <section id="location" className="py-24 px-6 bg-gray-950 text-white border-t border-white/10">
+    <section id="location" className="py-24 px-6 bg-black text-white border-t border-white/10">
       <div className="container max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tighter">LOCATION</h2>
         <p className="text-gray-400 text-lg mb-12">
