@@ -4,12 +4,6 @@ import { creativePieces } from '../../data/creativeWritingData';
 const CreativeWriting = () => {
   return (
     <section id="creative-writing" className="relative py-24 px-6 bg-black text-white overflow-hidden min-h-screen">
-      {/* Subtle Noise Background */}
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
-
-      {/* Background Gradient Elements */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-tedx-red/20 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="relative z-10 container max-w-5xl mx-auto flex flex-col items-center space-y-16">
         <div className="text-center space-y-4 animate-fade-in-up">
