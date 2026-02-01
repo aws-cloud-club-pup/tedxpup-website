@@ -1,5 +1,3 @@
-
-
 const FAQs = () => {
   const faqData: FAQ[] = [
     {
@@ -26,8 +24,12 @@ const FAQs = () => {
       answer: 'Yes — there will be an exhibit area for student projects during the lunch break. Exhibitors must apply by October 15.'
     },
     {
-      question: 'Can I bring guests?',
-      answer: 'Each registrant may indicate up to 1 guest during registration, subject to availability.'
+      question: 'Can I transfer my slot to someone else?',
+      answer: 'Slot transfers may be subject to approval. Please follow official announcements or contact the organizing team through our official platforms for guidance.'
+    },
+    {
+      question: 'Are walk-ins allowed?',
+      answer: 'No. Walk-in attendees are not allowed. Only participants with confirmed registration will be admitted due to venue capacity and event guidelines.'
     },
   ]
 
