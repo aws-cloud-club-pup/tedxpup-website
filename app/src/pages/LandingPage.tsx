@@ -8,6 +8,7 @@ import CreativeWriting from '../components/features/CreativeWriting';
 import Partners from '../components/features/Partners';
 import FAQs from '../components/features/FAQs';
 import Footer from '../components/features/Footer';
+import TitoWidget from '../components/features/TitoWidget';
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -35,6 +36,9 @@ const LandingPage = () => {
         <ProgramFlow />
         <CreativeWriting />
         <Partners />
+        <section id="tickets" className="py-12 bg-black">
+           <TitoWidget /> 
+        </section>
         <FAQs />
       </main>
       <Footer />
