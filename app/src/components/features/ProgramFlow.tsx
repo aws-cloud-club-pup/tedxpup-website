@@ -70,10 +70,10 @@ const ProgramFlow = () => {
               className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-4 md:gap-8 p-4 md:p-6 border-b border-white/10 hover:bg-white/5 transition-colors text-center"
             >
               <div className="flex gap-3 items-center justify-center sm:justify-end sm:w-60 sm:flex-shrink-0">
-                <span className="text-tedx-red font-mono font-bold text-sm md:text-base whitespace-nowrap">
+                <span className="text-tedx-red font-bold text-sm md:text-base whitespace-nowrap">
                   {item.time}
                 </span>
-                <span className="text-white/50 font-mono text-xs md:text-sm whitespace-nowrap">
+                <span className="text-white/50 text-xs md:text-sm whitespace-nowrap">
                   ({item.duration})
                 </span>
               </div>

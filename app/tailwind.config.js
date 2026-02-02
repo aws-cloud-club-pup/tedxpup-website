@@ -4,9 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        outfit: ['Outfit', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif']
+        sans: ['Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         'tedx-red': '#e62b1f',

@@ -40,7 +40,7 @@ const Navbar = () => {
               </a>
             ))}
             
-            <Button className="px-6 py-3 text-sm font-bold tracking-wider uppercase">
+            <Button href="/#tickets" className="px-6 py-3 text-sm font-bold tracking-wider uppercase">
               Get Tickets
             </Button>
           </div>

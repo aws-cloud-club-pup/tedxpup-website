@@ -2,9 +2,7 @@ import Button from '../ui/Button';
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative pt-32 px-6 min-h-screen flex flex-col items-center justify-center bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-gray-900 via-black to-black overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
-      
+    <section id="hero" className="relative pt-32 px-6 min-h-screen flex flex-col items-center justify-center bg-black overflow-hidden">
       <div className="z-10 container max-w-7xl text-center space-y-8 animate-fade-in-up">
         <h1 className="text-5xl md:text-8xl font-black tracking-tighter">
           <span className="text-tedx-red inline-block hover:scale-105 transition-transform duration-500">HERO</span> 
