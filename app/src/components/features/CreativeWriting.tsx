@@ -3,7 +3,7 @@ import { creativePieces } from '../../data/creativeWritingData';
 
 const CreativeWriting = () => {
   return (
-    <section id="creative-writing" className="relative py-24 px-6 bg-black text-white overflow-hidden min-h-screen">
+    <section id="creative-writing-entries" className="relative py-24 px-6 bg-black text-white overflow-hidden min-h-screen">
 
       <div className="relative z-10 container max-w-5xl mx-auto flex flex-col items-center space-y-16">
         <div className="text-center space-y-4 animate-fade-in-up">
