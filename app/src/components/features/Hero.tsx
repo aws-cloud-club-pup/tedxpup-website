@@ -1,6 +1,7 @@
 import Button from '../ui/Button';
 import { FiClock, FiMapPin } from 'react-icons/fi';
 import heroBackground from '../../assets/hero/TEDX-HEART.png';
+import tedxpupLogo from '../../assets/about/logos/tedxpup-white.png';
 
 const Hero = () => {
   return (
@@ -12,14 +13,17 @@ const Hero = () => {
       />
       
       <div className="container mx-auto max-w-7xl relative w-full flex flex-col items-center z-10">
-        <div className="max-w-4xl space-y-8 text-center">
+        <div className="max-w-4xl space-y-5 text-center">
           <p className="text-gray-400 text-sm md:text-base font-medium italic">
             The Polytechnic University of the Philippines–Manila joins the global stage
           </p>
           
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none">
-            <span className="text-[#e62b1f]">TEDx</span> PUP 2026
-          </h1>
+          <div className="flex items-center justify-center gap-0 -ml-4 md:-ml-10">
+            <img src={tedxpupLogo} alt="TEDxPUP" className="h-24 md:h-40 w-auto" />
+            <h1 className="text-6xl md:text-8xl font-black tracking-tight leading-none text-white -ml-4 md:-ml-6">
+              2026
+            </h1>
+          </div>
           
           <div className="space-y-2">
             <p className="text-2xl md:text-3xl font-extrabold italic">Theme: Love at First Idea</p>
