@@ -4,25 +4,27 @@ const FAQs = () => {
 
   return (
     <section id="faqs" className="py-24 px-6 bg-black text-white border-t border-white/10">
-      <div className="container lg:flex justify-between max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-medium font-outfit mb-12 "><em className="not-italic text-tedx-red">Frequently</em> Asked Questions</h2>
-        <div className="max-w-3xl mx-auto space-y-4">
+      <div className="container lg:flex justify-between gap-8 max-w-7xl mx-auto">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium font-outfit mb-12 lg:mb-0 lg:w-2/5 shrink-0">
+          <em className="not-italic text-tedx-red font-bold">Frequently</em> <strong>Asked Questions</strong>
+        </h1>
+        <div className="w-full lg:w-3/5 space-y-4">
           {faqData.map((faq: FAQ, id: number) => (
-            <details key={id} className="max-w-3xl group border-b-2 border-white/10 overflow-hidden">
-              <summary className="flex items-center justify-between p-6 text-2xl lg:text-3xl cursor-pointer hover:bg-white/5 transition-colors list-none">
-                <span className="w-4/5">{faq.question}</span>
+            <details key={id} className="group border-b-2 border-white/10 overflow-hidden">
+              <summary className="flex items-center justify-between p-4 md:p-6 text-lg md:text-2xl lg:text-3xl cursor-pointer hover:bg-white/5 transition-colors list-none">
+                <span className="w-4/5 pr-4">{faq.question}</span>
                 <span className="bg-white rounded-full p-0.5 transform group-open:rotate-45 transition-transform text-tedx-red text-xl">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
                 </span>
               </summary>
-              <div className="transition-all p-6 pt-0 text-gray-400 leading-relaxed border-t border-white/5">
+              <div className="transition-all p-4 md:p-6 pt-0 text-sm md:text-base text-gray-400 leading-relaxed">
                 {faq.answer}
                 {faq.hasButton && (
                   <a 
                     href={faq.buttonLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="block mt-4 px-6 py-3 bg-tedx-red text-white font-medium rounded-lg hover:bg-tedx-red/90 transition-colors w-fit"
+                    className="block mt-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base bg-tedx-red text-white font-medium rounded-lg hover:bg-tedx-red/90 transition-colors w-fit"
                   >
                     {faq.buttonText}
                   </a>
