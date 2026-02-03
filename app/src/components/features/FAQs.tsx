@@ -5,7 +5,9 @@ const FAQs = () => {
   return (
     <section id="faqs" className="py-24 px-6 bg-black text-white border-t border-white/10">
       <div className="container lg:flex justify-between max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-medium font-outfit mb-12 "><em className="not-italic text-tedx-red">Frequently</em> Asked Questions</h2>
+        <h1 className="text-4xl md:text-5xl font-medium font-outfit mb-12 ">
+          <em className="not-italic text-tedx-red font-bold">Frequently</em> <strong>Asked Questions</strong>
+        </h1>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqData.map((faq: FAQ, id: number) => (
             <details key={id} className="max-w-3xl group border-b-2 border-white/10 overflow-hidden">
@@ -15,7 +17,7 @@ const FAQs = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
                 </span>
               </summary>
-              <div className="transition-all p-6 pt-0 text-gray-400 leading-relaxed border-t border-white/5">
+              <div className="transition-all p-6 pt-0 text-gray-400 leading-relaxed">
                 {faq.answer}
                 {faq.hasButton && (
                   <a 
