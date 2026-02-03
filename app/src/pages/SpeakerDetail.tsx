@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from '../components/features/Navbar';
 import speakersData from '../data/speakers.json';
@@ -20,6 +20,8 @@ const getSocialIcon = (name: string) => {
 interface Speaker {
   id: string;
   name: string;
+  title?: string;
+  titlePosition?: 'before' | 'after';
   topic: string;
   bio: string;
   image: string;
@@ -33,6 +35,7 @@ interface Speaker {
 
 const SpeakerDetail = () => {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const speaker = speakersData.find(s => s.id === slug) as Speaker | undefined;
 
   useEffect(() => {
@@ -45,7 +48,7 @@ const SpeakerDetail = () => {
             <Navbar />
             <main className="container max-w-7xl mx-auto px-6 py-32 flex flex-col items-center justify-center">
                  <h1 className="text-4xl font-bold">Speaker not found</h1>
-                 <Link to="/#speakers" className="text-tedx-red hover:underline mt-4">← Back to Home</Link>
+                 <Link to="/#speakers" className="text-tedx-red hover:underline mt-4">← Back</Link>
             </main>
         </div>
     )
@@ -61,16 +64,28 @@ const SpeakerDetail = () => {
          </div>
          
          <div className="w-full md:w-2/3 space-y-6">
-           <Link to="/#speakers" className="text-tedx-red hover:underline mb-4 inline-block">← Back to Home</Link>
-           <div className="flex flex-wrap items-baseline gap-3">
-              <h1 className="text-5xl md:text-7xl font-black tracking-tighter">{speaker.name}</h1>
-              {speaker.pronouns && (
-                 <span className="text-xl md:text-2xl text-gray-400 font-medium">{speaker.pronouns}</span>
-              )}
+           <button onClick={() => navigate(-1)} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm font-medium text-gray-300 hover:text-white hover:border-tedx-red hover:bg-tedx-red/10 transition-all duration-300 group self-start backdrop-blur-sm cursor-pointer">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform duration-300">
+               <path d="M19 12H5"/>
+               <path d="m12 19-7-7 7-7"/>
+             </svg>
+             Back
+           </button>
+           <div>
+             <h1 className="text-5xl md:text-7xl font-black tracking-tighter">
+               {speaker.title && speaker.titlePosition === 'before' 
+                 ? `${speaker.title} ${speaker.name}` 
+                 : speaker.title && speaker.titlePosition === 'after'
+                 ? `${speaker.name}, ${speaker.title}`
+                 : speaker.name}
+             </h1>
+             {speaker.pronouns && (
+               <p className="text-xl md:text-2xl text-gray-200 font-medium mt-2">{speaker.pronouns}</p>
+             )}
            </div>
            <h2 className="text-2xl md:text-3xl text-tedx-red font-bold mb-8">{speaker.topic}</h2>
            
-           <div className="space-y-6 text-lg text-gray-400">
+           <div className="space-y-6 text-lg text-gray-200">
                {speaker.role && (
                  <div className="text-justify">
                    <span className="font-bold text-white">Role: </span>
@@ -112,7 +127,7 @@ const SpeakerDetail = () => {
 
            <div className="pt-2">
              <h3 className="text-xl font-bold mb-4 text-white uppercase tracking-wider">Biography</h3>
-             <p className="text-gray-400 text-lg leading-relaxed whitespace-pre-wrap text-justify">
+             <p className="text-gray-200 text-lg leading-relaxed whitespace-pre-wrap text-justify">
                {speaker.bio}
              </p>
            </div>
@@ -120,7 +135,7 @@ const SpeakerDetail = () => {
            {speaker.achievements && speaker.achievements.length > 0 && (
              <div className="pt-2">
                <h3 className="text-xl font-bold mb-4 text-white uppercase tracking-wider">Achievements</h3>
-               <ul className="list-none space-y-3 text-gray-400 text-lg">
+               <ul className="list-none space-y-3 text-gray-200 text-lg">
                  {speaker.achievements.map((achievement, idx) => {
                    const colonIndex = achievement.indexOf(':');
                    if (colonIndex > -1) {

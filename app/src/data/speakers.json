@@ -22,7 +22,7 @@
     "Academic Excellence: Consistently maintaining high standing in a rigorous double-degree program (LGL-ECO) at DLSU",
     "Creative Leadership: successfully led marketing and creative initiatives for university organizations, blending branding strategies with student advocacy.", 
     "Advocacy: Proponent of \"Fashion with Purpose,\" using personal style as a tool for empowerment and professional branding."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Chanelle-Peru.jpg"
   },
   {
     "id": "speaker-2",
@@ -44,17 +44,19 @@
     ],
     "bio": "Eva Le Queen (Jace Lamban) is a force in the Asian drag scene. Before donning the wig, she worked in corporate HR and project management—skills she now utilizes as the CEO of Drag Playhouse PH, a drag talent agency and production house. She rose to international fame representing the Philippines in the inaugural season of Drag Race Philippines, where her intellect and advocacy for \"Drag is Political\" won her a legion of fans. She later competed on the global stage in RuPaul's Drag Race Global All Stars.\n\nEva's work transcends entertainment; she uses her platform to discuss LGBTQ+ rights, mental health, and the economic viability of queer art. She challenges the \"stereotype\" of drag queens by blending corporate acumen with campy performance, proving that queer artists are also astute business leaders.",
     "achievements": ["Drag Race Pioneer: Finalist on Drag Race Philippines Season 1 and the first Filipino drag artist to compete in RuPaul’s Drag Race Global All Stars.", "CEO & Founder: Established Drag Playhouse PH, a premier drag talent agency and content production house that professionalizes drag entertainment in the Philippines.", "Advocacy: A vocal champion for the \"Drag is Political\" movement, she uses her platform to advocate for LGBTQ+ rights, fair labor practices for queer artists, and mental health awareness in the creative industry."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Eva-Le-Queen.jpg"
   },
   {
     "id": "speaker-3",
     "name": "Haven Mosquito",
-    "topic": "Topic Title 3",
+    "topic": "When Ideas Don’t Love You Back",
     "role": "Debater, Adjudicator, Student Leader",
     "pronouns": "Him/Them",
     "affiliations": [
-      "n/a",
-      "n/a"
+      "Senior Psychology Student, Polytechnic University of the Philippines (PUP)",
+      "Former Intern, Learning & Development, SGV & Co. (EY Philippines)",
+      "Former Student Ambassador, Samsung Galaxy Campus (Batch 2)", 
+      "Former Year Representative, PUP Psychology Students Association (PUPPSA)"
     ],
     "socials": [
       { "name": "LinkedIn", "url": "https://www.linkedin.com/in/havenmosquito/" },
@@ -62,9 +64,9 @@
       { "name": "Instagram", "url": "https://www.instagram.com/pook.lamok" },
       { "name": "Youtube", "url": "https://www.youtube.com/@pooklamok" }
     ],
-    "bio": "Lorem Ipsum",
-    "achievements": ["Lorem Ipsum Dunking Donut Choco Butter Coconut", "Krispy Kreme Glazed"],
-    "image": "/speakers/speaker-1.jpg"
+    "bio": "Haven is a Psychology senior at the Polytechnic University of the Philippines, a competitive debater and adjudicator, and an active student leader. He has represented institutions in national and international debate tournaments, served in leadership roles within student organizations, and brings a strong interest in meaningful dialogue, psychology, and people-centered leadership.",
+    "achievements": ["Samsung Galaxy Campus Ambassador: Selected as one of the top 100 ambassadors nationwide from a pool of ~7,000 applicants, representing 650+ universities.","SGV & Co. Intern: Completed a competitive internship in the Learning and Development department of the country's top auditing firm.", "Event Leadership: Co-led the logistics and planning for the PUP Psychology Department’s First Pinning Ceremony (600+ attendees) and the PUPPSA Team Building (90+ officers).", "DOST-SEI Scholar: Awarded the Merit Scholarship for exceptional aptitude in science and mathematics.", "Student Leader: Served as Year Representative and Membership Committee Head, overseeing welfare and conflict resolution for hundreds of students."],
+    "image": "/speakers/Haven-Mosquito.jpg"
   },
   {
     "id": "speaker-4",
@@ -86,7 +88,7 @@
     ],
     "bio": "Isaeus (Asi) Guiang thrives at the intersection of technology, strategy, and leadership. As the Regional Captain of AWS Cloud Clubs Philippines, he leads a nationwide movement of student builders, overseeing 22+ university chapters and over 4,000 members. His mission is to democratize access to cloud technology, ensuring that Filipino students are not just consumers of tech but active creators of it.\n\nWith a strong background in risk assessment and cloud security, Asi goes beyond theory. He has served as an AWS re/Start Instructor and Mentor, designing hands-on modules that integrate core AWS services (EC2, VPC, IAM, S3) to help students build cloud-hosted applications from scratch. His tenure as an intern at industry giants like Globe and Tutorials Dojo gave him the practical expertise he now passes on to his peers.\n\nCurrently, Asi is also a Lead at Build Club AI, a community for AI builders and founders, where he champions the safe and strategic adoption of artificial intelligence. He embodies the \"Think Big\" leadership principle, evident in his orchestration of large-scale engagements like the Innovation Cup 2024, which secured internships for winners at top firms. Whether speaking at community days, writing technical blogs on cybersecurity, or mentoring future professionals, Asi's goal remains constant: to create impact, drive change, and redefine what is possible for the Filipino youth in tech.",
     "achievements": ["Regional Captain, AWS Cloud Clubs PH: Successfully scaled the community to over 22 chapters and 4,000+ members, fostering a nationwide network of cloud enthusiasts.", "Orchestrator, Innovation Cup 2024: Led a high-stakes competition that connected student innovators with top industry firms, resulting in internship placements for the winners.", "AWS Student Community Day 2024: Played a pivotal leadership role in organizing the first-ever AWS Student Community Day in the Philippines, bringing together industry experts and student leaders.", "Tech Educator & Mentor:  Personally mentored hundreds of students in cloud computing, helping them achieve AWS certifications and guiding them through the AWS re/Start program at Edukasyon.ph.", "Technical Writer: Publishes educational content on cybersecurity and cloud architecture on DEV.to and Tutorials Dojo, simplifying complex topics like \"Zero-Trust Architecture\" and \"Malware Detection\" for beginners."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Asi-Guiang.jpg" 
   },
   {
     "id": "speaker-5",
@@ -107,12 +109,14 @@
     ],
     "bio": "Joy Mayanne Barcoma has redefined what it means to be a beauty queen in the modern era. Crowned Miss Philippines Earth 2025 in August and finishing as a runner-up (Top 8) on the international stage in November 2025, Joy used her global platform not just to model, but to mobilize.\n\nA proud Iskolar ng Bayan, she graduated with a degree in Broadcast Communication from the Polytechnic University of the Philippines (PUP). Her communication background is the backbone of her advocacy work. Unlike traditional environmental campaigns, Joy focuses on the intersection of climate change and human survival: Disaster Risk Reduction and Management (DRRM). She has collaborated with tech firms to develop mobile command centers and disaster alert apps (including work recognized by EOSC's Handa Pilipinas), ensuring that communities in her hometown of Bacoor—and across the Philippines—are prepared for the realities of the climate crisis.\n\nBeyond the environment, Joy is a fierce mental health advocate. She serves as the Region IV-A Head of the Youth for Mental Health Coalition and an ambassador for LoveYourself, an organization dedicated to HIV awareness and self-empowerment. She believes that resilience is holistic: protecting the mind is just as vital as protecting the planet.\n\nOn social media, she launched #SustainabilityIn60Seconds, a video series that breaks down complex Sustainable Development Goals (SDGs) into bite-sized, relatable content for the Filipino youth. Whether she is walking a runway or lobbying for better flood control policies, Joy Barcoma carries herself with \"humor, courage, and purpose,\" proving that the most beautiful thing a woman can do is serve her people.",
     "achievements": ["Miss Philippines Earth 2025: Winner of the prestigious national title, besting 35 other candidates.", "Miss Earth 2025 (Top 8): Represented the Philippines on the international stage, finishing as a runner-up.", "Tech For Good: Collaborated on the development of a critical communications app and mobile command vehicle for disaster response.", "Youth Leadership: Appointed Head of the Youth for Mental Health Coalition in Calabarzon (Region IV-A).", "Digital Advocacy: Creator of the viral educational series #SustainabilityIn60Seconds.", "Miss World Philippines 2021: Previously placed in the Top 24 and won the \"Beauty with a Purpose\" challenge."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Joy-Mayanne-Barcoma.jpg"
   },
   {
     "id": "speaker-6",
     "name": "Kristine Jane Atienza",
-    "topic": "Topic Title 6",
+    "title": "RND",
+    "titlePosition": "after",
+    "topic": "How small “What if?” questions can shape a meaningful, unconventional career and future.",
     "role": "Public Health Nutritionist, Analog Astronaut, Space Nutrition Researcher",
     "pronouns": "She/Her",
     "affiliations": [
@@ -131,7 +135,7 @@
     "Technical Author: Key contributor to the Manual on the Management of Moderate Acute Malnutrition, a critical resource for health workers in the Philippines.",
     "Space Advocate:  A vocal proponent for Space Nutrition, conducting research on sustainable food systems in extreme environments."],
 
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Kristine-Atienza.jpg"
   },
   {
     "id": "speaker-7",
@@ -153,12 +157,12 @@
     "LinkedIn Top Voice: Recognized as one of the most influential creators on LinkedIn Philippines for her consistent, high-value content on Leadership and Personal Branding.",
     "Educational Leadership: Holds a Master’s in Public Management (MPM) and Six Sigma Certification, integrating data-driven process improvement with soft-skills training.",
     "Business Growth: As Head of Sales at LJMB, she has been instrumental in scaling the firm's client portfolio to include over 500 global clients, proving her ability to merge L&D with revenue generation."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Laraine-Zyreen-Marcelo.jpg"
   },
   {
     "id": "speaker-8",
     "name": "Nabbe Francisco",
-    "topic": "Topic Title 8",
+    "topic": "Design as an emotional and relational act, not just a visual or commercial one.",
     "role": "Digital Marketing, Graphic Design, Community Leadership",
     "pronouns": "He/Him",
     "affiliations": [
@@ -178,16 +182,19 @@
     "Media Recognition: Featured in top-tier lifestyle and business publications including PhilStar L!fe, ScoutMag, Village Pipol, and PageOne for his contributions to the gig economy. ",
     "Academic Excellence: Graduated Magna Cum Laude from PUP (Advertising and Public Relations), setting a standard for academic and professional rigor.",
     "Agency Growth: Scaled Uno Graphiko into a recognized agency managing seven brands remotely, demonstrating the viability of the \"work-from-anywhere\" agency model."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Nabbe-Francisco.jpg"
   },
   {
     "id": "speaker-9",
-    "name": "Nicole Redding Wilhem",
-    "topic": "Topic Title 9",
+    "name": "Nicole Redding Wilhelm",
+    "topic": "What If the Next Housing Crisis Isn’t About Affordability but Belonging?",
     "role": "Author",
     "pronouns": "She/Her",
     "affiliations": [
-      "Mental Real Estate"
+      "Mental Real Estate",
+      "Author: Own Your Space: How to Stop Renting and Start Owning Your Purpose, Power, and Property",
+      "TEDx Speaker", 
+      "Former Leadership: Compass (Senior Director / Team Lead), Tech Marketing VP"
     ],
     "socials": [
       { "name": "LinkedIn", "url": "https://www.linkedin.com/in/nicolerwilhelm/" },
@@ -195,14 +202,14 @@
       { "name": "Instagram", "url": "https://www.instagram.com/nicolereddingwilhelm/"},
       { "name": "Website", "url": "http://mentalrealestate.com"}
     ],
-    "bio" : "Lorem Ipsum",
-    "achievements" : ["###", "###"],
-    "image": "/speakers/speaker-1.jpg"
+    "bio" : "Nicole Redding Wilhelm is an entrepreneur, real estate expert, author, and speaker known for her work in property ownership and personal development. She is the author of \"Own Your Space: How to Stop Renting and Start Owning Your Purpose, Power, and Property\", a book that combines financial strategy with mindset transformation, inspired by her own journey from homelessness to real estate success. Wilhelm also co-leads a top real estate team and runs a personal development brand focused on helping others achieve financial and personal growth through property ownership and mindset change.",
+    "achievements" : ["TEDx Speaker: Delivered impactful talks on leadership and the power of \"holding space.\"", "Author: Published Own Your Space: How to Stop Renting and Start Owning Your Purpose, Power, and Property, a guide to personal and professional sovereignty.", "DEI Pioneer at Compass: Co-created \"Black at Compass\" and helped launch the Diversity Council at the multi-billion dollar real estate tech firm.", "Top Real Estate Leader: Co-led one of the highest-producing real estate teams in the US, proving that inclusive leadership drives tangible financial results.", "Tech Executive: Rose from entry-level to Vice President of Marketing in the competitive tech sector."],
+    "image": "/speakers/Nicole-Redding-Wilhelm.jpg"
   },
   {
     "id": "speaker-10",
     "name": "Paul John Hernandez",
-    "topic": "Topic Title 10",
+    "topic": "The role of youth in preserving, protecting, and reimagining cultural heritage.",
     "role": " Educator, Cultural Worker, Heritage Advocate, Textbook Writer",
     "pronouns": "He/Him",
     "affiliations": [
@@ -223,12 +230,14 @@
     "Gat Ciriaco Contreras Leadership Award (2020): Inaugural recipient honored by the Local Government of Meycauayan, Bulacan.",
     "HWPL Award for Community Service (2015): Awarded in Seoul, South Korea, for peace-building and cultural advocacy.", 
     "LEAD Fellow: Leadership and Democracy Fellow under The Asia Foundation and USAID’s YouthLed program."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Paul-John-Hernandez.jpg"
   },
   {
     "id": "speaker-11",
-    "name": "Riyan Portugez",
-    "topic": "Topic Title 11",
+    "name": "Riyan Portuguez",
+    "title": "PsyD",
+    "titlePosition": "after",
+    "topic": "Reframing normality in mental health through psychology, culture, and empathy (kapwa).",
     "role": "Clinical Psychology, Mental Health Advocacy, Digital Content Creation",
     "pronouns": "She/Her/Siya",
     "affiliations": [
@@ -251,11 +260,13 @@
     "Media Features: Frequently featured as a subject matter expert on major networks including CNN Philippines, GMA News, and Rappler, discussing issues ranging from pandemic anxiety to seasonal depression.",
     "Digital Influence: Built a massive following across Facebook, TikTok, and YouTube, creating one of the largest mental health-focused communities in the Philippines.",
     "Leadership: Appointed Co-Chairperson for the PAP LGBT Psychology Special Interest Group, influencing policy and practice for gender-inclusive therapy in the country."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Riyan-Portuguez.jpg"
   },
   {
     "id": "speaker-12",
     "name": "Renee Louise Co",
+    "title": "Atty.",
+    "titlePosition": "before",
     "topic": "Topic Title 12",
     "role": "Lawyer, Youth Leader, Writer",
     "pronouns": "She/Her",
@@ -277,6 +288,6 @@
     "Bar Passer: Successfully passed the Philippine Bar Examinations, transitioning from student activism to legal practice.",
     "Defender of Academic Freedom: Led the student body in protests and dialogues to uphold the UP-DND Accord, protecting the university's status as a safe haven for free speech.",
     "Writer: Published essays and creative works that document the student movement, bridging the gap between literary art and political commentary."],
-    "image": "/speakers/speaker-1.jpg"
+    "image": "/speakers/Renee-Louise-Co.jpg"
   }
 ]
