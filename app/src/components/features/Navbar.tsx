@@ -13,12 +13,12 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 px-8 py-6 bg-black/60 backdrop-blur-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.08)]">
         <div className="container max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <img src="/logo-white.webp" alt="TEDxPUP" className="h-12 md:h-14 w-auto object-contain -ml-3" />
+          <img src="/logo-white.webp" alt="TEDxPUP" className="h-12 lg:h-14 w-auto object-contain -ml-3" />
 
           {/* Mobile Menu Button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden relative z-50 p-2 text-white hover:text-tedx-red transition-colors focus:outline-none"
+            className="lg:hidden relative z-50 p-2 text-white hover:text-tedx-red transition-colors focus:outline-none"
             aria-label="Toggle menu"
           >
             <div className="w-6 h-5 flex flex-col justify-between">
@@ -29,7 +29,7 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a 
                 key={link} 
@@ -48,7 +48,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navigation Overlay */}
-      <div className={`fixed inset-0 bg-black z-40 flex flex-col pt-24 pb-8 overflow-y-auto duration-500 md:hidden ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
+      <div className={`fixed inset-0 bg-black z-40 flex flex-col pt-24 pb-8 overflow-y-auto duration-500 lg:hidden ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
         <div className="flex flex-col items-center space-y-6 px-6 w-full min-h-0">
           {navLinks.map((link) => (
             <a 
