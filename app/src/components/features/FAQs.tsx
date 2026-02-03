@@ -5,7 +5,7 @@ const FAQs = () => {
   return (
     <section id="faqs" className="py-24 px-6 bg-black text-white border-t border-white/10">
       <div className="container lg:flex justify-between gap-8 max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium font-outfit mb-12 lg:mb-0 lg:w-2/5 shrink-0">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl font-black mb-12 lg:mb-0 lg:w-2/5 shrink-0 uppercase">
           <em className="not-italic text-tedx-red font-bold">Frequently</em> <strong>Asked Questions</strong>
         </h1>
         <div className="w-full lg:w-3/5 space-y-4">

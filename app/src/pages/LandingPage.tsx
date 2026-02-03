@@ -1,17 +1,19 @@
-import Navbar from '../components/features/Navbar';
-import Hero from '../components/features/Hero';
-import About from '../components/features/About';
-import Location from '../components/features/Location';
-import Speakers from '../components/features/Speakers';
-import ProgramFlow from '../components/features/ProgramFlow';
-import CreativeWriting from '../components/features/CreativeWriting';
-import Partners from '../components/features/Partners';
-import FAQs from '../components/features/FAQs';
-import Footer from '../components/features/Footer';
-import TitoWidget from '../components/features/TitoWidget';
+import Navbar from "../components/features/Navbar";
+import Hero from "../components/features/Hero";
+import About from "../components/features/About";
+import Location from "../components/features/Location";
+import Speakers from "../components/features/Speakers";
+import ProgramFlow from "../components/features/ProgramFlow";
+import CreativeWriting from "../components/features/CreativeWriting";
+import Partners from "../components/features/Partners";
+import FAQs from "../components/features/FAQs";
+import Footer from "../components/features/Footer";
+import CTA from "../components/features/CTA";
 
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+// import TitoWidget from '../components/features/TitoWidget';
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const LandingPage = () => {
   const { hash } = useLocation();
@@ -20,7 +22,7 @@ const LandingPage = () => {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [hash]);
@@ -36,10 +38,8 @@ const LandingPage = () => {
         <ProgramFlow />
         <CreativeWriting />
         <Partners />
-        <section id="tickets" className="py-12 bg-black">
-           <TitoWidget /> 
-        </section>
         <FAQs />
+        <CTA />
       </main>
       <Footer />
     </>
