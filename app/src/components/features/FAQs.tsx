@@ -4,10 +4,10 @@ const FAQs = () => {
 
   return (
     <section id="faqs" className="py-24 px-6 bg-black text-white border-t border-white/10">
-      <div className="container lg:flex justify-between max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-medium font-outfit mb-12 ">
-          <em className="not-italic text-tedx-red font-bold">Frequently</em> <strong>Asked Questions</strong>
-        </h1>
+      <div className="container lg:flex justify-between max-w-8xl mx-auto">
+        <h2 className="text-4xl lg:text-5xl font-small font-outfit mb-12 ">
+          <em className="not-italic text-tedx-red font-bold">FREQUENTLY</em> <strong>ASKED QUESTIONS</strong>
+        </h2>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqData.map((faq: FAQ, id: number) => (
             <details key={id} className="max-w-xl group border-b-2 border-white/10 overflow-hidden">
