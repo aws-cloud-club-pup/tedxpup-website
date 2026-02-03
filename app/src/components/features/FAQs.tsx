@@ -10,7 +10,7 @@ const FAQs = () => {
         </h1>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqData.map((faq: FAQ, id: number) => (
-            <details key={id} className="max-w-3xl group border-b-2 border-white/10 overflow-hidden">
+            <details key={id} className="max-w-xl group border-b-2 border-white/10 overflow-hidden">
               <summary className="flex items-center justify-between p-6 text-2xl lg:text-3xl cursor-pointer hover:bg-white/5 transition-colors list-none">
                 <span className="w-4/5">{faq.question}</span>
                 <span className="bg-white rounded-full p-0.5 transform group-open:rotate-45 transition-transform text-tedx-red text-xl">
