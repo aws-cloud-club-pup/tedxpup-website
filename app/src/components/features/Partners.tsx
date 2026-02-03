@@ -30,7 +30,7 @@ const Partners = () => {
       </div>
 
       <div className="relative z-10 container max-w-7xl mx-auto flex flex-col items-center text-center space-y-16 md:space-y-24">
-        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white">
+        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">
           Our <span className="text-tedx-red">Sponsors</span>
         </h2>
 
