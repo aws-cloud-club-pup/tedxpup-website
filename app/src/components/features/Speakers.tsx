@@ -133,7 +133,7 @@ const Speakers = () => {
                   <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
                     isFocused ? 'max-h-40 md:max-h-0 md:group-hover:max-h-40' : 'max-h-0 md:group-hover:max-h-40'
                   }`}>
-                    <p className="text-lg text-gray-200 mb-4 line-clamp-4 leading-relaxed font-light">
+                    <p className="text-sm text-gray-200 mb-4 line-clamp-4 leading-relaxed font-light">
                       {speaker.role}
                     </p>
                   </div>

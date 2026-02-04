@@ -88,7 +88,7 @@ const CreativeWritingDetail = () => {
            </header>
            
            <article className="prose prose-invert prose-lg max-w-none">
-             <div className="whitespace-pre-wrap leading-relaxed font-light text-lg text-gray-300">
+             <div className="whitespace-pre-wrap leading-relaxed font-light text-gray-300">
                {piece.content}
              </div>
            </article>

@@ -8,7 +8,7 @@ const Location = () => {
       id: "PITX",
       label: "From PITX",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-sm">
           <li>Board the EDSA Carousel Bus at Gate 10.</li>
           <li>Alight at Ayala Station.</li>
           <li>
@@ -28,7 +28,7 @@ const Location = () => {
       id: "Cubao",
       label: "From Cubao",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-sm">
           <li>Ride the MRT-3 Southbound and alight at Guadalupe Station.</li>
           <li>
             Exit on the Northbound side and ride a jeepney signed "L. Guinto" or
@@ -46,7 +46,7 @@ const Location = () => {
       id: "PUP",
       label: "From PUP",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-sm">
           <li>
             Ride the LRT-2 from Pureza Station to Araneta Center-Cubao Station.
           </li>
@@ -65,7 +65,7 @@ const Location = () => {
       id: "Details",
       label: "Details",
       content: (
-        <ul className="list-disc list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
+        <ul className="list-disc list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
           <li>
             <span className="font-bold text-white">GPS Search:</span> "The
             Astbury" or "2 Orion, Makati" (Waze/Google Maps).
@@ -112,12 +112,12 @@ const Location = () => {
             <div className="space-y-6 text-xl text-gray-300">
               <div>
                 <span className="font-bold text-tedx-red">Venue: </span>
-                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">The Astbury, 2 Orion, Makati City</span>
+                <span>The Astbury, 2 Orion, Makati City</span>
               </div>
 
               <div>
                 <span className="font-bold text-tedx-red">Address: </span>
-                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">2 Orion, Makati City</span>
+                <span>2 Orion, Makati City</span>
               </div>
 
               <div className="space-y-4">
