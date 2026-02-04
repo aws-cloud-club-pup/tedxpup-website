@@ -23,7 +23,7 @@ const Partners = () => {
   ];
 
   return (
-    <section id="partners" className="relative py-24 px-6 bg-black text-white overflow-hidden">
+    <section id="sponsors-partners" className="relative py-24 px-6 bg-black text-white overflow-hidden">
       {/* Background X */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
         <img src="/sponsors/x.webp" alt="" className="w-full h-full object-contain" />

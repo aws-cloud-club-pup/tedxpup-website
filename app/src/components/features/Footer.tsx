@@ -2,12 +2,12 @@
 import type { FC } from 'react';
 
 const NAV_LINKS = [
-  { label: 'About', href: '#about' },
-  { label: 'Speakers', href: '#speakers' },
-  { label: 'Program', href: '#program' },
-  { label: 'Creative Writing Entries', href: '#creative-writing-entries' },
-  { label: 'Partners', href: '#partners' },
-  { label: 'FAQs', href: '#faqs' },
+    { label: 'About', href: '#about' },
+    { label: 'Speakers', href: '#speakers' },
+    { label: 'Program', href: '#program' },
+    { label: 'Creative Writing Entries', href: '#creative-writing-entries' },
+    { label: 'Sponsors & Partners', href: '#sponsors-partners' },
+    { label: 'FAQs', href: '#faqs' },
 ];
 
 const Footer: FC = () => {
@@ -16,51 +16,15 @@ const Footer: FC = () => {
             {/* Top Content */}
             <div className="container mx-auto px-6 md:px-12 relative z-10 mb-24">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12 justify-items-start">
-                    
+
                     {/* Brand Column (Left) */}
                     <div className="col-span-2 md:col-span-1 flex flex-col space-y-6">
                         <div className="flex items-baseline space-x-1 -ml-3">
                             <img src="/logo-white.webp" alt="TEDxPUP" className="h-12 w-auto object-contain" />
                         </div>
-                        
-                        {/* Social Icons */}
-                        <div className="flex items-center space-x-4">
-                            {/* Twitter / X */}
-                            <a href="#" className="hover:text-tedx-red transition-colors" aria-label="Twitter">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                                </svg>
-                            </a>
-                            {/* Facebook */}
-                            <a href="#" className="hover:text-tedx-red transition-colors" aria-label="Facebook">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-                                    <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.138v.855h3.897l-.52 3.669h-3.377v7.98h-4.943z"/>
-                                </svg>
-                            </a>
-                            {/* Instagram */}
-                            <a href="#" className="hover:text-tedx-red transition-colors" aria-label="Instagram">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg>
-                            </a>
-                            {/* LinkedIn */}
-                            <a href="#" className="hover:text-tedx-red transition-colors" aria-label="LinkedIn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                            </a>
-                            {/* YouTube */}
-                            <a href="#" className="hover:text-tedx-red transition-colors" aria-label="YouTube">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        
+
                         <div className="text-sm text-gray-400">
-                            All rights reserved
+                            ©2026 TEDxPUP. All rights reserved
                         </div>
                     </div>
 
@@ -83,9 +47,30 @@ const Footer: FC = () => {
                     <div className="col-span-2 md:col-span-1 flex flex-col space-y-4">
                         <h3 className="text-tedx-red font-semibold text-base mb-2">Contact / Socials</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li>Facebook: <a href="https://facebook.com/TEDXPUP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TEDXPUP</a></li>
-                            <li>Tiktok and Instagram: <a href="https://instagram.com/tedxpup" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@tedxpup</a></li>
                             <li>Email: <a href="mailto:tedxpup@gmail.com" className="hover:text-white transition-colors">tedxpup@gmail.com</a></li>
+                            {/* Social Icons */}
+                            <div className="flex items-center space-x-4">
+                                {/* Facebook */}
+                                <a href="https://www.facebook.com/TEDxPUP" className="hover:text-tedx-red transition-colors" aria-label="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.138v.855h3.897l-.52 3.669h-3.377v7.98h-4.943z" />
+                                    </svg>
+                                </a>
+                                {/* Instagram */}
+                                <a href="https://www.instagram.com/tedxpup/" className="hover:text-tedx-red transition-colors" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                {/* Tiktok */}
+                                <a href="https://www.tiktok.com/@tedxpup" className="hover:text-tedx-red transition-colors" aria-label="Tiktok">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" stroke="none" viewBox="0 0 24 24">
+                                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                                    </svg>
+                                </a>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -93,11 +78,11 @@ const Footer: FC = () => {
 
             {/* Massive Brand Presence */}
             <div className="relative w-full overflow-hidden flex justify-center items-end opacity-100 pb-4 pointer-events-none select-none">
-                 <img 
+                <img
                     src="/logo-white.webp"
                     alt="TEDxPUP"
-                    className="w-[90%] md:w-[80%] h-auto" 
-                 />
+                    className="w-[90%] md:w-[80%] h-auto"
+                />
             </div>
 
             {/* Bottom Copyright */}
