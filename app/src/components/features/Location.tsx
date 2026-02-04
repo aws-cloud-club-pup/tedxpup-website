@@ -8,7 +8,7 @@ const Location = () => {
       id: "PITX",
       label: "From PITX",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-sm">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
           <li>Board the EDSA Carousel Bus at Gate 10.</li>
           <li>Alight at Ayala Station.</li>
           <li>
@@ -28,7 +28,7 @@ const Location = () => {
       id: "Cubao",
       label: "From Cubao",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-sm">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
           <li>Ride the MRT-3 Southbound and alight at Guadalupe Station.</li>
           <li>
             Exit on the Northbound side and ride a jeepney signed "L. Guinto" or
@@ -46,7 +46,7 @@ const Location = () => {
       id: "PUP",
       label: "From PUP",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-sm">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
           <li>
             Ride the LRT-2 from Pureza Station to Araneta Center-Cubao Station.
           </li>
