@@ -1,4 +1,4 @@
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/features/Navbar';
 import { creativePieces } from '../data/creativeWritingData';
 import { useEffect } from 'react';
@@ -8,12 +8,22 @@ import XBackground from '../components/ui/XBackground';
 const CreativeWritingDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const piece = creativePieces.find(p => p.slug === slug);
+  const pieceIndex = location.state?.pieceIndex;
 
   // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleBackClick = () => {
+    // Store the piece index in sessionStorage for scroll after navigation
+    if (pieceIndex !== undefined) {
+      sessionStorage.setItem('scrollToPiece', pieceIndex.toString());
+    }
+    navigate('/');
+  };
 
   if (!piece) {
     return (
@@ -39,7 +49,7 @@ const CreativeWritingDetail = () => {
 
          <div className="relative z-10 container max-w-4xl mx-auto px-6 py-32 flex flex-col gap-8">
            
-           <button onClick={() => navigate(-1)} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm font-medium text-gray-300 hover:text-white hover:border-tedx-red hover:bg-tedx-red/10 transition-all duration-300 group self-start backdrop-blur-sm cursor-pointer">
+           <button onClick={handleBackClick} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm font-medium text-gray-300 hover:text-white hover:border-tedx-red hover:bg-tedx-red/10 transition-all duration-300 group self-start backdrop-blur-sm cursor-pointer">
              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform duration-300">
                <path d="M19 12H5"/>
                <path d="m12 19-7-7 7-7"/>

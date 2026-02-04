@@ -6,28 +6,48 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
-  const navLinks = ["ABOUT", "SPEAKERS", "PROGRAM", "CREATIVE WRITING", "FAQs"];
+  const navLinks = ["ABOUT", "SPEAKERS", "PROGRAM", "CREATIVE WRITING ENTRIES", "FAQs"];
+
+  // Map display names to section IDs
+  const getLinkId = (link: string) => {
+    if (link === "CREATIVE WRITING ENTRIES") {
+      return "creative-writing";
+    }
+    return link.toLowerCase().replace(/ /g, "-");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      // Active section detection
-      const sections = navLinks.map((link) =>
-        link.toLowerCase().replace(/ /g, "-"),
-      );
+      // Active section detection - check which section's top is closest to the viewport top
+      const sections = navLinks.map((link) => getLinkId(link));
+      const offset = 150; // Offset to account for navbar
 
       let current = "";
-      for (const section of sections) {
+      
+      // Iterate through sections in reverse so later sections take precedence when overlapping
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
         const element = document.getElementById(section);
+        
+        // Debug: log all sections
+        console.log(`Checking section: ${section}, element found: ${!!element}`);
+        
         if (element) {
           const rect = element.getBoundingClientRect();
-          // Check if section is active (e.g. top within manageable view range)
-          if (rect.top <= 150 && rect.bottom >= 150) {
+          console.log(`Section ${section}: top=${rect.top}, bottom=${rect.bottom}, offset=${offset}`);
+          
+          // Section is active if its top is above the offset threshold and its bottom is still below it
+          if (rect.top <= offset && rect.bottom > offset) {
             current = section;
+            console.log(`Active section found: ${section}`);
+            break; // Found the lowest section that's in view, stop here
           }
         }
       }
+      
+      console.log(`Final activeSection: ${current}`);
       setActiveSection(current);
     };
 
@@ -77,14 +97,14 @@ const Navbar = () => {
           {/* Desktop Navigation (Centered) */}
           <div className="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => {
-              const linkId = link.toLowerCase().replace(/ /g, "-");
+              const linkId = getLinkId(link);
               return (
                 <a
                   key={link}
                   href={`/#${linkId}`}
-                  className={`text-sm font-medium transition-colors tracking-wide ${
+                  className={`text-sm font-bold transition-colors tracking-wide ${
                     activeSection === linkId
-                      ? "text-tedx-red font-bold"
+                      ? "text-tedx-red"
                       : "text-white hover:text-tedx-red"
                   }`}
                 >
@@ -116,9 +136,9 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a
               key={link}
-              href={`/#${link.toLowerCase().replace(/ /g, "-")}`}
+              href={`/#${getLinkId(link)}`}
               onClick={() => setIsOpen(false)}
-              className="text-white text-xl font-medium hover:text-tedx-red transition-colors tracking-wide text-center w-full py-2 border-b border-white/10 last:border-0"
+              className="text-white text-xl font-bold hover:text-tedx-red transition-colors tracking-wide text-center w-full py-2 border-b border-white/10 last:border-0"
             >
               {link}
             </a>

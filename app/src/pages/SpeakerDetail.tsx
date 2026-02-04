@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from '../components/features/Navbar';
 import speakersData from '../data/speakers.json';
@@ -36,11 +36,21 @@ interface Speaker {
 const SpeakerDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const speaker = speakersData.find(s => s.id === slug) as Speaker | undefined;
+  const speakerIndex = location.state?.speakerIndex;
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [slug]);
+
+  const handleBackClick = () => {
+    // Store the speaker index in sessionStorage for scroll after navigation
+    if (speakerIndex !== undefined) {
+      sessionStorage.setItem('scrollToSpeaker', speakerIndex.toString());
+    }
+    navigate('/');
+  };
 
   if (!speaker) {
     return (
@@ -64,7 +74,7 @@ const SpeakerDetail = () => {
          </div>
          
          <div className="w-full md:w-2/3 space-y-6">
-           <button onClick={() => navigate(-1)} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm font-medium text-gray-300 hover:text-white hover:border-tedx-red hover:bg-tedx-red/10 transition-all duration-300 group self-start backdrop-blur-sm cursor-pointer">
+           <button onClick={handleBackClick} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm font-medium text-gray-300 hover:text-white hover:border-tedx-red hover:bg-tedx-red/10 transition-all duration-300 group self-start backdrop-blur-sm cursor-pointer">
              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform duration-300">
                <path d="M19 12H5"/>
                <path d="m12 19-7-7 7-7"/>
