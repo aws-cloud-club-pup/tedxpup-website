@@ -8,7 +8,7 @@ const Location = () => {
       id: "PITX",
       label: "From PITX",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
           <li>Board the EDSA Carousel Bus at Gate 10.</li>
           <li>Alight at Ayala Station.</li>
           <li>
@@ -28,7 +28,7 @@ const Location = () => {
       id: "Cubao",
       label: "From Cubao",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
           <li>Ride the MRT-3 Southbound and alight at Guadalupe Station.</li>
           <li>
             Exit on the Northbound side and ride a jeepney signed "L. Guinto" or
@@ -46,7 +46,7 @@ const Location = () => {
       id: "PUP",
       label: "From PUP",
       content: (
-        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
+        <ol className="list-decimal list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
           <li>
             Ride the LRT-2 from Pureza Station to Araneta Center-Cubao Station.
           </li>
@@ -65,7 +65,7 @@ const Location = () => {
       id: "Details",
       label: "Details",
       content: (
-        <ul className="list-disc list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-base">
+        <ul className="list-disc list-inside space-y-2 pl-2 marker:text-tedx-red text-sm md:text-lg">
           <li>
             <span className="font-bold text-white">GPS Search:</span> "The
             Astbury" or "2 Orion, Makati" (Waze/Google Maps).
@@ -104,20 +104,20 @@ const Location = () => {
           <div className="lg:w-1/2 text-left space-y-8 font-light relative">
             {/* Title with stylized ampersand */}
             <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tighter uppercase relative z-10 font-outfit">
-              Location{" "}
-              <span className="text-tedx-red text-4xl md:text-5xl">&</span>{" "}
-              Logistics
+              {" "}
+              <span className="text-tedx-red text-4xl md:text-5xl">Event</span>{" "}
+              Location
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-300">
+            <div className="space-y-6 text-xl text-gray-300">
               <div>
                 <span className="font-bold text-tedx-red">Venue: </span>
-                <span>The Astbury, 2 Orion, Makati City</span>
+                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">The Astbury, 2 Orion, Makati City</span>
               </div>
 
               <div>
                 <span className="font-bold text-tedx-red">Address: </span>
-                <span>2 Orion, Makati City</span>
+                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">2 Orion, Makati City</span>
               </div>
 
               <div className="space-y-4">
@@ -137,7 +137,7 @@ const Location = () => {
                           : "bg-transparent text-gray-400 border-white/20 hover:border-white/50 hover:text-white"
                       }`}
                     >
-                      {route.label}
+                      <span>{route.label}</span>
                     </button>
                   ))}
                 </div>
