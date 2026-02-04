@@ -59,6 +59,43 @@ const Speakers = () => {
       }
     });
 
+    // Check if we need to scroll to a specific speaker after navigation
+    const scrollToSpeaker = sessionStorage.getItem('scrollToSpeaker');
+    if (scrollToSpeaker !== null) {
+      const speakerIndex = parseInt(scrollToSpeaker, 10);
+      sessionStorage.removeItem('scrollToSpeaker');
+      
+      // Wait for DOM to be ready
+      setTimeout(() => {
+        const allCards = document.querySelectorAll('[data-speaker-id]');
+        const isMobile = window.innerWidth < 1024;
+        
+        let targetCard;
+        if (isMobile) {
+          // Mobile: Scroll to exact card
+          targetCard = allCards[speakerIndex];
+        } else {
+          // Desktop: Scroll to first card of the row (4 cards per row)
+          const cardsPerRow = 4;
+          const rowIndex = Math.floor(speakerIndex / cardsPerRow);
+          const firstCardInRow = rowIndex * cardsPerRow;
+          targetCard = allCards[firstCardInRow];
+        }
+        
+        if (targetCard) {
+          const cardRect = targetCard.getBoundingClientRect();
+          const absoluteTop = cardRect.top + window.pageYOffset;
+          const navbarHeight = 80;
+          const offsetPosition = absoluteTop - navbarHeight - 40;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+
     return () => {
       cards.forEach((card) => {
         if (observerRef.current) {
@@ -73,12 +110,13 @@ const Speakers = () => {
       <div className="container max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center"><span className="text-tedx-red">OUR</span> SPEAKERS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {speakersData.map((speaker) => {
+          {speakersData.map((speaker, index) => {
             const isFocused = focusedCard === speaker.id;
             return (
               <Link 
                 key={speaker.id} 
-                to={`/speakers/${speaker.id}`} 
+                to={`/speakers/${speaker.id}`}
+                state={{ speakerIndex: index }}
                 data-speaker-id={speaker.id}
                 className={`group relative aspect-[3/4] bg-gray-900 rounded-xl overflow-hidden border cursor-pointer transition-all duration-300 block ${
                   isFocused ? 'border-tedx-red shadow-[0_0_30px_rgba(255,45,45,0.5)] md:border-white/10 md:shadow-none md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]' : 'border-white/10 md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]'

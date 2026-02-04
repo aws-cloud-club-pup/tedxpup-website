@@ -121,7 +121,7 @@ const About = () => {
               <img
                 src={slide.image}
                 alt="About Image"
-                className="w-full h-auto rounded-2xl shadow-[0_0_40px_rgba(230,43,31,0.3)] border border-white/10"
+                className="w-full h-auto rounded-2xl border border-tedx-red shadow-[0_0_30px_rgba(255,45,45,0.5)] transition-all duration-300"
               />
 
               {/* Content */}
@@ -157,7 +157,7 @@ const About = () => {
                     <img
                       src={slide.image}
                       alt="About Image"
-                      className="w-full h-auto rounded-2xl shadow-[0_0_40px_rgba(230,43,31,0.3)] border border-white/10"
+                      className="w-full h-auto rounded-2xl border border-tedx-red shadow-[0_0_30px_rgba(255,45,45,0.5)] transition-all duration-300"
                     />
                   </div>
 
