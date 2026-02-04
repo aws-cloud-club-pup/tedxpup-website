@@ -124,7 +124,7 @@ const SpeakerDetail = () => {
                             href={social.url} 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            className="text-2xl text-tedx-red hover:text-white transition-colors"
+                            className="text-2xl text-white hover:text-tedx-red transition-colors"
                             title={social.name}
                         >
                             {getSocialIcon(social.name)}
