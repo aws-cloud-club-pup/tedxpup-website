@@ -8,7 +8,7 @@ const NAV_LINKS = [
     { label: 'Event Location', href: '#location'},
     { label: 'Speakers', href: '#speakers' },
     { label: 'Program', href: '#program' },
-    { label: 'Creative Writing Entries', href: '#creative-writing-entries' },
+    { label: 'Creative Writing Entries', href: '#creative-writing' },
     { label: 'Sponsors & Partners', href: '#sponsors-partners' },
     { label: 'FAQs', href: '#faqs' },
 ];
