@@ -4,6 +4,9 @@ export interface Contributor {
   role: string;
   department?: string;
   image?: string;
+  bio?: string;
+  github?: string;
+  linkedin?: string;
   socials?: { name: string; url: string }[];
 }
 
@@ -86,6 +89,9 @@ const contributorsData: DepartmentGroup[] = [
         role: "Frontend Developer",
         department: "Frontend Developers",
         image: "/contributors/frontend-earl.png",
+        bio: "Passionate frontend developer with expertise in React and modern web technologies.",
+        github: "https://github.com/earlbanez",
+        linkedin: "https://linkedin.com/in/earlbanez",
       },
       {
         id: "john-michael-dumalo",
