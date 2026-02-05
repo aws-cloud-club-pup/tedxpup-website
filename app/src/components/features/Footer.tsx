@@ -11,6 +11,7 @@ const NAV_LINKS = [
     { label: 'Creative Writing Entries', href: '#creative-writing' },
     { label: 'Sponsors & Partners', href: '#sponsors-partners' },
     { label: 'FAQs', href: '#faqs' },
+    { label: 'Contributors', href: '/contributors' },
 ];
 
 const Footer: FC = () => {
