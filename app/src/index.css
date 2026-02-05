@@ -26,3 +26,78 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* --- 1. WebKit Browsers (Chrome, Edge, Safari) --- */
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e62b1f;
+  border: 4px solid #000000;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9CA3AF;
+}
+
+/* --- THE NEW TRIANGLE BUTTONS --- */
+
+/* 1. Base settings for both buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: #000000; /* Match track background */
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 2. The UP Button (Vertical Decrement) */
+::-webkit-scrollbar-button:vertical:decrement {
+  height: 16px;
+  width: 16px;
+  /* Red Up Triangle SVG */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23e62b1f'%3E%3Cpolygon points='50,0 0,100 100,100'/%3E%3C/svg%3E");
+}
+
+/* 3. The DOWN Button (Vertical Increment) */
+::-webkit-scrollbar-button:vertical:increment {
+  height: 16px;
+  width: 16px;
+  /* Red Down Triangle SVG */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23e62b1f'%3E%3Cpolygon points='0,0 100,0 50,100'/%3E%3C/svg%3E");
+}
+
+/* --- HOVER & CLICK EFFECTS (Change to Gray) --- */
+
+/* Hovering over Up Button */
+::-webkit-scrollbar-button:vertical:decrement:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23d1d5db'%3E%3Cpolygon points='50,0 0,100 100,100'/%3E%3C/svg%3E");
+}
+
+/* Hovering over Down Button */
+::-webkit-scrollbar-button:vertical:increment:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23d1d5db'%3E%3Cpolygon points='0,0 100,0 50,100'/%3E%3C/svg%3E");
+}
+
+/* Active (Clicked) State - Keeps it gray or you can make it darker */
+::-webkit-scrollbar-button:vertical:decrement:active,
+::-webkit-scrollbar-button:vertical:increment:active {
+  background-color: #9CA3AF; /* Slight background highlight when clicking */
+}
+
+
+/* --- 2. Firefox Support Block --- */
+/* This ensures Firefox behaves normally and doesn't break Edge */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-width: thin; 
+    scrollbar-color: #e62b1f #000000;
+  }
+}
