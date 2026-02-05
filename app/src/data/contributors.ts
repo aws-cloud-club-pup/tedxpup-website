@@ -85,6 +85,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Earl Clyde Bañez",
         role: "Frontend Developer",
         department: "Frontend Developers",
+        image: "/contributors/frontend-earl.png",
       },
       {
         id: "john-michael-dumalo",

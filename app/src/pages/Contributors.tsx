@@ -43,57 +43,68 @@ const Contributors = () => {
                 {department.departmentName}
               </h2>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 {department.contributors.map((contributor: Contributor) => (
                   <div 
                     key={contributor.id}
-                    className="group relative bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 rounded-xl p-6 hover:border-tedx-red/50 hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                    className="group relative"
                   >
-                    {/* Profile Image Placeholder */}
-                    {contributor.image ? (
-                      <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-white/20 group-hover:border-tedx-red transition-colors">
+                    {/* Profile Card */}
+                    <div className="relative aspect-square rounded-3xl overflow-hidden border-4 border-white/20 group-hover:border-tedx-red transition-all duration-300 group-hover:scale-105 bg-gradient-to-br from-gray-900 to-black">
+                      {contributor.image ? (
                         <img 
                           src={contributor.image} 
                           alt={contributor.name}
                           className="w-full h-full object-cover"
                         />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-tedx-red/20 to-tedx-red/5 flex items-center justify-center">
+                          <span className="text-6xl md:text-7xl font-bold text-tedx-red">
+                            {contributor.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                          </span>
+                        </div>
+                      )}
+                      
+                      {/* Overlay gradient for better text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      
+                      {/* Name overlay on hover */}
+                      <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 className="text-lg font-bold text-white mb-1">
+                          {contributor.name}
+                        </h3>
+                        {contributor.socials && contributor.socials.length > 0 && (
+                          <div className="flex gap-2 mt-2">
+                            {contributor.socials.map((social, idx) => (
+                              <a 
+                                key={idx}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white/80 hover:text-tedx-red transition-colors"
+                                title={social.name}
+                              >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                  <polyline points="15 3 21 3 21 9"/>
+                                  <line x1="10" x2="21" y1="14" y2="3"/>
+                                </svg>
+                              </a>
+                            ))}
+                          </div>
+                        )}
                       </div>
-                    ) : (
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-tedx-red/20 to-tedx-red/5 mb-4 border-2 border-white/20 group-hover:border-tedx-red transition-colors flex items-center justify-center">
-                        <span className="text-2xl font-bold text-tedx-red">
-                          {contributor.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
-                        </span>
-                      </div>
-                    )}
+                    </div>
                     
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-tedx-red transition-colors">
-                      {contributor.name}
-                    </h3>
-                    <p className="text-sm text-gray-400 font-medium">
-                      {contributor.role}
-                    </p>
-                    
-                    {/* Optional: Social Links */}
-                    {contributor.socials && contributor.socials.length > 0 && (
-                      <div className="flex gap-3 mt-4">
-                        {contributor.socials.map((social, idx) => (
-                          <a 
-                            key={idx}
-                            href={social.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-tedx-red transition-colors"
-                            title={social.name}
-                          >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                              <polyline points="15 3 21 3 21 9"/>
-                              <line x1="10" x2="21" y1="14" y2="3"/>
-                            </svg>
-                          </a>
-                        ))}
-                      </div>
-                    )}
+                    {/* Info below card */}
+                    <div className="mt-4 text-center">
+                      <h3 className="text-lg md:text-xl font-bold mb-1 group-hover:text-tedx-red transition-colors">
+                        {contributor.name}
+                      </h3>
+                      <p className="text-sm md:text-base text-gray-400 font-medium">
+                        {contributor.role}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
