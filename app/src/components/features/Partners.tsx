@@ -1,24 +1,24 @@
 const Partners = () => {
 
   const goldSponsors = [
-    { name: "PUPianLifestyle", src: "/sponsors/gold/1-puplife.jpg" },
-    { name: "Reddit", src: "/sponsors/gold/2-reddit.png" },
+    { name: "PUPianLifestyle", src: "/sponsors/gold/1-puplife.webp" },
+    { name: "Reddit", src: "/sponsors/gold/2-reddit.webp" },
   ];
 
   const bronzeSponsors = [
-    { name: "Browhaus", src: "/sponsors/bronze/1-browhaus.png" },
-    { name: "H-Vybe", src: "/sponsors/bronze/2-h-vybe.png" },
-    { name: "Strip", src: "/sponsors/bronze/3-strip.jpg" },
+    { name: "Browhaus", src: "/sponsors/bronze/1-browhaus.webp" },
+    { name: "H-Vybe", src: "/sponsors/bronze/2-h-vybe.webp" },
+    { name: "Strip", src: "/sponsors/bronze/3-strip.webp" },
   ];
 
   const supporters = [
-    { name: "Astbury", src: "/sponsors/supporters/1-astbury.png" },
-    { name: "IndieCo", src: "/sponsors/supporters/2-indie-co.jpeg" },
-    { name: "Manila TEDx", src: "/sponsors/supporters/3-manila-tedx.jpeg" },
+    { name: "Astbury", src: "/sponsors/supporters/1-astbury.webp" },
+    { name: "IndieCo", src: "/sponsors/supporters/2-indie-co.webp" },
+    { name: "Manila TEDx", src: "/sponsors/supporters/3-manila-tedx.webp" },
   ];
 
   const partners = [
-    { name: "AWSCCPUP", src: "/partners/AWSCCPUP.png" },
+    { name: "AWSCCPUP", src: "/partners/AWSCCPUP.webp" },
   ];
 
   return (
