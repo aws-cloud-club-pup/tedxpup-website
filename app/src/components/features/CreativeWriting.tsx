@@ -72,7 +72,7 @@ const CreativeWriting = () => {
 
                   {/* Content Preview */}
                   <div className="relative overflow-hidden max-h-24 opacity-80 [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)]">
-                     <p className="text-gray-300 whitespace-pre-wrap leading-relaxed font-light text-lg line-clamp-3">
+                     <p className="text-gray-300 whitespace-pre-wrap leading-relaxed font-light text-xl line-clamp-3">
                        {piece.content}
                      </p>
                   </div>
