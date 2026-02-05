@@ -47,7 +47,7 @@ const Partners = () => {
                 key={i}
                 src={sponsor.src}
                 alt={sponsor.name}
-                className={`h-[100px] md:h-[130px] lg:h-[150px] object-contain hover:scale-110 transition-transform duration-300 ${i >= 3 ? 'rounded-full' : ''}`}
+                className={`${i != 0 ? 'h-[70px] md:h-[85px] lg:h-[100px]' : 'h-[50px] md:h-[65px] lg:h-[80px]'} object-contain hover:scale-110 transition-transform duration-300`}
               />
             ))}
           </div>
@@ -67,7 +67,7 @@ const Partners = () => {
                 key={i}
                 src={sponsor.src}
                 alt={sponsor.name}
-                className="h-[80px] md:h-[100px] lg:h-[120px] object-contain hover:scale-110 transition-transform duration-300"
+                className="h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300"
               />
             ))}
           </div>
@@ -89,7 +89,7 @@ const Partners = () => {
                   key={i}
                   src={sponsor.src}
                   alt={sponsor.name}
-                  className={`h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300 ${i >= 3 ? 'rounded-full' : ''}`}
+                  className={`h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300`}
                 />
               );
             })}
