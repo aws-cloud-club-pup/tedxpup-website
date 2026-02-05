@@ -2,7 +2,7 @@
   {
     "id": "speaker-1",
     "name": "Chanelle Peru",
-    "topic": "Topic Title 1",
+    "topic": "",
     "role": "Legal Management & Economics Student, Aspiring Lawyer, Creative Marketer",
     "pronouns": "She/Her",
     "affiliations": [
@@ -41,7 +41,7 @@
   {
     "id": "speaker-2",
     "name": "Eva Le Queen",
-    "topic": "Topic Title 2",
+    "topic": "",
     "role": "Drag Artist, Content Creator, CEO",
     "pronouns": "She/Her",
     "affiliations": [
@@ -70,7 +70,7 @@
   {
     "id": "speaker-3",
     "name": "Haven Mosquito",
-    "topic": "When Ideas Don’t Love You Back",
+    "topic": "",
     "role": "Debater, Adjudicator, Student Leader",
     "pronouns": "Him/Them",
     "affiliations": [
@@ -101,7 +101,7 @@
   {
     "id": "speaker-4",
     "name": "Isaeus \"Asi\" Guiang",
-    "topic": "Topic Title 4",
+    "topic": "",
     "role": " Cloud Computing Leader, Cybersecurity Advocate, Community Builder",
     "pronouns": "He/Him",
     "affiliations": [
@@ -115,7 +115,6 @@
         "url": "http://linkedin.com/in/isaeus-guiang/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9dhiFVi3R9ijXOR05MT%2FCw%3D%3D"
       },
       { "name": "Facebook", "url": "https://web.facebook.com/isaeus2003" },
-      { "name": "Instagram", "url": "#" },
       { "name": "Website", "url": "https://asiguiang.com/" },
       { "name": "Mail", "url": "mailto:iguiang.business@gmail.com" }
     ],
@@ -132,7 +131,7 @@
   {
     "id": "speaker-5",
     "name": "Joy Mayanne Barcoma",
-    "topic": "Topic Title 5",
+    "topic": "",
     "role": "Beauty Queen, Disaster Resilience Consultant, Mental Health Advocate",
     "pronouns": "She/Her",
     "affiliations": [
@@ -169,7 +168,7 @@
     "name": "Kristine Jane Atienza",
     "title": "RND",
     "titlePosition": "after",
-    "topic": "How small “What if?” questions can shape a meaningful, unconventional career and future.",
+    "topic": "",
     "role": "Public Health Nutritionist, Analog Astronaut, Space Nutrition Researcher",
     "pronouns": "She/Her",
     "affiliations": [
@@ -201,7 +200,7 @@
   {
     "id": "speaker-7",
     "name": "Laraine Zyreen Marcelo",
-    "topic": "Topic Title 7",
+    "topic": "",
     "role": "Chief Learning Officer, Head of Sales, Organizational Development Consultant",
     "pronouns": "She/Her",
     "affiliations": [
@@ -228,7 +227,7 @@
   {
     "id": "speaker-8",
     "name": "Nabbe Francisco",
-    "topic": "Design as an emotional and relational act, not just a visual or commercial one.",
+    "topic": "",
     "role": "Digital Marketing, Graphic Design, Community Leadership",
     "pronouns": "He/Him",
     "affiliations": [
@@ -267,7 +266,7 @@
   {
     "id": "speaker-9",
     "name": "Nicole Redding Wilhelm",
-    "topic": "What If the Next Housing Crisis Isn’t About Affordability but Belonging?",
+    "topic": "",
     "role": "Author",
     "pronouns": "She/Her",
     "affiliations": [
@@ -304,7 +303,7 @@
   {
     "id": "speaker-10",
     "name": "Paul John Hernandez",
-    "topic": "The role of youth in preserving, protecting, and reimagining cultural heritage.",
+    "topic": "",
     "role": " Educator, Cultural Worker, Heritage Advocate, Textbook Writer",
     "pronouns": "He/Him",
     "affiliations": [
@@ -343,7 +342,7 @@
     "name": "Riyan Portuguez",
     "title": "PsyD",
     "titlePosition": "after",
-    "topic": "Reframing normality in mental health through psychology, culture, and empathy (kapwa).",
+    "topic": "",
     "role": "Clinical Psychology, Mental Health Advocacy, Digital Content Creation",
     "pronouns": "She/Her/Siya",
     "affiliations": [
@@ -390,7 +389,7 @@
     "name": "Renee Louise Co",
     "title": "Atty.",
     "titlePosition": "before",
-    "topic": "Topic Title 12",
+    "topic": "",
     "role": "Lawyer, Youth Leader, Writer",
     "pronouns": "She/Her",
     "affiliations": [
