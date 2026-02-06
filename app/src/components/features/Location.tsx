@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ScrollReveal from "../ui/ScrollReveal";
 
 const Location = () => {
   const [activeTab, setActiveTab] = useState("PITX");
@@ -101,7 +102,7 @@ const Location = () => {
       <div className="container max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           {/* Text Content */}
-          <div className="lg:w-1/2 text-left space-y-8 font-light relative">
+          <ScrollReveal className="lg:w-1/2 text-left space-y-8 font-light relative">
             {/* Title with stylized ampersand */}
             <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tighter uppercase relative z-10 font-outfit">
               {" "}
@@ -112,12 +113,16 @@ const Location = () => {
             <div className="space-y-6 text-xl text-gray-300">
               <div>
                 <span className="font-bold text-tedx-red">Venue: </span>
-                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">The Astbury, 2 Orion, Makati City</span>
+                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">
+                  The Astbury, 2 Orion, Makati City
+                </span>
               </div>
 
               <div>
                 <span className="font-bold text-tedx-red">Address: </span>
-                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">2 Orion, Makati City</span>
+                <span className="text-xl text-gray-200 mb-4 leading-relaxed font-light">
+                  2 Orion, Makati City
+                </span>
               </div>
 
               <div className="space-y-4">
@@ -132,8 +137,8 @@ const Location = () => {
                       key={route.id}
                       onClick={() => setActiveTab(route.id)}
                       className={`px-4 py-2 rounded-full text-sm font-bold transition-all duration-300 border ${activeTab === route.id
-                          ? "bg-tedx-red text-white border-tedx-red shadow-[0_0_15px_rgba(230,43,30,0.4)]"
-                          : "bg-transparent text-gray-400 border-white/20 hover:border-white/50 hover:text-white"
+                        ? "bg-tedx-red text-white border-tedx-red shadow-[0_0_15px_rgba(230,43,30,0.4)]"
+                        : "bg-transparent text-gray-400 border-white/20 hover:border-white/50 hover:text-white"
                         }`}
                     >
                       <span>{route.label}</span>
@@ -147,11 +152,14 @@ const Location = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Map Illustration */}
-          <div className="lg:w-1/2 w-full flex justify-center items-center relative">
-            <div className="relative w-full max-w-xl aspect-square md:aspect-video lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(230,43,31,0.2)] border-2 border-dotted border-tedx-red/50 bg-black/50 p-2 animate-fade-in-up">
+          <ScrollReveal
+            delay="0.05s"
+            className="lg:w-1/2 w-full flex justify-center items-center relative"
+          >
+            <div className="relative w-full max-w-xl aspect-square md:aspect-video lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(230,43,31,0.2)] border-2 border-dotted border-tedx-red/50 bg-black/50 p-2">
               <iframe
                 width="100%"
                 height="100%"
@@ -165,7 +173,7 @@ const Location = () => {
                 title="The Astbury Location"
               ></iframe>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
