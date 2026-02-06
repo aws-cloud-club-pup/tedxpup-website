@@ -75,8 +75,8 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 px-8 transition-all duration-300 ${isScrolled
-          ? "bg-black/60 backdrop-blur-2xl shadow-md py-4"
-          : "bg-black/60 backdrop-blur-2xl shadow-md py-6 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"
+          ? "bg-black/70 backdrop-blur-2xl shadow-md py-4"
+          : "bg-black/70 backdrop-blur-2xl shadow-md py-6 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"
           }`}
       >
         <div className="container max-w-7xl mx-auto flex items-center justify-between relative">
@@ -113,14 +113,14 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation (Centered) */}
-          <div className="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => {
               const linkId = getLinkId(link);
               return (
                 <a
                   key={link}
                   href={`/#${linkId}`}
-                  className={`text-sm font-bold transition-colors tracking-wide ${activeSection === linkId
+                  className={`text-sm font-semibold transition-colors ${activeSection === linkId
                     ? "text-tedx-red"
                     : "text-white hover:text-tedx-red"
                     }`}
@@ -137,7 +137,7 @@ const Navbar = () => {
               href="https://ti.to/tedxpup/tedxpup2026"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 text-sm font-bold tracking-wider uppercase"
+              className="px-6 py-3 text-sm font-bold tracking-wider uppercase shadow-[0_0_20px_rgba(230,43,31,0.6)] hover:shadow-[0_0_30px_rgba(230,43,31,0.8)] scale-[0.95] transition-all bg-tedx-red border-none"
             >
               Get Tickets
             </Button>
@@ -155,7 +155,7 @@ const Navbar = () => {
               key={link}
               href={`/#${getLinkId(link)}`}
               onClick={() => setIsOpen(false)}
-              className="text-white text-xl font-bold hover:text-tedx-red transition-colors tracking-wide text-center w-full py-2 border-b border-white/10 last:border-0"
+              className="text-white text-xl font-semibold hover:text-tedx-red transition-colors text-center w-full py-2 border-b border-white/10 last:border-0"
             >
               {link}
             </a>
@@ -166,7 +166,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="w-full py-4 text-base font-bold tracking-wider uppercase shadow-xl shadow-tedx-red/20"
+              className="w-full py-4 text-base font-bold tracking-wider uppercase shadow-[0_0_20px_rgba(230,43,31,0.6)] hover:shadow-[0_0_30px_rgba(230,43,31,0.8)] scale-[0.95] transition-all bg-tedx-red border-none"
             >
               Get Tickets
             </Button>

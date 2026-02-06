@@ -23,7 +23,7 @@ const CTA = () => {
             href="https://ti.to/tedxpup/tedxpup2026"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-10 py-5 text-xl font-bold tracking-widest uppercase shadow-[0_0_40px_rgba(230,43,31,0.6)] hover:shadow-[0_0_60px_rgba(230,43,31,0.8)] hover:scale-105 transition-all duration-300 bg-tedx-red border-none"
+            className="px-10 py-5 text-xl font-bold tracking-widest uppercase shadow-[0_0_40px_rgba(230,43,31,0.6)] hover:shadow-[0_0_60px_rgba(230,43,31,0.8)] scale-[0.95] transition-all duration-300 bg-tedx-red border-none"
           >
             Secure Your Seat
           </Button>
