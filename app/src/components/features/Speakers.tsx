@@ -107,8 +107,21 @@ const Speakers = () => {
   }, []);
 
   return (
-    <section id="speakers" className="py-24 px-6 bg-black text-white">
-      <div className="container max-w-7xl mx-auto">
+
+    <section id="speakers" className="relative py-24 px-6 bg-black text-white overflow-hidden">
+      {/* Abstract Side Gradients - Natural Fade */}
+      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[70%] bg-[radial-gradient(ellipse_at_center,_rgba(230,43,31,0.25)_0%,_rgba(0,0,0,0)_70%)] blur-[80px] pointer-events-none mix-blend-screen" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[70%] bg-[radial-gradient(ellipse_at_center,_rgba(230,43,31,0.25)_0%,_rgba(0,0,0,0)_70%)] blur-[80px] pointer-events-none mix-blend-screen" />
+
+      {/* Noise Texture */}
+      <div
+        className="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+        }}
+      />
+
+      <div className="relative z-10 container max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center"><span className="text-tedx-red">OUR</span> SPEAKERS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {speakersData.map((speaker, index) => {
