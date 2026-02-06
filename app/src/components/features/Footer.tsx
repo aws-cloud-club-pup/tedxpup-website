@@ -103,7 +103,7 @@ const Footer: FC = () => {
             </div>
 
             {/* Bottom Copyright */}
-            <div className="text-center text-xs text-gray-100 border-t border-white/5 pt-4 pb-4 px-6 relative z-10 w-full">
+            <div className="text-center text-xs text-gray-100 pb-4 px-6 relative z-10 w-full">
                 This independent TEDx event is operated under license from TED.
             </div>
         </footer>
