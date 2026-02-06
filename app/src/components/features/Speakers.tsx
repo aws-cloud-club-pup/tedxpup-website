@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import speakersData from '../../data/speakers.json';
+import ScrollReveal from '../ui/ScrollReveal'; // Import ScrollReveal
 
 const Speakers = () => {
   const [focusedCard, setFocusedCard] = useState<string | null>(null);
@@ -64,12 +65,12 @@ const Speakers = () => {
     if (scrollToSpeaker !== null) {
       const speakerIndex = parseInt(scrollToSpeaker, 10);
       sessionStorage.removeItem('scrollToSpeaker');
-      
+
       // Wait for DOM to be ready
       setTimeout(() => {
         const allCards = document.querySelectorAll('[data-speaker-id]');
         const isMobile = window.innerWidth < 1024;
-        
+
         let targetCard;
         if (isMobile) {
           // Mobile: Scroll to exact card
@@ -81,13 +82,13 @@ const Speakers = () => {
           const firstCardInRow = rowIndex * cardsPerRow;
           targetCard = allCards[firstCardInRow];
         }
-        
+
         if (targetCard) {
           const cardRect = targetCard.getBoundingClientRect();
           const absoluteTop = cardRect.top + window.pageYOffset;
           const navbarHeight = 80;
           const offsetPosition = absoluteTop - navbarHeight - 40;
-          
+
           window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
@@ -113,34 +114,36 @@ const Speakers = () => {
           {speakersData.map((speaker, index) => {
             const isFocused = focusedCard === speaker.id;
             return (
-              <Link 
-                key={speaker.id} 
-                to={`/speakers/${speaker.id}`}
-                state={{ speakerIndex: index }}
-                data-speaker-id={speaker.id}
-                className={`group relative aspect-[3/4] bg-gray-900 rounded-xl overflow-hidden border cursor-pointer transition-all duration-300 block ${
-                  isFocused ? 'border-tedx-red shadow-[0_0_30px_rgba(255,45,45,0.5)] md:border-white/10 md:shadow-none md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]' : 'border-white/10 md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]'
-                }`}
+              <ScrollReveal
+                key={speaker.id}
+                delay={`${(index % 4) * 0.03}s`}
+                className="w-full h-full"
               >
-                <img 
-                  src={speaker.image} 
-                  alt={speaker.name} 
-                  className={`object-cover w-full h-full transition-all duration-500 ${
-                    isFocused ? 'scale-105 grayscale-0 md:scale-100 md:grayscale md:group-hover:scale-105 md:group-hover:grayscale-0' : 'grayscale md:group-hover:scale-105 md:group-hover:grayscale-0'
-                  }`}
-                />
-                <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/90 to-transparent">
-                  <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    isFocused ? 'max-h-40 md:max-h-0 md:group-hover:max-h-40' : 'max-h-0 md:group-hover:max-h-40'
-                  }`}>
-                    <p className="text-lg text-gray-200 mb-4 line-clamp-4 leading-relaxed font-light">
-                      {speaker.role}
-                    </p>
+                <Link
+                  to={`/speakers/${speaker.id}`}
+                  state={{ speakerIndex: index }}
+                  data-speaker-id={speaker.id}
+                  className={`group relative aspect-[3/4] bg-gray-900 rounded-xl overflow-hidden border cursor-pointer transition-all duration-300 block ${isFocused ? 'border-tedx-red shadow-[0_0_30px_rgba(255,45,45,0.5)] md:border-white/10 md:shadow-none md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]' : 'border-white/10 md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]'
+                    }`}
+                >
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className={`object-cover w-full h-full transition-all duration-500 ${isFocused ? 'scale-105 grayscale-0 md:scale-100 md:grayscale md:group-hover:scale-105 md:group-hover:grayscale-0' : 'grayscale md:group-hover:scale-105 md:group-hover:grayscale-0'
+                      }`}
+                  />
+                  <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/90 to-transparent">
+                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isFocused ? 'max-h-40 md:max-h-0 md:group-hover:max-h-40' : 'max-h-0 md:group-hover:max-h-40'
+                      }`}>
+                      <p className="text-lg text-gray-200 mb-4 line-clamp-4 leading-relaxed font-light">
+                        {speaker.role}
+                      </p>
+                    </div>
+                    <h3 className="text-2xl font-bold">{speaker.name}</h3>
+                    <p className="text-tedx-red font-xl">{speaker.pronouns}</p>
                   </div>
-                  <h3 className="text-2xl font-bold">{speaker.name}</h3>
-                  <p className="text-tedx-red font-xl">{speaker.pronouns}</p>
-                </div>
-              </Link>
+                </Link>
+              </ScrollReveal>
             );
           })}
         </div>

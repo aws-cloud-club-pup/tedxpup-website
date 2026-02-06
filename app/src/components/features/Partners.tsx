@@ -1,3 +1,5 @@
+import ScrollReveal from "../ui/ScrollReveal";
+
 const Partners = () => {
 
   const goldSponsors = [
@@ -17,7 +19,11 @@ const Partners = () => {
     { name: "Manila TEDx", src: "/sponsors/supporters/3-manila-tedx.webp" },
   ];
 
-  const partners = [
+  const mediaPartners = [
+    { name: "Pop", src: "/partners/Pop_logo_2021.png" },
+  ];
+
+  const orgPartners = [
     { name: "AWSCCPUP", src: "/partners/AWSCCPUP.webp" },
   ];
 
@@ -29,83 +35,114 @@ const Partners = () => {
       </div>
 
       <div className="relative z-10 container max-w-7xl mx-auto flex flex-col items-center text-center space-y-16 md:space-y-24">
-        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">
-          Our <span className="text-tedx-red">Sponsors</span>
-        </h2>
+        <ScrollReveal>
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">
+            Our <span className="text-tedx-red">Sponsors & Partners</span>
+          </h2>
+        </ScrollReveal>
 
         {/* Gold Sponsors */}
         <div className="w-full space-y-6 md:space-y-8">
-          <div className="relative flex items-center justify-center">
+          <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
             </div>
             <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Gold Sponsors</p>
-          </div>
+          </ScrollReveal>
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
             {goldSponsors.map((sponsor, i) => (
-              <img
-                key={i}
-                src={sponsor.src}
-                alt={sponsor.name}
-                className={`${i != 0 ? 'h-[70px] md:h-[85px] lg:h-[100px]' : 'h-[50px] md:h-[65px] lg:h-[80px]'} object-contain hover:scale-110 transition-transform duration-300`}
-              />
+              <ScrollReveal key={i} delay={`${i * 0.03}s`}>
+                <img
+                  src={sponsor.src}
+                  alt={sponsor.name}
+                  className={`${i != 0 ? 'h-[70px] md:h-[85px] lg:h-[100px]' : 'h-[50px] md:h-[65px] lg:h-[80px]'} object-contain hover:scale-110 transition-transform duration-300`}
+                />
+              </ScrollReveal>
             ))}
           </div>
         </div>
 
         {/* Bronze Sponsors */}
         <div className="w-full space-y-6 md:space-y-8">
-          <div className="relative flex items-center justify-center">
+          <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
             </div>
             <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Bronze Sponsors</p>
-          </div>
+          </ScrollReveal>
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-6 lg:gap-10">
             {bronzeSponsors.map((sponsor, i) => (
-              <img
-                key={i}
-                src={sponsor.src}
-                alt={sponsor.name}
-                className="h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300"
-              />
+              <ScrollReveal key={i} delay={`${i * 0.03}s`}>
+                <img
+                  src={sponsor.src}
+                  alt={sponsor.name}
+                  className="h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300"
+                />
+              </ScrollReveal>
             ))}
           </div>
         </div>
 
         {/* Supporters */}
         <div className="w-full space-y-6 md:space-y-8">
-          <div className="relative flex items-center justify-center">
+          <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
             </div>
             <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Supporters</p>
-          </div>
+          </ScrollReveal>
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-6 lg:gap-8">
             {supporters.map((sponsor, i) => {
               // First logo: rounded-full, last logo: rounded-[30px] (oval) with w-[170px]
               return (
-                <img
-                  key={i}
-                  src={sponsor.src}
-                  alt={sponsor.name}
-                  className={`h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300`}
-                />
+                <ScrollReveal key={i} delay={`${i * 0.03}s`}>
+                  <img
+                    src={sponsor.src}
+                    alt={sponsor.name}
+                    className={`h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300`}
+                  />
+                </ScrollReveal>
               );
             })}
           </div>
         </div>
 
-        {/* Partners */}
+        {/* Media Partners */}
         <div className="w-full space-y-6 md:space-y-8">
-          <div className="relative flex items-center justify-center">
+          <ScrollReveal className="relative flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-white/20"></div>
+            </div>
+            <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Media Partner</p>
+          </ScrollReveal>
+          <div className="flex flex-wrap justify-center items-center gap-5 md:gap-6 lg:gap-8">
+            {mediaPartners.map((sponsor, i) => {
+              // First logo: rounded-full, last logo: rounded-[30px] (oval) with w-[170px]
+              let width = '';
+              let objectFit = 'object-contain';
+              return (
+                <ScrollReveal key={i} delay={`${i * 0.03}s`}>
+                  <img
+                    src={sponsor.src}
+                    alt={sponsor.name}
+                    className={`h-[70px] md:h-[85px] lg:h-[100px] ${width} ${objectFit} hover:scale-110 transition-transform duration-300`}
+                  />
+                </ScrollReveal>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Organization Partners */}
+        <div className="w-full space-y-6 md:space-y-8">
+          <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
             </div>
             <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Organization Partner</p>
-          </div>
+          </ScrollReveal>
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-6 lg:gap-8">
-            {partners.map((sponsor, i) => {
+            {orgPartners.map((sponsor, i) => {
               // First logo: rounded-full, last logo: rounded-[30px] (oval) with w-[170px]
               let borderRadius = '';
               let width = '';
@@ -117,12 +154,13 @@ const Partners = () => {
                 objectFit = 'object-cover';
               }
               return (
-                <img
-                  key={i}
-                  src={sponsor.src}
-                  alt={sponsor.name}
-                  className={`h-[70px] md:h-[85px] lg:h-[100px] ${width} ${objectFit} hover:scale-110 transition-transform duration-300 ${borderRadius}`}
-                />
+                <ScrollReveal key={i} delay={`${i * 0.05}s`}>
+                  <img
+                    src={sponsor.src}
+                    alt={sponsor.name}
+                    className={`h-[70px] md:h-[85px] lg:h-[100px] ${width} ${objectFit} hover:scale-110 transition-transform duration-300 ${borderRadius}`}
+                  />
+                </ScrollReveal>
               );
             })}
           </div>

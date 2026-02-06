@@ -1,3 +1,5 @@
+import ScrollReveal from "../ui/ScrollReveal";
+
 const ProgramFlow = () => {
   const programItems = [
     {
@@ -60,27 +62,30 @@ const ProgramFlow = () => {
   return (
     <section id="program" className="py-24 px-6 bg-black text-white">
       <div className="container max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center">
-          PROGRAM <span className="text-tedx-red">FLOW</span>
-        </h2>
+        <ScrollReveal>
+          <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center">
+            PROGRAM <span className="text-tedx-red"></span>
+          </h2>
+        </ScrollReveal>
         <div className="space-y-2 max-w-5xl mx-auto">
           {programItems.map((item, i) => (
-            <div
-              key={i}
-              className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-4 md:gap-8 p-4 md:p-6 border-b border-white/10 hover:bg-white/5 transition-colors text-center"
-            >
-              <div className="flex gap-3 items-center justify-center sm:justify-end sm:w-60 sm:flex-shrink-0">
-                <span className="text-tedx-red font-bold text-sm md:text-base whitespace-nowrap">
-                  {item.time}
-                </span>
-                <span className="text-white/50 text-xs md:text-sm whitespace-nowrap">
-                  ({item.duration})
+            <ScrollReveal key={i} delay={`${i * 0.01}s`}>
+              <div
+                className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-4 md:gap-8 p-4 md:p-6 border-b border-white/10 hover:bg-white/5 transition-colors text-center"
+              >
+                <div className="flex gap-3 items-center justify-center sm:justify-end sm:w-60 sm:flex-shrink-0">
+                  <span className="text-tedx-red font-bold text-sm md:text-base whitespace-nowrap">
+                    {item.time}
+                  </span>
+                  <span className="text-white/50 text-xs md:text-sm whitespace-nowrap">
+                    ({item.duration})
+                  </span>
+                </div>
+                <span className="text-base md:text-lg lg:text-xl font-semibold sm:text-left leading-relaxed sm:w-80">
+                  {item.title}
                 </span>
               </div>
-              <span className="text-base md:text-lg lg:text-xl font-semibold sm:text-left leading-relaxed sm:w-80">
-                {item.title}
-              </span>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

@@ -9,6 +9,8 @@ import tedxpupLogo from "../../assets/about/logos/tedxpup-white.webp";
 import tedxLogo from "../../assets/about/logos/tedx.webp";
 import tedLogo from "../../assets/about/logos/ted.webp";
 
+import ScrollReveal from "../ui/ScrollReveal";
+
 const slides = [
   {
     id: 0,
@@ -110,9 +112,9 @@ const About = () => {
         {/* MOBILE LAYOUT: Vertical Stack (Better UX - No scrolling up needed) */}
         <div className="flex flex-col gap-24 lg:hidden pb-12">
           {slides.map((slide) => (
-            <div
+            <ScrollReveal
               key={slide.id}
-              className="flex flex-col gap-8 animate-fade-in-up"
+              className="flex flex-col gap-8"
             >
               {/* Header */}
               <div>{slide.header}</div>
@@ -128,12 +130,12 @@ const About = () => {
               <div className="text-gray-200 text-lg leading-relaxed">
                 {slide.content}
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* DESKTOP LAYOUT: Interactive Carousel */}
-        <div className="hidden lg:block">
+        <ScrollReveal className="hidden lg:block">
           {/* CSS Grid Stack Container for Smooth Height Handling */}
           <div className="grid grid-cols-1 grid-rows-1 relative min-h-[400px] overflow-hidden">
             {slides.map((slide, index) => {
@@ -178,18 +180,17 @@ const About = () => {
           </div>
 
           {/* Controls */}
-          <div className="flex items-center justify-between pt-12 mt-8 md:mt-0 border-t border-white/10">
+          <div className="flex items-center justify-between pt-12 mt-8 md:mt-0">
             {/* Dots */}
             <div className="flex gap-3">
               {slides.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setActiveTab(i)}
-                  className={`h-2.5 rounded-full transition-all duration-500 ${
-                    activeTab === i
-                      ? "w-12 bg-tedx-red shadow-glow"
-                      : "w-2.5 bg-white/20 hover:bg-white/40"
-                  }`}
+                  className={`h-2.5 rounded-full transition-all duration-500 ${activeTab === i
+                    ? "w-12 bg-tedx-red shadow-glow"
+                    : "w-2.5 bg-white/20 hover:bg-white/40"
+                    }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
               ))}
@@ -211,9 +212,9 @@ const About = () => {
               </button>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
-    </section>
+    </section >
   );
 };
 

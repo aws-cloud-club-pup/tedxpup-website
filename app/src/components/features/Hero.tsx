@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Button from "../ui/Button";
 import { FiClock, FiMapPin } from "react-icons/fi";
 
-import heroBackground from "../../assets/hero/TEDX-HEART.webp";
+import heroBackground from "../../assets/hero/tedx-heart2.webp";
 import tedxpupLogo from "../../assets/about/logos/tedxpup-white.webp";
 
 import hero1 from "../../assets/hero/111.webp";
@@ -34,11 +34,10 @@ const Hero = () => {
         {SLIDES.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] ease-in-out transform ${
-              index === currentSlide
-                ? "opacity-100 scale-105"
-                : "opacity-0 scale-100"
-            }`}
+            className={`absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] ease-in-out transform ${index === currentSlide
+              ? "opacity-100 scale-105"
+              : "opacity-0 scale-100"
+              }`}
             style={{ backgroundImage: `url(${slide})` }}
           />
         ))}
@@ -47,11 +46,11 @@ const Hero = () => {
       </div>
 
       {/* 2. Central Heart-X Image Graphic (Background of Text) */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vw] md:w-[1200px] md:h-[1200px] pointer-events-none z-0 select-none mix-blend-screen opacity-100">
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0 select-none mix-blend-screen opacity-100">
         <img
           src={heroBackground}
           alt="TEDx Heart Theme"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
 
