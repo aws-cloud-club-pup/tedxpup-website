@@ -9,18 +9,18 @@ const CreativeWriting = () => {
     if (scrollToPiece !== null) {
       const pieceIndex = parseInt(scrollToPiece, 10);
       sessionStorage.removeItem('scrollToPiece');
-      
+
       // Wait for DOM to be ready
       setTimeout(() => {
         const allCards = document.querySelectorAll('[data-piece-id]');
         const targetCard = allCards[pieceIndex];
-        
+
         if (targetCard) {
           const cardRect = targetCard.getBoundingClientRect();
           const absoluteTop = cardRect.top + window.pageYOffset;
           const navbarHeight = 80;
           const offsetPosition = absoluteTop - navbarHeight - 40;
-          
+
           window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
@@ -39,14 +39,14 @@ const CreativeWriting = () => {
             <span className="text-tedx-red">Creative</span> Writing Entries
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-             Voices of the community. Stories that evoke, inspire, and reflect.
+            Voices of the community. Stories that evoke, inspire, and reflect.
           </p>
         </div>
 
         <div className="w-full grid gap-8">
           {creativePieces.map((piece, index) => (
-            <Link 
-              key={piece.id} 
+            <Link
+              key={piece.id}
               to={`/creative-writing/${piece.slug}`}
               state={{ pieceIndex: index }}
               data-piece-id={piece.id}
@@ -54,7 +54,7 @@ const CreativeWriting = () => {
             >
               <div className="flex flex-col md:flex-row gap-6 justify-between items-start">
                 <div className="space-y-4 flex-1">
-                  
+
                   {/* Badge */}
                   <div className="inline-flex items-center px-3 py-1 rounded-full bg-tedx-red/20 border border-tedx-red/30 text-tedx-red text-xs md:text-sm font-bold tracking-wider uppercase">
                     {piece.category}
@@ -72,29 +72,29 @@ const CreativeWriting = () => {
 
                   {/* Content Preview */}
                   <div className="relative overflow-hidden max-h-24 opacity-80 [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)]">
-                     <p className="text-gray-300 whitespace-pre-wrap leading-relaxed font-light text-xl line-clamp-3">
-                       {piece.content}
-                     </p>
+                    <p className="text-gray-300 whitespace-pre-wrap leading-relaxed font-light text-xl line-clamp-3">
+                      {piece.content}
+                    </p>
                   </div>
 
                   {/* Action Button */}
-                  <div 
+                  <div
                     className="group/btn flex items-center gap-2 text-sm font-semibold text-white tracking-widest uppercase mt-4 group-hover:text-tedx-red transition-colors"
                   >
                     Read Full Piece
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="20" 
-                      height="20" 
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="transition-transform duration-300 group-hover:translate-x-1"
                     >
-                      <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                      <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
                     </svg>
                   </div>
 
