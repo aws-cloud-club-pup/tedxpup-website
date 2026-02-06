@@ -67,7 +67,8 @@ const contributorsData: DepartmentGroup[] = [
         name: "Jasmin Ivy Fedilo",
         role: "UI/UX Developer",
         department: "UI/UX Developers",
-        image: "https://avatars.githubusercontent.com/u/100293312?v=4",
+        image: "https://avatars.githubusercontent.com/u/168498796?v=4",
+        github: "https://github.com/cowniv",
         socials: [
           { name: "Facebook", url: "https://www.facebook.com/CantStopHuggingTrees" },
           { name: "LinkedIn", url: "https://www.linkedin.com/me" },

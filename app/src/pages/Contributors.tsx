@@ -53,7 +53,7 @@ const Contributors = () => {
             <em className="not-italic text-tedx-red font-bold">Our</em> Contributors
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
-            Meet the amazing team behind TEDxPUP who made this event possible through their dedication, creativity, and hard work.
+            Meet the amazing team behind TEDxPUP who made this TEDxPUP website possible through their dedication, creativity, and hard work.
           </p>
         </div>
 
