@@ -178,18 +178,17 @@ const About = () => {
           </div>
 
           {/* Controls */}
-          <div className="flex items-center justify-between pt-12 mt-8 md:mt-0 border-t border-white/10">
+          <div className="flex items-center justify-between pt-12 mt-8 md:mt-0">
             {/* Dots */}
             <div className="flex gap-3">
               {slides.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setActiveTab(i)}
-                  className={`h-2.5 rounded-full transition-all duration-500 ${
-                    activeTab === i
+                  className={`h-2.5 rounded-full transition-all duration-500 ${activeTab === i
                       ? "w-12 bg-tedx-red shadow-glow"
                       : "w-2.5 bg-white/20 hover:bg-white/40"
-                  }`}
+                    }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
               ))}

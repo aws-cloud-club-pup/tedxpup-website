@@ -61,7 +61,7 @@ const ProgramFlow = () => {
     <section id="program" className="py-24 px-6 bg-black text-white">
       <div className="container max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center">
-          PROGRAM <span className="text-tedx-red">FLOW</span>
+          PROGRAM <span className="text-tedx-red"></span>
         </h2>
         <div className="space-y-2 max-w-5xl mx-auto">
           {programItems.map((item, i) => (

@@ -87,7 +87,7 @@ const Location = () => {
   return (
     <section
       id="location"
-      className="py-24 px-6 bg-black text-white border-t border-white/10 relative overflow-hidden"
+      className="py-24 px-6 bg-black text-white relative overflow-hidden"
     >
       {/* Decorative Elements */}
       <div className="absolute top-0 left-10 w-[800px] h-[800px] opacity-80 pointer-events-none select-none mix-blend-screen">
@@ -131,11 +131,10 @@ const Location = () => {
                     <button
                       key={route.id}
                       onClick={() => setActiveTab(route.id)}
-                      className={`px-4 py-2 rounded-full text-sm font-bold transition-all duration-300 border ${
-                        activeTab === route.id
+                      className={`px-4 py-2 rounded-full text-sm font-bold transition-all duration-300 border ${activeTab === route.id
                           ? "bg-tedx-red text-white border-tedx-red shadow-[0_0_15px_rgba(230,43,30,0.4)]"
                           : "bg-transparent text-gray-400 border-white/20 hover:border-white/50 hover:text-white"
-                      }`}
+                        }`}
                     >
                       <span>{route.label}</span>
                     </button>
