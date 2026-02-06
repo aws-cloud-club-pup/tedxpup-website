@@ -15,7 +15,7 @@ const NAV_LINKS = [
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans relative">
+        <footer id="footer" className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans relative">
             {/* Top Content */}
             <div className="container mx-auto px-6 md:px-12 relative z-10 mb-24">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12 justify-items-start">
