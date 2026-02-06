@@ -34,6 +34,18 @@ const CreativeWriting = () => {
   return (
     <section id="creative-writing" className="relative py-24 px-6 bg-black text-white overflow-hidden min-h-screen">
 
+      {/* Creative Background - Top & Bottom Natural Glow */}
+      <div className="absolute top-[-10%] left-[-20%] right-[-20%] h-[60%] bg-[radial-gradient(ellipse_at_top,_rgba(230,43,31,0.2)_0%,_rgba(0,0,0,0)_70%)] blur-[80px] pointer-events-none mix-blend-screen" />
+      <div className="absolute bottom-[-10%] left-[-20%] right-[-20%] h-[60%] bg-[radial-gradient(ellipse_at_bottom,_rgba(230,43,31,0.2)_0%,_rgba(0,0,0,0)_70%)] blur-[80px] pointer-events-none mix-blend-screen" />
+
+      {/* Noise Texture */}
+      <div
+        className="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+        }}
+      />
+
       <div className="relative z-10 container max-w-5xl mx-auto flex flex-col items-center space-y-16">
         <ScrollReveal className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">

@@ -5,7 +5,7 @@ import { SiGmail } from 'react-icons/si';
 
 const NAV_LINKS = [
     { label: 'About', href: '#about' },
-    { label: 'Event Location', href: '#location'},
+    { label: 'Event Location', href: '#location' },
     { label: 'Speakers', href: '#speakers' },
     { label: 'Program', href: '#program' },
     { label: 'Creative Writing Entries', href: '#creative-writing' },
@@ -15,7 +15,7 @@ const NAV_LINKS = [
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans border-t border-white/10 relative">
+        <footer className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans relative">
             {/* Top Content */}
             <div className="container mx-auto px-6 md:px-12 relative z-10 mb-24">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12 justify-items-start">
@@ -30,8 +30,8 @@ const Footer: FC = () => {
                             <div className="text-sm text-gray-400">
                                 ©2026 TEDxPUP. All rights reserved
                             </div>
-                            <a 
-                                href="/contributors" 
+                            <a
+                                href="/contributors"
                                 className="text-sm text-gray-400 hover:text-tedx-red transition-colors"
                             >
                                 Contributors
@@ -57,7 +57,7 @@ const Footer: FC = () => {
                     {/* Contact / Socials */}
                     <div className="col-span-2 md:col-span-1 flex flex-col space-y-4">
                         <h3 className="text-white font-semibold text-base mb-2">CONTACT US</h3>
-                        
+
                         {/* Social Icons - Vertical Layout */}
                         <div className="flex flex-col space-y-3 mt-2">
                             {/* Email */}
