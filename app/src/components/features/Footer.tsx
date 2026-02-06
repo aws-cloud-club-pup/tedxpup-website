@@ -26,8 +26,16 @@ const Footer: FC = () => {
                             <img src="/logo-white.webp" alt="TEDxPUP" className="h-12 w-auto object-contain" />
                         </div>
 
-                        <div className="text-sm text-gray-400">
-                            ©2026 TEDxPUP. All rights reserved
+                        <div className="flex flex-col space-y-2">
+                            <div className="text-sm text-gray-400">
+                                ©2026 TEDxPUP. All rights reserved
+                            </div>
+                            <a 
+                                href="/contributors" 
+                                className="text-sm text-gray-400 hover:text-tedx-red transition-colors"
+                            >
+                                Contributors
+                            </a>
                         </div>
                     </div>
 
