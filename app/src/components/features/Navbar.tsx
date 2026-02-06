@@ -25,19 +25,19 @@ const Navbar = () => {
       const offset = 150; // Offset to account for navbar
 
       let current = "";
-      
+
       // Iterate through sections in reverse so later sections take precedence when overlapping
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const element = document.getElementById(section);
-        
+
         // Debug: log all sections
         console.log(`Checking section: ${section}, element found: ${!!element}`);
-        
+
         if (element) {
           const rect = element.getBoundingClientRect();
           console.log(`Section ${section}: top=${rect.top}, bottom=${rect.bottom}, offset=${offset}`);
-          
+
           // Section is active if its top is above the offset threshold and its bottom is still below it
           if (rect.top <= offset && rect.bottom > offset) {
             current = section;
@@ -46,7 +46,7 @@ const Navbar = () => {
           }
         }
       }
-      
+
       console.log(`Final activeSection: ${current}`);
       setActiveSection(current);
     };
@@ -61,19 +61,24 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 px-8 transition-all duration-300 ${
-          isScrolled
+        className={`fixed top-0 left-0 w-full z-50 px-8 transition-all duration-300 ${isScrolled
             ? "bg-black/60 backdrop-blur-2xl shadow-md py-4"
             : "bg-black/60 backdrop-blur-2xl shadow-md py-6 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"
-        }`}
+          }`}
       >
         <div className="container max-w-7xl mx-auto flex items-center justify-between relative">
           {/* Logo */}
-          <img
-            src="/logo-white.webp"
-            alt="TEDxPUP"
-            className="h-12 lg:h-14 w-auto object-contain -ml-3"
-          />
+          {/* Logo */}
+          <div
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="cursor-pointer"
+          >
+            <img
+              src="/logo-white.webp"
+              alt="TEDxPUP"
+              className="h-12 lg:h-14 w-auto object-contain -ml-3"
+            />
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -102,11 +107,10 @@ const Navbar = () => {
                 <a
                   key={link}
                   href={`/#${linkId}`}
-                  className={`text-sm font-bold transition-colors tracking-wide ${
-                    activeSection === linkId
+                  className={`text-sm font-bold transition-colors tracking-wide ${activeSection === linkId
                       ? "text-tedx-red"
                       : "text-white hover:text-tedx-red"
-                  }`}
+                    }`}
                 >
                   {link}
                 </a>
