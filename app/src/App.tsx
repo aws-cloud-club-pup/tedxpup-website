@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import SpeakerDetail from './pages/SpeakerDetail';
 import CreativeWritingDetail from './pages/CreativeWritingDetail';
 import Contributors from './pages/Contributors';
+import PageNotFound from './pages/PageNotFound';
 import LoadingScreen from './components/ui/LoadingScreen';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/speakers/:slug" element={<SpeakerDetail />} />
                 <Route path="/creative-writing/:slug" element={<CreativeWritingDetail />} />
                 <Route path="/contributors" element={<Contributors />} />
+                <Route path="*" element={<PageNotFound />} />
               </Routes>
             </motion.div>
           )}
