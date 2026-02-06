@@ -107,12 +107,17 @@ const contributorsData: DepartmentGroup[] = [
         name: "Redd Lawrence Reyes",
         role: "Frontend Developer",
         department: "Frontend Developers",
+        image: "https://avatars.githubusercontent.com/u/139360924?v=4",
+        github: "https://github.com/definitelynotredd",
+        linkedin: "https://www.linkedin.com/in/redd-lawrence-reyes-271420298/",
       },
       {
         id: "john-michael-dumlao",
         name: "John Michael Dumlao",
         role: "Frontend Developer",
         department: "Frontend Developers",
+        image: "https://avatars.githubusercontent.com/u/177717483?v=4",
+        github: "https://github.com/Faiithal",
       },
       {
         id: "earl-clyde-banez",
@@ -132,6 +137,8 @@ const contributorsData: DepartmentGroup[] = [
         name: "John Alejandro De Vera",
         role: "Frontend Developer",
         department: "Frontend Developers",
+        github: "https://github.com/SntJhn",
+        image: "https://avatars.githubusercontent.com/u/112607182?v=4",
       },
       {
         id: "randall-graida",
