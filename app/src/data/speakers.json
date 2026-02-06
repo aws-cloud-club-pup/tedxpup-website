@@ -1,6 +1,6 @@
 ﻿[
   {
-    "id": "speaker-1",
+    "id": "chanelle-peru",
     "name": "Chanelle Peru",
     "topic": "",
     "role": "Legal Management & Economics Student, Aspiring Lawyer, Creative Marketer",
@@ -39,7 +39,7 @@
     "image": "/speakers/Chanelle-Peru.webp"
   },
   {
-    "id": "speaker-2",
+    "id": "eva-le-queen",
     "name": "Eva Le Queen",
     "topic": "",
     "role": "Drag Artist, Content Creator, CEO",
@@ -80,7 +80,7 @@
     "image": "/speakers/Eva-Le-Queen.webp"
   },
   {
-    "id": "speaker-3",
+    "id": "haven-mosquito",
     "name": "Haven Mosquito",
     "topic": "",
     "role": "Debater, Adjudicator, Student Leader",
@@ -120,7 +120,7 @@
     "image": "/speakers/Haven-Mosquito.webp"
   },
   {
-    "id": "speaker-4",
+    "id": "isaeus-asi-guiang",
     "name": "Isaeus \"Asi\" Guiang",
     "topic": "",
     "role": " Cloud Computing Leader, Cybersecurity Advocate, Community Builder",
@@ -159,7 +159,7 @@
     "image": "/speakers/Asi-Guiang.webp"
   },
   {
-    "id": "speaker-5",
+    "id": "joy-mayanne-barcoma",
     "name": "Joy Mayanne Barcoma",
     "topic": "",
     "role": "Beauty Queen, Disaster Resilience Consultant, Mental Health Advocate",
@@ -197,7 +197,7 @@
     "image": "/speakers/Joy-Mayanne-Barcoma.webp"
   },
   {
-    "id": "speaker-6",
+    "id": "kristine-jane-atienza",
     "name": "Kristine Jane Atienza",
     "title": "RND",
     "titlePosition": "after",
@@ -230,7 +230,7 @@
     "image": "/speakers/Kristine-Atienza.webp"
   },
   {
-    "id": "speaker-7",
+    "id": "laraine-zyreen-marcelo",
     "name": "Laraine Zyreen Marcelo",
     "topic": "",
     "role": "Chief Learning Officer, Head of Sales, Organizational Development Consultant",
@@ -260,7 +260,7 @@
     "image": "/speakers/Laraine-Zyreen-Marcelo.webp"
   },
   {
-    "id": "speaker-8",
+    "id": "nabbe-francisco",
     "name": "Nabbe Francisco",
     "topic": "",
     "role": "Digital Marketing, Graphic Design, Community Leadership",
@@ -299,7 +299,7 @@
     "image": "/speakers/Nabbe-Francisco.webp"
   },
   {
-    "id": "speaker-9",
+    "id": "nicole-redding-wilhelm",
     "name": "Nicole Redding Wilhelm",
     "topic": "",
     "role": "Author",
@@ -339,7 +339,7 @@
     "image": "/speakers/Nicole-Redding-Wilhelm.webp"
   },
   {
-    "id": "speaker-10",
+    "id": "paul-john-hernandez",
     "name": "Paul John Hernandez",
     "topic": "",
     "role": " Educator, Cultural Worker, Heritage Advocate, Textbook Writer",
@@ -376,7 +376,7 @@
     "image": "/speakers/Paul-John-Hernandez.webp"
   },
   {
-    "id": "speaker-11",
+    "id": "riyan-portuguez",
     "name": "Riyan Portuguez",
     "title": "MP, RPm, RPsy",
     "titlePosition": "after",
@@ -429,7 +429,7 @@
     "image": "/speakers/Riyan-Portuguez.webp"
   },
   {
-    "id": "speaker-12",
+    "id": "renee-louise-co",
     "name": "Renee Louise Co",
     "title": "Atty.",
     "titlePosition": "before",
