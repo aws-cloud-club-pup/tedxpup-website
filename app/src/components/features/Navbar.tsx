@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Button from "../ui/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navLinks = ["ABOUT", "SPEAKERS", "PROGRAM", "CREATIVE WRITING ENTRIES", "FAQs"];
 
@@ -31,46 +34,50 @@ const Navbar = () => {
         const section = sections[i];
         const element = document.getElementById(section);
 
-        // Debug: log all sections
-        console.log(`Checking section: ${section}, element found: ${!!element}`);
-
-        if (element) {
+        // Only check sections if we are on the home page
+        if (location.pathname === "/" && element) {
           const rect = element.getBoundingClientRect();
-          console.log(`Section ${section}: top=${rect.top}, bottom=${rect.bottom}, offset=${offset}`);
 
           // Section is active if its top is above the offset threshold and its bottom is still below it
           if (rect.top <= offset && rect.bottom > offset) {
             current = section;
-            console.log(`Active section found: ${section}`);
             break; // Found the lowest section that's in view, stop here
           }
         }
       }
 
-      console.log(`Final activeSection: ${current}`);
       setActiveSection(current);
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Initial check
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location.pathname]); // Update dependency
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      window.scrollTo(0, 0);
+    }
+  };
 
   return (
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 px-8 transition-all duration-300 ${isScrolled
-            ? "bg-black/60 backdrop-blur-2xl shadow-md py-4"
-            : "bg-black/60 backdrop-blur-2xl shadow-md py-6 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"
+          ? "bg-black/60 backdrop-blur-2xl shadow-md py-4"
+          : "bg-black/60 backdrop-blur-2xl shadow-md py-6 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"
           }`}
       >
         <div className="container max-w-7xl mx-auto flex items-center justify-between relative">
           {/* Logo */}
           {/* Logo */}
           <div
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={handleLogoClick}
             className="cursor-pointer"
           >
             <img
@@ -108,8 +115,8 @@ const Navbar = () => {
                   key={link}
                   href={`/#${linkId}`}
                   className={`text-sm font-bold transition-colors tracking-wide ${activeSection === linkId
-                      ? "text-tedx-red"
-                      : "text-white hover:text-tedx-red"
+                    ? "text-tedx-red"
+                    : "text-white hover:text-tedx-red"
                     }`}
                 >
                   {link}
