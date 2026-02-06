@@ -110,6 +110,10 @@ const contributorsData: DepartmentGroup[] = [
         image: "https://avatars.githubusercontent.com/u/139360924?v=4",
         github: "https://github.com/definitelynotredd",
         linkedin: "https://www.linkedin.com/in/redd-lawrence-reyes-271420298/",
+        socials: [
+          { name: "Facebook", url: "https://www.facebook.com/Seishirou.xz" },
+          { name: "Instagram", url: "https://www.instagram.com/definitelynotredd_/" },
+        ],
       },
       {
         id: "john-michael-dumlao",
