@@ -34,11 +34,10 @@ const Hero = () => {
         {SLIDES.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] ease-in-out transform ${
-              index === currentSlide
+            className={`absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] ease-in-out transform ${index === currentSlide
                 ? "opacity-100 scale-105"
                 : "opacity-0 scale-100"
-            }`}
+              }`}
             style={{ backgroundImage: `url(${slide})` }}
           />
         ))}
