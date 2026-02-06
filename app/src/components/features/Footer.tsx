@@ -1,5 +1,5 @@
 
-import type { FC } from 'react';
+import { useEffect, type FC } from 'react';
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 
@@ -14,6 +14,24 @@ const NAV_LINKS = [
 ];
 
 const Footer: FC = () => {
+    // Check for scroll restoration from Contributors page (only on home page)
+    useEffect(() => {
+        // Only trigger on home page, not on Contributors page which also has a Footer
+        if (window.location.pathname !== '/') return;
+
+        const scrollToFooter = sessionStorage.getItem('scrollToFooter');
+        if (scrollToFooter === 'true') {
+            sessionStorage.removeItem('scrollToFooter');
+            // Delay to ensure all components have mounted and other scroll handlers complete
+            setTimeout(() => {
+                const footerElement = document.getElementById('footer');
+                if (footerElement) {
+                    footerElement.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+            }, 200);
+        }
+    }, []);
+
     return (
         <footer id="footer" className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans relative">
             {/* Top Content */}

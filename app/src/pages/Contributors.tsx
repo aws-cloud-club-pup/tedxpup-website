@@ -24,6 +24,14 @@ const Contributors = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, []);
 
+  // Store footer scroll flag for restoration when leaving this page
+  useEffect(() => {
+    return () => {
+      // Set flag only when component unmounts (navigating away)
+      sessionStorage.setItem('scrollToFooter', 'true');
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white selection:bg-tedx-red selection:text-white font-sans">
       <Navbar />
