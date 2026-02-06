@@ -129,21 +129,21 @@ const Contributors = () => {
 
       {/* Modal */}
       {selectedContributor && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md"
           onClick={() => setSelectedContributor(null)}
         >
-          <div 
-            className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-white/20 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+          <div
+            className="relative bg-gradient-to-br from-tedx-red/50 via-tedx-red/20 to-tedx-red/10 border border-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button
               onClick={() => setSelectedContributor(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 hover:bg-tedx-red transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-zinc-800/80 hover:bg-[#e62b1f] transition-all duration-200 hover:scale-105"
               aria-label="Close"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"/>
                 <line x1="6" y1="6" x2="18" y2="18"/>
               </svg>
@@ -152,16 +152,16 @@ const Contributors = () => {
             <div className="flex flex-col md:flex-row gap-6 p-6 md:p-8">
               {/* Profile Image */}
               <div className="flex-shrink-0">
-                <div className="w-48 h-48 rounded-2xl overflow-hidden border-4 border-white/20 bg-gradient-to-br from-gray-800 to-gray-900">
+                <div className="w-48 h-48 rounded-xl overflow-hidden border border-white/20 bg-gradient-to-br from-tedx-red/20 to-tedx-red/5 shadow-lg">
                   {selectedContributor.image ? (
-                    <img 
-                      src={selectedContributor.image} 
+                    <img
+                      src={selectedContributor.image}
                       alt={selectedContributor.name}
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-tedx-red/20 to-tedx-red/5 flex items-center justify-center">
-                      <span className="text-6xl font-bold text-tedx-red">
+                    <div className="w-full h-full bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
+                      <span className="text-5xl font-bold text-zinc-600">
                         {selectedContributor.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
                       </span>
                     </div>
@@ -172,36 +172,36 @@ const Contributors = () => {
               {/* Info */}
               <div className="flex-1 space-y-4">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 text-white">
+                  <h2 className="text-3xl font-bold mb-2 text-zinc-100">
                     {selectedContributor.name}
                   </h2>
-                  <p className="text-lg text-tedx-red font-semibold">
+                  <p className="text-base text-zinc-400 font-medium">
                     {selectedContributor.role}
                   </p>
                 </div>
 
                 {selectedContributor.bio && (
-                  <div>
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">About</h3>
-                    <p className="text-gray-300 leading-relaxed">
+                  <div className="pt-2">
+                    <h3 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">About</h3>
+                    <p className="text-zinc-300 leading-relaxed text-sm">
                       {selectedContributor.bio}
                     </p>
                   </div>
                 )}
 
                 {/* Social Links */}
-                <div className="pt-4 border-t border-white/10">
-                  <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Connect</h3>
-                  <div className="flex flex-wrap gap-3">
+                <div className="pt-4 border-t border-zinc-800">
+                  <h3 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-3">Connect</h3>
+                  <div className="flex flex-wrap gap-2">
                     {selectedContributor.github && (
                       <a
                         href={selectedContributor.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-tedx-red border border-white/10 hover:border-tedx-red rounded-lg transition-all group"
+                        className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-200 group"
                       >
-                        <FaGithub className="text-xl group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-medium">GitHub</span>
+                        <FaGithub className="text-base group-hover:scale-110 transition-transform" />
+                        <span className="text-sm font-medium text-zinc-300 group-hover:text-white">GitHub</span>
                       </a>
                     )}
                     {selectedContributor.linkedin && (
@@ -209,10 +209,10 @@ const Contributors = () => {
                         href={selectedContributor.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-tedx-red border border-white/10 hover:border-tedx-red rounded-lg transition-all group"
+                        className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-200 group"
                       >
-                        <FaLinkedin className="text-xl group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-medium">LinkedIn</span>
+                        <FaLinkedin className="text-base group-hover:scale-110 transition-transform" />
+                        <span className="text-sm font-medium text-zinc-300 group-hover:text-white">LinkedIn</span>
                       </a>
                     )}
                     {selectedContributor.socials && selectedContributor.socials.length > 0 && (
@@ -222,15 +222,15 @@ const Contributors = () => {
                           href={social.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-tedx-red border border-white/10 hover:border-tedx-red rounded-lg transition-all group"
+                          className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-200 group"
                         >
-                          <FaGlobe className="text-xl group-hover:scale-110 transition-transform" />
-                          <span className="text-sm font-medium">{social.name}</span>
+                          <FaGlobe className="text-base group-hover:scale-110 transition-transform" />
+                          <span className="text-sm font-medium text-zinc-300 group-hover:text-white">{social.name}</span>
                         </a>
                       ))
                     )}
                     {!selectedContributor.github && !selectedContributor.linkedin && (!selectedContributor.socials || selectedContributor.socials.length === 0) && (
-                      <p className="text-sm text-gray-500 italic">No links available</p>
+                      <p className="text-sm text-zinc-600 italic">No links available</p>
                     )}
                   </div>
                 </div>
