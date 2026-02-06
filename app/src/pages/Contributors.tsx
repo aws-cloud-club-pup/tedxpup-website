@@ -53,7 +53,7 @@ const Contributors = () => {
             <em className="not-italic text-tedx-red font-bold">Our</em> Contributors
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
-            Meet the amazing team behind TEDxPUP who made this website possible through their dedication, creativity, and hard work.
+            Meet the amazing team behind TEDxPUP website who made this event possible through their dedication, creativity, and hard work.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const Contributors = () => {
                     onClick={() => setSelectedContributor(contributor)}
                   >
                     {/* Profile Card */}
-                    <div className="relative aspect-square rounded-3xl overflow-hidden border-4 border-white/20 group-hover:border-tedx-red transition-all duration-300 group-hover:scale-105 bg-gradient-to-br from-gray-900 to-black cursor-pointer">
+                    <div className="relative aspect-square rounded-3xl overflow-hidden border-4 border-white/20 group-hover:border-tedx-red transition-all duration-500 ease-in-out group-hover:shadow-[0_0_40px_rgba(255,45,45,0.6)] bg-gradient-to-br from-gray-900 to-black cursor-pointer">
                       {contributor.image ? (
                         <img 
                           src={contributor.image} 
@@ -98,10 +98,10 @@ const Contributors = () => {
                     
                     {/* Info below card */}
                     <div className="mt-4 text-center">
-                      <h3 className="text-lg md:text-xl font-bold mb-1 group-hover:text-tedx-red transition-colors">
+                      <h3 className="text-lg md:text-xl font-bold mb-1 group-hover:text-tedx-red transition-colors duration-300">
                         {contributor.name}
                       </h3>
-                      <p className="text-sm md:text-base text-gray-400 font-medium">
+                      <p className="text-sm md:text-base text-gray-400 font-medium group-hover:text-gray-200 transition-colors duration-300">
                         {contributor.role}
                       </p>
                     </div>
@@ -110,18 +110,6 @@ const Contributors = () => {
               </div>
             </section>
           ))}
-        </div>
-
-        {/* Acknowledgment Section */}
-        <div className="mt-20 border-t border-white/10 pt-12">
-          <div className="bg-gradient-to-br from-tedx-red/10 to-tedx-red/5 border border-tedx-red/20 rounded-2xl p-8 md:p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase">
-              Thank You
-            </h2>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              A heartfelt thank you to all contributors who dedicated their time, skills, and passion to make TEDxPUP a reality. Your efforts have created an unforgettable experience for our community.
-            </p>
-          </div>
         </div>
       </main>
 
@@ -134,13 +122,13 @@ const Contributors = () => {
           onClick={() => setSelectedContributor(null)}
         >
           <div
-            className="relative bg-gradient-to-br from-tedx-red/50 via-tedx-red/20 to-tedx-red/10 border border-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+            className="group/modal relative bg-white/5 backdrop-blur-md border border-white/10 hover:border-tedx-red rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto transition-all duration-500 ease-in-out hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button
               onClick={() => setSelectedContributor(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-zinc-800/80 hover:bg-[#e62b1f] transition-all duration-200 hover:scale-105"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-zinc-800/80 hover:bg-[#e62b1f] transition-all duration-300 ease-in-out hover:scale-105"
               aria-label="Close"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -172,10 +160,10 @@ const Contributors = () => {
               {/* Info */}
               <div className="flex-1 space-y-4">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 text-zinc-100">
+                  <h2 className="text-3xl font-bold mb-2 text-zinc-100 group-hover/modal:text-tedx-red transition-colors duration-300">
                     {selectedContributor.name}
                   </h2>
-                  <p className="text-base text-zinc-400 font-medium">
+                  <p className="text-base text-zinc-400 font-medium group-hover/modal:text-tedx-red/80 transition-colors duration-300">
                     {selectedContributor.role}
                   </p>
                 </div>
@@ -198,10 +186,10 @@ const Contributors = () => {
                         href={selectedContributor.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-200 group"
+                        className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-300 ease-in-out group"
                       >
-                        <FaGithub className="text-base group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-medium text-zinc-300 group-hover:text-white">GitHub</span>
+                        <FaGithub className="text-base group-hover:scale-110 transition-transform duration-300" />
+                        <span className="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors duration-300">GitHub</span>
                       </a>
                     )}
                     {selectedContributor.linkedin && (
@@ -209,10 +197,10 @@ const Contributors = () => {
                         href={selectedContributor.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-200 group"
+                        className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-300 ease-in-out group"
                       >
-                        <FaLinkedin className="text-base group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-medium text-zinc-300 group-hover:text-white">LinkedIn</span>
+                        <FaLinkedin className="text-base group-hover:scale-110 transition-transform duration-300" />
+                        <span className="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors duration-300">LinkedIn</span>
                       </a>
                     )}
                     {selectedContributor.socials && selectedContributor.socials.length > 0 && (
@@ -222,10 +210,10 @@ const Contributors = () => {
                           href={social.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-200 group"
+                          className="flex items-center gap-2 px-3 py-2 bg-zinc-800/50 hover:bg-[#e62b1f] border border-zinc-700 hover:border-[#e62b1f] rounded-lg transition-all duration-300 ease-in-out group"
                         >
-                          <FaGlobe className="text-base group-hover:scale-110 transition-transform" />
-                          <span className="text-sm font-medium text-zinc-300 group-hover:text-white">{social.name}</span>
+                          <FaGlobe className="text-base group-hover:scale-110 transition-transform duration-300" />
+                          <span className="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors duration-300">{social.name}</span>
                         </a>
                       ))
                     )}
