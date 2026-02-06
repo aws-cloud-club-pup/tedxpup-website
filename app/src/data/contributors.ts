@@ -24,6 +24,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "John Paul Curada",
         role: "Web Operations Lead",
         department: "Project Leads",
+        image: "https://avatars.githubusercontent.com/u/84607933?v=4",
         github: "https://github.com/JpCurada",
         linkedin: "https://www.linkedin.com/in/jpcurada",
         socials: [
@@ -36,6 +37,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Gerald Berongoy",
         role: "Frontend Lead",
         department: "Project Leads",
+        image: "https://avatars.githubusercontent.com/u/149705711?v=4",
         github: "https://github.com/geraldsberongoy",
         linkedin: "https://www.linkedin.com/in/geraldberongoy",
         socials: [
@@ -48,6 +50,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Geinel Dungao",
         role: "Technical Project Manager",
         department: "Project Leads",
+        image: "https://avatars.githubusercontent.com/u/181841371?v=4",
         github: "https://github.com/wolfsenberg",
         linkedin: "https://www.linkedin.com/in/geineldungao",
         socials: [
@@ -64,6 +67,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Jasmin Ivy Fedilo",
         role: "UI/UX Developer",
         department: "UI/UX Developers",
+        image: "https://avatars.githubusercontent.com/u/100293312?v=4",
         socials: [
           { name: "Facebook", url: "https://www.facebook.com/CantStopHuggingTrees" },
           { name: "LinkedIn", url: "https://www.linkedin.com/me" },
@@ -84,6 +88,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Charles Lucas",
         role: "UI/UX Developer",
         department: "UI/UX Developers",
+        image: "https://avatars.githubusercontent.com/u/143716638?v=4",
         github: "https://github.com/charlesczar",
         linkedin: "https://www.linkedin.com/in/charles-lucas-0449b428a",
         socials: [
@@ -113,7 +118,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Earl Clyde Bañez",
         role: "Frontend Developer",
         department: "Frontend Developers",
-        image: "/contributors/frontend-earl.png",
+        image: "https://avatars.githubusercontent.com/u/155219849?v=4",
         github: "https://github.com/EarlClydeeee",
         linkedin: "https://l.facebook.com/l.php",
         socials: [
@@ -132,6 +137,7 @@ const contributorsData: DepartmentGroup[] = [
         name: "Randall Graida",
         role: "Frontend Developer",
         department: "Frontend Developers",
+        image: "https://avatars.githubusercontent.com/u/179570333?v=4",
         github: "https://github.com/RandallGraida",
         socials: [
           { name: "Facebook", url: "https://www.facebook.com/carlosrandall.graida" },
