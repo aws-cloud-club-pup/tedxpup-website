@@ -50,14 +50,26 @@
       "Cast Member, RuPaul's Drag Race Global All Stars"
     ],
     "socials": [
-      { "name": "Facebook", "url": "https://web.facebook.com/Ms.EvaLeQueen" },
-      { "name": "Instagram", "url": "https://www.instagram.com/eva_lequeen/" },
+      {
+        "name": "Facebook",
+        "url": "https://web.facebook.com/Ms.EvaLeQueen"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/eva_lequeen/"
+      },
       {
         "name": "Youtube",
         "url": "http://youtube.com/@evalequeen?si=LvbvnZ4xc_mayYpY&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnX-aTAVNF2_Ttx5gZSJFvUhYYvInhnp7-rMCGtM0Tl1Mze7n8B7G0kw8oBl0_aem_-LMl3xJ8pvGjTazYLabE6g"
       },
-      { "name": "X", "url": "https://x.com/eva_lequeen" },
-      { "name": "Tiktok", "url": "https://www.tiktok.com/@evalequeen?lang=en" }
+      {
+        "name": "X",
+        "url": "https://x.com/eva_lequeen"
+      },
+      {
+        "name": "Tiktok",
+        "url": "https://www.tiktok.com/@evalequeen?lang=en"
+      }
     ],
     "bio": "Eva Le Queen (Jace Lamban) is a force in the Asian drag scene. Before donning the wig, she worked in corporate HR and project management—skills she now utilizes as the CEO of Drag Playhouse PH, a drag talent agency and production house. She rose to international fame representing the Philippines in the inaugural season of Drag Race Philippines, where her intellect and advocacy for \"Drag is Political\" won her a legion of fans. She later competed on the global stage in RuPaul's Drag Race Global All Stars.\n\nEva's work transcends entertainment; she uses her platform to discuss LGBTQ+ rights, mental health, and the economic viability of queer art. She challenges the \"stereotype\" of drag queens by blending corporate acumen with campy performance, proving that queer artists are also astute business leaders.",
     "achievements": [
@@ -84,9 +96,18 @@
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/havenmosquito/"
       },
-      { "name": "Facebook", "url": "https://www.facebook.com/pook.lamok" },
-      { "name": "Instagram", "url": "https://www.instagram.com/pook.lamok" },
-      { "name": "Youtube", "url": "https://www.youtube.com/@pooklamok" }
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/pook.lamok"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/pook.lamok"
+      },
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/@pooklamok"
+      }
     ],
     "bio": "Haven is a Psychology senior at the Polytechnic University of the Philippines, a competitive debater and adjudicator, and an active student leader. He has represented institutions in national and international debate tournaments, served in leadership roles within student organizations, and brings a strong interest in meaningful dialogue, psychology, and people-centered leadership.",
     "achievements": [
@@ -114,9 +135,18 @@
         "name": "LinkedIn",
         "url": "http://linkedin.com/in/isaeus-guiang/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9dhiFVi3R9ijXOR05MT%2FCw%3D%3D"
       },
-      { "name": "Facebook", "url": "https://web.facebook.com/isaeus2003" },
-      { "name": "Website", "url": "https://asiguiang.com/" },
-      { "name": "Mail", "url": "mailto:iguiang.business@gmail.com" }
+      {
+        "name": "Facebook",
+        "url": "https://web.facebook.com/isaeus2003"
+      },
+      {
+        "name": "Website",
+        "url": "https://asiguiang.com/"
+      },
+      {
+        "name": "Mail",
+        "url": "mailto:iguiang.business@gmail.com"
+      }
     ],
     "bio": "Isaeus (Asi) Guiang thrives at the intersection of technology, strategy, and leadership. As the Regional Captain of AWS Cloud Clubs Philippines, he leads a nationwide movement of student builders, overseeing 22+ university chapters and over 4,000 members. His mission is to democratize access to cloud technology, ensuring that Filipino students are not just consumers of tech but active creators of it.\n\nWith a strong background in risk assessment and cloud security, Asi goes beyond theory. He has served as an AWS re/Start Instructor and Mentor, designing hands-on modules that integrate core AWS services (EC2, VPC, IAM, S3) to help students build cloud-hosted applications from scratch. His tenure as an intern at industry giants like Globe and Tutorials Dojo gave him the practical expertise he now passes on to his peers.\n\nCurrently, Asi is also a Lead at Build Club AI, a community for AI builders and founders, where he champions the safe and strategic adoption of artificial intelligence. He embodies the \"Think Big\" leadership principle, evident in his orchestration of large-scale engagements like the Innovation Cup 2024, which secured internships for winners at top firms. Whether speaking at community days, writing technical blogs on cybersecurity, or mentoring future professionals, Asi's goal remains constant: to create impact, drive change, and redefine what is possible for the Filipino youth in tech.",
     "achievements": [
@@ -142,7 +172,10 @@
       "Consultant, City Goverment of Bacoor (Social & Civic Programs)"
     ],
     "socials": [
-      { "name": "Facebook", "url": "https://web.facebook.com/Joymayanneee" },
+      {
+        "name": "Facebook",
+        "url": "https://web.facebook.com/Joymayanneee"
+      },
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/joymayanne/?hl=en"
@@ -194,7 +227,6 @@
       "Technical Author: Key contributor to the Manual on the Management of Moderate Acute Malnutrition, a critical resource for health workers in the Philippines.",
       "Space Advocate:  A vocal proponent for Space Nutrition, conducting research on sustainable food systems in extreme environments."
     ],
-
     "image": "/speakers/Kristine-Atienza.webp"
   },
   {
@@ -213,7 +245,10 @@
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/larainezyreenmarcelo/"
       },
-      { "name": "Mail", "url": "mailto:larainezyreen@gmail.com" }
+      {
+        "name": "Mail",
+        "url": "mailto:larainezyreen@gmail.com"
+      }
     ],
     "bio": "Laraine Zyreen Marcelo stands at the forefront of organizational transformation in the Philippines. As a dual-focused leader in operations and commercial strategy, she currently serves as the Chief Learning Officer and Head of Sales for Learning Just Made Better (LJMB). Her resume is a testament to prolific impact: she has successfully steered over 3,000 consulting projects and facilitated 3,500+ training days for more than 500 global clients across 22 diverse industries.\n\nLaraine's expertise lies in \"Humanizing the Grind.\" She specializes in taking complex subject matter and transforming it into scalable, digestible learning systems that drive real behavioral change. Her work covers the full spectrum of talent management — from Organizational Leadership and Strategic Operations to Culture Building and AI-Driven Learning Solutions.\n\nBeyond the boardroom, Laraine is a digital thought leader. As a LinkedIn Philippines Top Creator, she uses her platform to mentor thousands of professionals on leadership development and career growth. She holds a Master's in Public Management (MPM) and is a Certified Six Sigma Green Belt, combining rigorous process improvement methodologies with a deep understanding of human psychology. Whether she is training C-suite executives or entry-level staff, Laraine's mission remains constant: to build cultures where people are empowered to perform at their peak, ensuring that businesses grow because their people grow first.",
     "achievements": [
@@ -288,7 +323,10 @@
         "name": "Instagram",
         "url": "https://www.instagram.com/nicolereddingwilhelm/"
       },
-      { "name": "Website", "url": "http://mentalrealestate.com" }
+      {
+        "name": "Website",
+        "url": "http://mentalrealestate.com"
+      }
     ],
     "bio": "Nicole Redding Wilhelm is an entrepreneur, real estate expert, author, and speaker known for her work in property ownership and personal development. She is the author of \"Own Your Space: How to Stop Renting and Start Owning Your Purpose, Power, and Property\", a book that combines financial strategy with mindset transformation, inspired by her own journey from homelessness to real estate success. Wilhelm also co-leads a top real estate team and runs a personal development brand focused on helping others achieve financial and personal growth through property ownership and mindset change.",
     "achievements": [
@@ -340,7 +378,7 @@
   {
     "id": "speaker-11",
     "name": "Riyan Portuguez",
-    "title": "PsyD",
+    "title": "MP, RPm, RPsy",
     "titlePosition": "after",
     "topic": "",
     "role": "Clinical Psychology, Mental Health Advocacy, Digital Content Creation",
@@ -372,8 +410,14 @@
         "name": "X",
         "url": "https://x.com/riyanportuguez?fbclid=IwY2xjawOVZZ9leHRuA2FlbQIxMABicmlkETFqbjU1NXg5U2N6a3kyZXhsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlfD5PVaFCTeaxjhEY020wU1d41u16eB7TmUOW3i48X47hu5vMgxEJQ_qGPl_aem_5ynrDwXkOOHj63960x0eSQ"
       },
-      { "name": "Tiktok", "url": "http://tiktok.com/@yourmillennialpsych" },
-      { "name": "Mail", "url": "mailto:yourmillennialpsychologist@gmail.com" }
+      {
+        "name": "Tiktok",
+        "url": "http://tiktok.com/@yourmillennialpsych"
+      },
+      {
+        "name": "Mail",
+        "url": "mailto:yourmillennialpsychologist@gmail.com"
+      }
     ],
     "bio": "Riyan Portuguez is a pioneering figure in the Philippine mental health landscape, bridging the gap between clinical practice and social media.\nShe holds both a Bachelor’s and a Master’s degree in Psychology from the Polytechnic University of the Philippines (PUP).\nAs a Registered Psychologist and Psychometrician, she has served as a college instructor, a clinician, and a resource speaker for various national organizations.\n\nRecognizing the barriers many Filipinos face in accessing mental healthcare, Riyan established her digital brand, \"Your Millennial Psychologist.\"\nThrough this platform, she breaks down complex psychological theories into digestible content, tackling taboo topics such as burnout, toxic family dynamics, and suicide prevention.\nHer approach is deeply rooted in Sikolohiyang Pilipino (Filipino Psychology), ensuring that her interventions resonate with the local cultural context.\n\nBeyond content creation, she is a leader in the field.\nShe serves as the Co-Chairperson of the LGBT Psychology Special Interest Group of the Psychological Association of the Philippines (PAP), advocating for gender-affirmative care.\nShe is also a core member of #MentalHealthPH, a nonprofit organization driving national awareness.\nRiyan is also the CEO of YMP Learning and Development Solutions, a consulting firm focused on organizational well-being.\n\nPerhaps her most powerful tool is her vulnerability; Riyan openly discusses her diagnosis of Bipolar II Disorder, using her lived experience to validate the struggles of her community.\nBy humanizing the therapist, she empowers thousands of Filipinos to seek help without shame, proving that even healers need healing.",
     "achievements": [
@@ -403,13 +447,22 @@
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/renee-louise-co/?originalSubdomain=ph"
       },
-      { "name": "Facebook", "url": "https://web.facebook.com/reneelco" },
+      {
+        "name": "Facebook",
+        "url": "https://web.facebook.com/reneelco"
+      },
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/renee.issance/?hl=en"
       },
-      { "name": "X", "url": "https://x.com/renee_co_" },
-      { "name": "Mail", "url": "mailto:Werk@theplayhouse.ph" }
+      {
+        "name": "X",
+        "url": "https://x.com/renee_co_"
+      },
+      {
+        "name": "Mail",
+        "url": "mailto:Werk@theplayhouse.ph"
+      }
     ],
     "bio": "Renee Louise Co represents the intersection of creative passion and uncompromising political will.\nBefore entering the legal profession, she served as the 39th Student Regent of the University of the Philippines (UP) System—the highest student official in the premier state university.\nHer term (2021-2022) was defined by unprecedented challenges: the remote learning crisis brought by COVID-19 and threats to the UP-DND Accord.\nRenee was at the forefront of these battles, negotiating with the Board of Regents to ensure that no student was left behind by the digital divide and fiercely opposing the red-tagging of student activists.\n\nHer leadership is rooted in a deep love for the arts and humanities.\nPrior to law school, she was an active figure in the campus literary scene and student governance through her political party, KAISA UP.\nShe believes that \"the mass line is not a straight line,\" often using her writing to explore the complexities of service and struggle.\n\nNow a full-fledged lawyer, Atty. Co continues her advocacy beyond the campus.\nShe focuses on human rights and public interest law, using her degree to empower marginalized sectors.\nShe remains a powerful voice for the youth, constantly reminding them that their education is a tool not just for personal gain, but for national survival.\nHer journey from student leader to lawyer serves as a blueprint for young Filipinos who aspire to turn their idealism into tangible, systemic change.",
     "achievements": [
