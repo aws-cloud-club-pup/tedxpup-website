@@ -17,7 +17,11 @@ const Partners = () => {
     { name: "Manila TEDx", src: "/sponsors/supporters/3-manila-tedx.webp" },
   ];
 
-  const partners = [
+  const mediaPartners = [
+    { name: "Pop", src: "/partners/Pop_logo_2021.png" },
+  ];
+
+  const orgPartners = [
     { name: "AWSCCPUP", src: "/partners/AWSCCPUP.webp" },
   ];
 
@@ -30,7 +34,7 @@ const Partners = () => {
 
       <div className="relative z-10 container max-w-7xl mx-auto flex flex-col items-center text-center space-y-16 md:space-y-24">
         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">
-          Our <span className="text-tedx-red">Sponsors</span>
+          Our <span className="text-tedx-red">Sponsors & Partners</span>
         </h2>
 
         {/* Gold Sponsors */}
@@ -96,7 +100,32 @@ const Partners = () => {
           </div>
         </div>
 
-        {/* Partners */}
+        {/* Media Partners */}
+        <div className="w-full space-y-6 md:space-y-8">
+          <div className="relative flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-white/20"></div>
+            </div>
+            <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Media Partner</p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-5 md:gap-6 lg:gap-8">
+            {mediaPartners.map((sponsor, i) => {
+              // First logo: rounded-full, last logo: rounded-[30px] (oval) with w-[170px]
+              let width = '';
+              let objectFit = 'object-contain';
+              return (
+                <img
+                  key={i}
+                  src={sponsor.src}
+                  alt={sponsor.name}
+                  className={`h-[70px] md:h-[85px] lg:h-[100px] ${width} ${objectFit} hover:scale-110 transition-transform duration-300`}
+                />
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Organization Partners */}
         <div className="w-full space-y-6 md:space-y-8">
           <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
@@ -105,7 +134,7 @@ const Partners = () => {
             <p className="relative px-4 md:px-6 bg-black text-base md:text-lg lg:text-xl font-medium tracking-wide text-gray-400 uppercase">Organization Partner</p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-6 lg:gap-8">
-            {partners.map((sponsor, i) => {
+            {orgPartners.map((sponsor, i) => {
               // First logo: rounded-full, last logo: rounded-[30px] (oval) with w-[170px]
               let borderRadius = '';
               let width = '';
