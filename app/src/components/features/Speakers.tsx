@@ -123,14 +123,14 @@ const Speakers = () => {
 
       <div className="relative z-10 container max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center"><span className="text-tedx-red">OUR</span> SPEAKERS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {speakersData.map((speaker, index) => {
             const isFocused = focusedCard === speaker.id;
             return (
               <ScrollReveal
                 key={speaker.id}
                 delay={`${(index % 5) * 0.03}s`}
-                className="w-full h-full"
+                className="w-full md:w-[calc(50%-12px)] lg:w-[calc(20%-19.2px)]"
               >
                 <Link
                   to={`/speakers/${speaker.id}`}
