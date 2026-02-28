@@ -3,14 +3,11 @@ import { useEffect, type FC } from 'react';
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 
-const NAV_LINKS = [
+const footerLinks = [
     { label: 'About', href: '#about' },
-    { label: 'Event Location', href: '#location' },
     { label: 'Speakers', href: '#speakers' },
-    { label: 'Program', href: '#program' },
-    { label: 'Creative Writing Entries', href: '#creative-writing' },
-    { label: 'Sponsors & Partners', href: '#sponsors-partners' },
-    { label: 'FAQs', href: '#faqs' },
+    { label: 'Creative Writing', href: '#creative-writing' },
+    { label: 'FAQs', href: '#faqs' }
 ];
 
 const Footer: FC = () => {
@@ -61,7 +58,7 @@ const Footer: FC = () => {
                     <div className="flex flex-col space-y-4">
                         <h3 className="text-white font-semibold text-base mb-2">NAVIGATION</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            {NAV_LINKS.map((link) => (
+                            {footerLinks.map((link) => (
                                 <li key={link.label}>
                                     <a href={link.href} className="hover:text-tedx-red transition-colors">
                                         {link.label}

@@ -18,12 +18,15 @@ const Navbar = () => {
     }
   };
 
-  const navLinks = ["ABOUT", "SPEAKERS", "PROGRAM", "CREATIVE WRITING ENTRIES", "FAQs"];
+  const navLinks = ["ABOUT", "SPEAKERS", "CREATIVE WRITING ENTRIES", "SPONSORS & PARTNERS", "FAQs"];
 
   // Map display names to section IDs
   const getLinkId = (link: string) => {
     if (link === "CREATIVE WRITING ENTRIES") {
       return "creative-writing";
+    }
+    if (link === "SPONSORS & PARTNERS") {
+      return "sponsors-partners";
     }
     return link.toLowerCase().replace(/ /g, "-");
   };
@@ -113,7 +116,7 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation (Centered) */}
-          <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8 absolute left-1/2 -translate-x-1/2 w-max">
             {navLinks.map((link) => {
               const linkId = getLinkId(link);
               return (
