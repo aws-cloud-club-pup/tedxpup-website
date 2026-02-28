@@ -8,11 +8,11 @@ const CTA = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-tedx-red/20 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="container max-w-4xl mx-auto px-6 relative z-10 text-center space-y-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tighter uppercase font-outfit drop-shadow-xl whitespace-nowrap">
-          NO UPCOMING EVENTS<span className="text-tedx-red">…FOR NOW</span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tighter uppercase font-outfit drop-shadow-xl md:whitespace-nowrap leading-tight">
+          NO UPCOMING EVENTS<br className="md:hidden" /><span className="text-tedx-red">…FOR NOW</span>
         </h2>
 
-        <div className="space-y-4 px-4 w-full">
+        <div className="space-y-4 px-4 w-full mt-4 md:mt-0">
           <p className="text-base md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">
             There are no events scheduled at the moment — but something exciting is always in the works.
           </p>
