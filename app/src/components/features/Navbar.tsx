@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Button from "../ui/Button";
+// import Button from "../ui/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,8 +131,8 @@ const Navbar = () => {
             })}
           </div>
 
-          {/* CTA Button (Right) */}
-          <div className="hidden lg:block">
+          {/* CTA Button (Right) - Hidden as event ended */}
+          {/* <div className="hidden lg:block">
             <Button
               href="https://ti.to/tedxpup/tedxpup2026"
               target="_blank"
@@ -141,7 +141,7 @@ const Navbar = () => {
             >
               Get Tickets
             </Button>
-          </div>
+          </div> */}
         </div>
       </nav>
 
@@ -160,7 +160,7 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <div className="pt-4 w-full max-w-xs mx-auto">
+          {/* <div className="pt-4 w-full max-w-xs mx-auto">
             <Button
               href="https://ti.to/tedxpup/tedxpup2026"
               target="_blank"
@@ -170,7 +170,7 @@ const Navbar = () => {
             >
               Get Tickets
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

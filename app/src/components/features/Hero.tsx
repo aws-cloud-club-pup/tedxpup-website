@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Button from "../ui/Button";
+// import Button from "../ui/Button";
 import { FiClock, FiMapPin } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -145,7 +145,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-3 w-full">
+          {/* <div className="flex flex-col items-center gap-3 w-full">
             <Button
               href="https://ti.to/tedxpup/tedxpup2026"
               target="_blank"
@@ -155,7 +155,7 @@ const Hero = () => {
             >
               GET TICKETS
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

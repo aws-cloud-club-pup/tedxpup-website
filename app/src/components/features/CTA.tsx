@@ -1,4 +1,5 @@
-import Button from "../ui/Button";
+// import Button from "../ui/Button";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const CTA = () => {
   return (
@@ -7,18 +8,51 @@ const CTA = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-tedx-red/20 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="container max-w-4xl mx-auto px-6 relative z-10 text-center space-y-8">
-        <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase font-outfit drop-shadow-xl">
-          Ready to Spark <span className="text-tedx-red">Change?</span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tighter uppercase font-outfit drop-shadow-xl whitespace-nowrap">
+          NO UPCOMING EVENTS<span className="text-tedx-red">…FOR NOW</span>
         </h2>
 
-        <p className="text-lg md:text-2xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">
-          Join us on{" "}
-          <span className="text-white font-bold">February 13, 2026</span> at{" "}
-          <span className="text-white font-bold">The Astbury</span> for an
-          unforgettable day of ideas, inspiration, and connection.
-        </p>
+        <div className="space-y-4 px-4 w-full">
+          <p className="text-base md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">
+            There are no events scheduled at the moment — but something exciting is always in the works.
+          </p>
+          <p className="text-base md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">
+            Stay connected and be the first to know what's coming next.
+          </p>
+        </div>
 
-        <div className="pt-8">
+        {/* Social Media Links */}
+        <div className="pt-1 flex justify-center items-center gap-6">
+          <a
+            href="https://www.facebook.com/TEDxPUP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-tedx-red transition-colors duration-300"
+            aria-label="TEDxPUP Facebook"
+          >
+            <FaFacebook size={32} />
+          </a>
+          <a
+            href="https://www.instagram.com/tedxpup/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-tedx-red transition-colors duration-300"
+            aria-label="TEDxPUP Instagram"
+          >
+            <FaInstagram size={32} />
+          </a>
+          <a
+            href="https://www.tiktok.com/@tedxpup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-tedx-red transition-colors duration-300"
+            aria-label="TEDxPUP TikTok"
+          >
+            <FaTiktok size={32} />
+          </a>
+        </div>
+
+        {/* <div className="pt-8">
           <Button
             href="https://ti.to/tedxpup/tedxpup2026"
             target="_blank"
@@ -31,7 +65,7 @@ const CTA = () => {
 
         <p className="text-sm text-gray-400 mt-6">
           Limited seats available. Don't miss out!
-        </p>
+        </p> */}
       </div>
     </section>
   );
