@@ -18,7 +18,7 @@ const Navbar = () => {
     }
   };
 
-  const navLinks = ["ABOUT", "SPEAKERS", "CREATIVE WRITING ENTRIES", "SPONSORS & PARTNERS", "FAQs"];
+  const navLinks = ["ABOUT","EVENTS", "SPEAKERS", "CREATIVE WRITING ENTRIES", "SPONSORS & PARTNERS", "FAQs"];
 
   // Map display names to section IDs
   const getLinkId = (link: string) => {
@@ -116,7 +116,7 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation (Centered) */}
-          <div className="hidden lg:flex items-center gap-4 xl:gap-8 absolute left-1/2 -translate-x-1/2 w-max">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6 absolute left-1/2 -translate-x-1/2 w-max">
             {navLinks.map((link) => {
               const linkId = getLinkId(link);
               return (
