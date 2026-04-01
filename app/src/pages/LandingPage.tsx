@@ -1,7 +1,7 @@
 import Navbar from "../components/features/Navbar";
 import Hero from "../components/features/Hero";
 import About from "../components/features/About";
-// import Location from "../components/features/Location";
+import Events from "../components/features/Events"; 
 import Speakers from "../components/features/Speakers";
 // import ProgramFlow from "../components/features/ProgramFlow";
 import CreativeWriting from "../components/features/CreativeWriting";
@@ -33,7 +33,7 @@ const LandingPage = () => {
       <main className="flex flex-col">
         <Hero />
         <About />
-        {/* <Location /> */}
+        <Events />
         <Speakers />
         {/* <ProgramFlow /> */}
         <CreativeWriting />
