@@ -56,9 +56,6 @@ const CreativeWritingDetail = () => {
 
       <main className="flex-1 relative overflow-hidden">
         <XBackground />
-        {/* Background Elements */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-tedx-red/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="relative z-10 container max-w-4xl mx-auto px-6 py-32 flex flex-col gap-8">
 

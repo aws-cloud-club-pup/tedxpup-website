@@ -3,12 +3,24 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const CTA = () => {
   return (
-    <section className="py-24 bg-gradient-to-t from-tedx-red/20 to-black relative overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-tedx-red/20 blur-[100px] rounded-full pointer-events-none" />
+    <section className="py-16 md:py-24 bg-black relative overflow-hidden">
+      {/* Background layers */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <img
+          src="/faq/tedxpup_bglayer3.webp"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover grayscale contrast-[1.2] brightness-[0.9]"
+          style={{ opacity: 0.68, mixBlendMode: "screen" }}
+        />
+        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60" />
+        <div className="absolute inset-0 opacity-[0.06] mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")` }} />
+      </div>
 
-      <div className="container max-w-4xl mx-auto px-6 relative z-10 text-center space-y-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tighter uppercase font-outfit drop-shadow-xl md:whitespace-nowrap leading-tight">
+      <div className="container max-w-4xl mx-auto px-6 relative z-10 text-center space-y-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tighter uppercase drop-shadow-xl lg:whitespace-nowrap leading-tight">
           NO UPCOMING EVENTS<br className="md:hidden" /><span className="text-tedx-red">…FOR NOW</span>
         </h2>
 

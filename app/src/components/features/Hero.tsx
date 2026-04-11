@@ -52,7 +52,7 @@ const Hero = () => {
                 scale: { duration: 8, ease: "linear" },
               }}
               className="absolute inset-0 bg-cover bg-center grayscale contrast-110 brightness-[0.65]"
-              style={{ backgroundImage: `url(${slide})` }}
+              style={{ backgroundImage: `url(${slide})`, contain: "strict" }}
             />
           </motion.div>
         ))}
@@ -62,14 +62,14 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
       </div>
 
-      {/* Content — centered, no pt offset needed since items-center handles it */}
-      <div className="w-full relative z-10 flex flex-col items-center justify-center text-center px-4 -mt-14 sm:-mt-16 md:-mt-20">
+      {/* Content */}
+      <div className="w-full relative z-20 flex flex-col items-center justify-center text-center px-4 -mt-14 sm:-mt-16 md:-mt-20" style={{ isolation: "isolate" }}>
 
         {/* Readability radial gradient */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[700px] bg-[radial-gradient(closest-side,rgba(0,0,0,0.7)_0%,transparent_100%)] pointer-events-none blur-2xl" />
 
         {/* Tagline */}
-        <p className="text-gray-400 text-xs sm:text-sm md:text-base font-medium italic max-w-xs sm:max-w-sm md:max-w-none">
+        <p className="text-gray-300 text-sm md:text-base font-medium italic max-w-xs sm:max-w-sm md:max-w-none">
           The Polytechnic University of the Philippines–Manila joins the global stage
         </p>
 
@@ -77,7 +77,7 @@ const Hero = () => {
         <div className="h-3 sm:h-4 md:h-5" />
 
         {/* Welcome to */}
-        <p className="text-white/55 text-xs sm:text-sm font-medium tracking-[0.25em] uppercase mb-3 sm:mb-4">
+        <p className="text-white/75 text-xs sm:text-sm md:text-base font-medium tracking-[0.25em] uppercase mb-3 sm:mb-4">
           Welcome to
         </p>
 
@@ -85,16 +85,21 @@ const Hero = () => {
         <motion.img
           src={tedxpupLogo}
           alt="TEDxPUP"
-          className="h-12 sm:h-16 md:h-24 w-auto object-contain"
+          className="h-14 sm:h-20 md:h-28 w-auto object-contain"
           animate={{
             filter: [
-              "drop-shadow(0 0 0px rgba(230, 43, 31, 0))",
-              "drop-shadow(0 0 14px rgba(230, 43, 31, 0.4))",
-              "drop-shadow(0 0 0px rgba(230, 43, 31, 0))",
+              "drop-shadow(0 0 4px rgba(230, 43, 31, 0.15))",
+              "drop-shadow(0 0 10px rgba(230, 43, 31, 0.3))",
+              "drop-shadow(0 0 4px rgba(230, 43, 31, 0.15))",
             ],
           }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         />
+
+        {/* Ideas Worth Sharing */}
+        <p className="text-white/65 text-xs sm:text-sm font-medium tracking-[0.3em] uppercase mt-3">
+          Ideas Worth Spreading
+        </p>
       </div>
     </section>
   );

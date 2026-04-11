@@ -108,22 +108,36 @@ const Speakers = () => {
 
   return (
 
-    <section id="speakers" className="relative py-24 px-6 bg-black text-white overflow-hidden">
-      {/* Abstract Side Gradients - Natural Fade */}
-      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[70%] bg-[radial-gradient(ellipse_at_center,_rgba(230,43,31,0.25)_0%,_rgba(0,0,0,0)_70%)] blur-[80px] pointer-events-none mix-blend-screen" />
-      <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[70%] bg-[radial-gradient(ellipse_at_center,_rgba(230,43,31,0.25)_0%,_rgba(0,0,0,0)_70%)] blur-[80px] pointer-events-none mix-blend-screen" />
-
-      {/* Noise Texture */}
-      <div
-        className="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
-        }}
-      />
+    <section id="speakers" className="relative py-16 md:py-24 px-6 bg-black text-white overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center grayscale contrast-[1.8] brightness-[1.1]"
+          style={{ backgroundImage: "url('/speakers/tedxpup_bg3.webp')", opacity: 0.55 }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50" />
+        {/* Grain */}
+        <div
+          className="absolute inset-0 opacity-[0.06] mix-blend-overlay pointer-events-none"
+          style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")` }}
+        />
+      </div>
 
       <div className="relative z-10 container max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tighter text-center"><span className="text-tedx-red">OUR</span> SPEAKERS</h2>
-        <div className="flex flex-wrap justify-center gap-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-8 tracking-tighter text-center"><span className="text-tedx-red">SPEA</span>KERS</h2>
+
+        <ScrollReveal>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 pb-6 mb-6 border-b border-white/20">
+            <img
+              src="/events/tedxlafi_logo.webp"
+              alt="TEDxPUP Love at First Idea"
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+        </ScrollReveal>
+
+        <div className="flex flex-wrap justify-center gap-4 md:gap-5">
           {speakersData.map((speaker, index) => {
             const isFocused = focusedCard === speaker.id;
             return (
@@ -142,18 +156,20 @@ const Speakers = () => {
                   <img
                     src={speaker.image}
                     alt={speaker.name}
+                    loading="lazy"
+                    decoding="async"
                     className={`object-cover w-full h-full transition-all duration-500 ${isFocused ? 'scale-105 grayscale-0 md:scale-100 md:grayscale md:group-hover:scale-105 md:group-hover:grayscale-0' : 'grayscale md:group-hover:scale-105 md:group-hover:grayscale-0'
                       }`}
                   />
                   <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/90 to-transparent">
                     <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isFocused ? 'max-h-40 md:max-h-0 md:group-hover:max-h-40' : 'max-h-0 md:group-hover:max-h-40'
                       }`}>
-                      <p className="text-lg text-gray-200 mb-4 line-clamp-4 leading-relaxed font-light">
+                      <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 line-clamp-4 leading-relaxed font-light">
                         {speaker.role}
                       </p>
                     </div>
-                    <h3 className="text-2xl font-bold">{speaker.name}</h3>
-                    <p className="text-tedx-red font-xl">{speaker.pronouns}</p>
+                    <h3 className="text-xl sm:text-2xl font-bold">{speaker.name}</h3>
+                    <p className="text-tedx-red text-sm sm:text-base">{speaker.pronouns}</p>
                   </div>
                 </Link>
               </ScrollReveal>
