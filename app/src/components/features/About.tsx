@@ -53,22 +53,24 @@ const About = () => {
   const prev = () => goTo((active - 1 + slides.length) % slides.length);
 
   return (
-    <section
+    <motion.section
       id="about"
-      className="relative bg-black text-white overflow-hidden py-24 px-6"
+      layout
+      className="relative bg-black text-white overflow-hidden py-16 md:py-24 px-6"
+      transition={{ layout: { duration: 0.5, ease: "easeInOut" } }}
     >
       {/* Background */}
       <div
-        className="absolute inset-0 bg-center bg-cover pointer-events-none opacity-[0.08] grayscale"
+        className="absolute inset-0 bg-center bg-cover pointer-events-none opacity-[0.14] grayscale"
         style={{ backgroundImage: `url(${aboutBackground})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60 pointer-events-none" />
 
       <ScrollReveal>
-        <div className="relative container max-w-6xl mx-auto z-10">
+        <div className="relative container max-w-7xl mx-auto z-10">
 
           {/* Grid: image left, text right on desktop — stacked on mobile */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
             {/* Image */}
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
@@ -81,6 +83,8 @@ const About = () => {
                   animate={{ opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" as const } }}
                   exit={{ opacity: 0, scale: 0.97, transition: { duration: 0.35, ease: "easeIn" as const } }}
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </AnimatePresence>
               <div className="absolute inset-0 rounded-2xl ring-1 ring-tedx-red/25 shadow-[0_0_40px_rgba(230,43,31,0.1)] pointer-events-none" />
@@ -88,7 +92,7 @@ const About = () => {
             </div>
 
             {/* Text */}
-            <div className="flex flex-col justify-center">
+            <motion.div layout transition={{ layout: { duration: 0.5, ease: "easeInOut" } }} className="flex flex-col justify-center">
               <AnimatePresence mode="wait" custom={direction}>
                 <motion.div
                   key={active}
@@ -96,32 +100,29 @@ const About = () => {
                   initial={{ opacity: 0, x: direction > 0 ? 30 : -30 }}
                   animate={{ opacity: 1, x: 0, transition: { duration: 0.45, ease: "easeOut" as const } }}
                   exit={{ opacity: 0, x: direction > 0 ? -30 : 30, transition: { duration: 0.3, ease: "easeIn" as const } }}
-                  className="space-y-5"
+                  className="space-y-4"
                 >
-                  {/* Label line */}
+                  {/* About + Logo */}
                   <div className="flex items-center gap-3">
-                    <div className="w-6 h-[2px] bg-tedx-red" />
-                    <span className="text-tedx-red text-xs uppercase tracking-[0.2em] font-medium">
-                      About
-                    </span>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tighter uppercase">About</h2>
+                    <img
+                      src={slides[active].logo}
+                      alt={slides[active].logoAlt}
+                      className="h-7 sm:h-8 md:h-10 w-auto"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
 
-                  {/* Logo */}
-                  <img
-                    src={slides[active].logo}
-                    alt={slides[active].logoAlt}
-                    className="h-8 md:h-10 w-auto"
-                  />
-
                   {/* Body */}
-                  <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                  <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
                     {slides[active].content}
                   </p>
                 </motion.div>
               </AnimatePresence>
 
               {/* Controls */}
-              <div className="flex items-center justify-between mt-10">
+              <div className="flex items-center justify-between mt-6 md:mt-8">
                 {/* Dots */}
                 <div className="flex gap-2">
                   {slides.map((_, i) => (
@@ -151,12 +152,12 @@ const About = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
           </div>
         </div>
       </ScrollReveal>
-    </section>
+    </motion.section>
   );
 };
 

@@ -11,9 +11,10 @@ const Navbar = () => {
 
   const handleLogoClick = () => {
     if (location.pathname === "/") {
+      navigate("/", { replace: true });
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      navigate("/");
+      navigate("/", { replace: true });
       window.scrollTo(0, 0);
     }
   };

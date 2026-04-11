@@ -28,21 +28,23 @@ const Partners = () => {
   ];
 
   return (
-    <section id="sponsors-partners" className="relative py-24 px-6 bg-black text-white overflow-hidden">
+    <section id="sponsors-partners" className="relative py-16 md:py-24 px-6 bg-black text-white overflow-hidden">
       {/* Background X */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
-        <img src="/sponsors/x.webp" alt="" className="w-full h-full object-contain" />
+        <img src="/sponsors/x.webp" alt="" className="w-full h-full object-contain grayscale contrast-[1.8] brightness-[4] opacity-80" />
       </div>
+      {/* Grain */}
+      <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.06] mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")` }} />
 
-      <div className="relative z-10 container max-w-7xl mx-auto flex flex-col items-center text-center space-y-16 md:space-y-24">
+      <div className="relative z-10 container max-w-7xl mx-auto flex flex-col items-center text-center space-y-10 md:space-y-14">
         <ScrollReveal>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">
-            Our <span className="text-tedx-red">Sponsors & Partners</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-white uppercase">
+            <span className="text-tedx-red">Sponsors</span> & Partners
           </h2>
         </ScrollReveal>
 
         {/* Gold Sponsors */}
-        <div className="w-full space-y-6 md:space-y-8">
+        <div className="w-full space-y-4 md:space-y-6">
           <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
@@ -55,6 +57,8 @@ const Partners = () => {
                 <img
                   src={sponsor.src}
                   alt={sponsor.name}
+                  loading="lazy"
+                  decoding="async"
                   className={`${i != 0 ? 'h-[70px] md:h-[85px] lg:h-[100px]' : 'h-[50px] md:h-[65px] lg:h-[80px]'} object-contain hover:scale-110 transition-transform duration-300`}
                 />
               </ScrollReveal>
@@ -63,7 +67,7 @@ const Partners = () => {
         </div>
 
         {/* Bronze Sponsors */}
-        <div className="w-full space-y-6 md:space-y-8">
+        <div className="w-full space-y-4 md:space-y-6">
           <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
@@ -84,7 +88,7 @@ const Partners = () => {
         </div>
 
         {/* Supporters */}
-        <div className="w-full space-y-6 md:space-y-8">
+        <div className="w-full space-y-4 md:space-y-6">
           <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
@@ -108,7 +112,7 @@ const Partners = () => {
         </div>
 
         {/* Media Partners */}
-        <div className="w-full space-y-6 md:space-y-8">
+        <div className="w-full space-y-4 md:space-y-6">
           <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
@@ -134,7 +138,7 @@ const Partners = () => {
         </div>
 
         {/* Organization Partners */}
-        <div className="w-full space-y-6 md:space-y-8">
+        <div className="w-full space-y-4 md:space-y-6">
           <ScrollReveal className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>

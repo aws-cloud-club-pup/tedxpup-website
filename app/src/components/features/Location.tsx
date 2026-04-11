@@ -104,7 +104,7 @@ const Location = () => {
           {/* Text Content */}
           <ScrollReveal className="lg:w-1/2 text-left space-y-8 font-light relative">
             {/* Title with stylized ampersand */}
-            <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tighter uppercase relative z-10 font-outfit">
+            <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tighter uppercase relative z-10">
               {" "}
               <span className="text-tedx-red text-4xl md:text-5xl">Event</span>{" "}
               Location

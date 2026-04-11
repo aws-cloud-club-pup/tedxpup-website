@@ -4,7 +4,7 @@ interface ScrollRevealProps {
   children: ReactNode;
   className?: string;
   threshold?: number;
-  delay?: string; // e.g., "0s", "0.2s"
+  delay?: string;
 }
 
 const ScrollReveal = ({
@@ -14,6 +14,7 @@ const ScrollReveal = ({
   delay = "0s",
 }: ScrollRevealProps) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [settled, setSettled] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,6 +23,9 @@ const ScrollReveal = ({
         if (entry.isIntersecting) {
           setIsVisible(true);
           observer.unobserve(entry.target);
+          // Remove will-change after animation settles to free GPU memory
+          const delay500 = setTimeout(() => setSettled(true), 600);
+          return () => clearTimeout(delay500);
         }
       },
       {
@@ -30,23 +34,16 @@ const ScrollReveal = ({
       },
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
   }, [threshold]);
 
   return (
     <div
       ref={ref}
-      className={`transition-all duration-500 ease-out transform will-change-transform ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      } ${className}`}
+      className={`transition-all duration-500 ease-out transform ${
+        !settled ? "will-change-transform" : ""
+      } ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} ${className}`}
       style={{ transitionDelay: delay }}
     >
       {children}

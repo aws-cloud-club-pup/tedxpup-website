@@ -24,6 +24,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Side vignette — dark red on left and right edges like TEDxAmsterdam */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.86;
+  background:
+    linear-gradient(to right, rgba(122,0,0,0.35) 0%, rgba(61,0,0,0.1) 4%, transparent 8%),
+    linear-gradient(to left,  rgba(122,0,0,0.35) 0%, rgba(61,0,0,0.1) 4%, transparent 8%);
+}
+
 html,
 body {
   background-color: #000000;
@@ -32,6 +45,17 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeSpeed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* --- 1. WebKit Browsers (Chrome, Edge, Safari) --- */
