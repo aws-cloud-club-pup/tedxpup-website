@@ -101,18 +101,20 @@ const Events = () => {
 
 				{/* Scrolling photo strip */}
 				<ScrollReveal>
-					<div className="relative overflow-hidden rounded-xl">
+					<div className="relative overflow-x-clip rounded-xl py-3 -my-3">
 						<div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
 						<div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 						<div className="events-carousel-track flex gap-3 w-max">
 							{loopImages.map((image, index) => (
-								<div key={`${image}-${index}`} className="shrink-0 w-[160px] sm:w-[200px] md:w-[260px]">
-									<img
-										src={image}
-										alt={`Moment ${((index % momentImages.length) + 1).toString()}`}
-										className="w-full aspect-[4/3] object-cover rounded-lg"
-										loading="lazy"
-									/>
+								<div key={`${image}-${index}`} className="shrink-0 w-[75vw] sm:w-[200px] md:w-[260px] group/tile transition-transform duration-300 hover:-translate-y-2">
+									<div className="relative rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 group-hover/tile:border-tedx-red group-hover/tile:shadow-[0_0_20px_rgba(230,43,31,0.25)]">
+										<img
+											src={image}
+											alt={`Moment ${((index % momentImages.length) + 1).toString()}`}
+											className="w-full aspect-[4/3] object-cover"
+											loading="lazy"
+										/>
+									</div>
 								</div>
 							))}
 						</div>
@@ -195,6 +197,9 @@ const Events = () => {
 				.events-carousel-track {
 					animation: events-scroll 70s linear infinite;
 					will-change: transform;
+				}
+				.events-carousel-track:hover {
+					animation-play-state: paused;
 				}
 				.events-grain::after {
 					content: '';

@@ -87,7 +87,7 @@ const About = () => {
                   decoding="async"
                 />
               </AnimatePresence>
-              <div className="absolute inset-0 rounded-2xl ring-1 ring-tedx-red/25 shadow-[0_0_40px_rgba(230,43,31,0.1)] pointer-events-none" />
+              <div className="absolute inset-0 rounded-2xl border-2 border-tedx-red shadow-[0_0_40px_rgba(230,43,31,0.15)] pointer-events-none" />
               <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
             </div>
 
