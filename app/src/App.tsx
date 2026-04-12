@@ -12,12 +12,39 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time (or wait for resources)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500); // 2.5s duration to ensure logo is seen
-
+    }, 2500);
     return () => clearTimeout(timer);
+  }, []);
+
+  // Smooth scroll for all hash nav links (e.g. /#about, #about)
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      if (!anchor) return;
+
+      const href = anchor.getAttribute('href');
+      if (!href) return;
+
+      // Match /#section or #section (with or without leading slash)
+      const match = href.match(/^(?:https?:\/\/[^/]+)?\/?(#.+)$/) ||
+                    href.match(/^(#.+)$/);
+      if (!match) return;
+
+      const hash = match[1]; // e.g. "#about"
+      const id = hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.pushState(null, '', `/#${id}`);
+    };
+
+    document.addEventListener('click', handleClick, { passive: false });
+    return () => document.removeEventListener('click', handleClick);
   }, []);
 
   return (

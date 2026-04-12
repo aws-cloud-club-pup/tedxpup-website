@@ -19,9 +19,9 @@ const CreativeWritingDetail = () => {
     navigate('/');
   }, [pieceIndex, navigate]);
 
-  // Scroll to top on mount
+  // Scroll to top on mount — instant so it doesn't animate up from bottom
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, []);
 
   // Store piece index for scroll restoration whenever leaving this page

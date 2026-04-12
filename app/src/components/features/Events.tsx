@@ -55,7 +55,7 @@ const Events = () => {
 	}, []);
 
 	return (
-		<section id="events" className="relative py-16 md:py-24 px-6 bg-black text-white overflow-hidden">
+		<section id="events" className="relative pt-16 pb-16 md:pt-16 md:pb-24 px-6 bg-black text-white overflow-hidden scroll-mt-16 lg:scroll-mt-20">
 
 			{/* Background layers */}
 			<div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -194,8 +194,14 @@ const Events = () => {
 					animation: events-scroll 70s linear infinite;
 					will-change: transform;
 				}
-				.events-carousel-track:hover {
+				.events-carousel-track:hover,
+				.events-carousel-track:focus-within {
 					animation-play-state: paused;
+				}
+				@media (prefers-reduced-motion: reduce) {
+					.events-carousel-track {
+						animation: none;
+					}
 				}
 				.events-grain::after {
 					content: '';

@@ -68,8 +68,8 @@ const Navbar = () => {
       setActiveSection(current);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]); // Update dependency
 
@@ -154,16 +154,21 @@ const Navbar = () => {
         className={`fixed inset-0 bg-black z-40 flex flex-col pt-24 pb-8 overflow-y-auto duration-500 lg:hidden ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}
       >
         <div className="flex flex-col items-center space-y-6 px-6 w-full min-h-0">
-          {navLinks.map((link) => (
-            <a
-              key={link}
-              href={`/#${getLinkId(link)}`}
-              onClick={() => setIsOpen(false)}
-              className="text-white text-xl font-semibold hover:text-tedx-red transition-colors text-center w-full py-2 border-b border-white/10 last:border-0"
-            >
-              {link}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const linkId = getLinkId(link);
+            return (
+              <a
+                key={link}
+                href={`/#${linkId}`}
+                onClick={() => setIsOpen(false)}
+                className={`text-xl font-semibold transition-colors text-center w-full py-2 border-b border-white/10 last:border-0 ${
+                  activeSection === linkId ? "text-tedx-red" : "text-white hover:text-tedx-red"
+                }`}
+              >
+                {link}
+              </a>
+            );
+          })}
           {/* <div className="pt-4 w-full max-w-xs mx-auto">
             <Button
               href="https://ti.to/tedxpup/tedxpup2026"

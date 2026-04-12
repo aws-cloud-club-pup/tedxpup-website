@@ -34,25 +34,20 @@ const Hero = () => {
           <motion.div
             key={index}
             initial={false}
-            animate={{
-              opacity: index === currentSlide ? 1 : 0,
-            }}
-            transition={{
-              opacity: { duration: 2.5, ease: "easeInOut" },
-            }}
+            animate={{ opacity: index === currentSlide ? 1 : 0 }}
+            transition={{ opacity: { duration: 2.5, ease: "easeInOut" } }}
             className="absolute inset-0"
+            style={{ willChange: index === currentSlide ? "opacity" : "auto" }}
           >
             <motion.div
-              animate={
-                index === currentSlide
-                  ? { scale: 1.08 }
-                  : { scale: 1.0 }
-              }
-              transition={{
-                scale: { duration: 8, ease: "linear" },
-              }}
+              animate={index === currentSlide ? { scale: 1.08 } : { scale: 1.0 }}
+              transition={{ scale: { duration: 8, ease: "linear" } }}
               className="absolute inset-0 bg-cover bg-center grayscale contrast-110 brightness-[0.65]"
-              style={{ backgroundImage: `url(${slide})`, contain: "strict" }}
+              style={{
+                backgroundImage: `url(${slide})`,
+                contain: "strict",
+                willChange: index === currentSlide ? "transform" : "auto",
+              }}
             />
           </motion.div>
         ))}

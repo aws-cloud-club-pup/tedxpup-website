@@ -22,6 +22,8 @@ const LoadingScreen = () => {
                 <img
                     src={logo}
                     alt="TEDxPUP Loading"
+                    fetchPriority="high"
+                    decoding="sync"
                     className="w-[101px] md:w-[151px] h-auto object-contain"
                 />
             </motion.div>
