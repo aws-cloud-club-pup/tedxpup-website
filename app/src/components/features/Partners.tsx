@@ -28,7 +28,7 @@ const Partners = () => {
   ];
 
   return (
-    <section id="sponsors-partners" className="relative py-16 md:py-24 px-6 bg-black text-white overflow-hidden">
+    <section id="sponsors-partners" className="relative pt-16 pb-16 md:pt-16 md:pb-24 px-6 bg-black text-white overflow-hidden scroll-mt-16 lg:scroll-mt-20">
       {/* Background X */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
         <img src="/sponsors/x.webp" alt="" className="w-full h-full object-contain grayscale contrast-[1.8] brightness-[4] opacity-80" />
@@ -80,6 +80,8 @@ const Partners = () => {
                 <img
                   src={sponsor.src}
                   alt={sponsor.name}
+                  loading="lazy"
+                  decoding="async"
                   className="h-[70px] md:h-[85px] lg:h-[100px] object-contain hover:scale-110 transition-transform duration-300"
                 />
               </ScrollReveal>

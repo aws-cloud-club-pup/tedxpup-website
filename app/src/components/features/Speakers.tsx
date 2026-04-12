@@ -108,7 +108,7 @@ const Speakers = () => {
 
   return (
 
-    <section id="speakers" className="relative py-16 md:py-24 px-6 bg-black text-white overflow-hidden">
+    <section id="speakers" className="relative pt-16 pb-16 md:pt-16 md:pb-24 px-6 bg-black text-white overflow-hidden scroll-mt-16 lg:scroll-mt-20">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div

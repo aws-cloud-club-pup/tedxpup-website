@@ -37,16 +37,38 @@ body::after {
     linear-gradient(to left,  rgba(122,0,0,0.35) 0%, rgba(61,0,0,0.1) 4%, transparent 8%);
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
   color-scheme: dark;
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
-  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior-y: none;
+}
+
+/* GPU compositing hint for animated elements */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* iOS momentum scrolling for scrollable containers */
+[class*="overflow-"] {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent text from being too small on mobile zoom */
+input, select, textarea {
+  font-size: 16px;
 }
 
 @media (prefers-reduced-motion: reduce) {

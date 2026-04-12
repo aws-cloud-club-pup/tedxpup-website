@@ -56,7 +56,7 @@ const About = () => {
     <motion.section
       id="about"
       layout
-      className="relative bg-black text-white overflow-hidden py-16 md:py-24 px-6"
+      className="relative bg-black text-white overflow-hidden pt-[72px] pb-16 md:pt-[72px] md:pb-24 px-6 scroll-mt-16 lg:scroll-mt-20"
       transition={{ layout: { duration: 0.5, ease: "easeInOut" } }}
     >
       {/* Background */}

@@ -32,7 +32,7 @@ const CreativeWriting = () => {
   }, []);
 
   return (
-    <section id="creative-writing" className="relative py-16 md:py-24 px-6 bg-black text-white overflow-hidden min-h-screen">
+    <section id="creative-writing" className="relative pt-16 pb-16 md:pt-16 md:pb-24 px-6 bg-black text-white overflow-hidden min-h-screen scroll-mt-16 lg:scroll-mt-20">
 
       {/* Background layers */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
