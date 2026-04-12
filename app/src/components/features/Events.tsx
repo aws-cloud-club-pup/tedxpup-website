@@ -129,28 +129,25 @@ const Events = () => {
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
 							<article
 								data-event-id="love-at-first-idea"
-								className={`group relative p-3 rounded-2xl border bg-white/5 backdrop-blur-md transition-all duration-500 ease-in-out hover:bg-black hover:border-tedx-red hover:shadow-[0_0_30px_rgba(255,45,45,0.5)] ${
-									focusedCard === 'love-at-first-idea'
+								className={`group relative p-3 rounded-2xl border bg-white/5 backdrop-blur-md transition-all duration-500 ease-in-out hover:bg-black hover:border-tedx-red hover:shadow-[0_0_30px_rgba(255,45,45,0.5)] ${focusedCard === 'love-at-first-idea'
 										? 'border-tedx-red shadow-[0_0_30px_rgba(255,45,45,0.5)] md:border-white/10 md:shadow-none md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]'
 										: 'border-white/10 md:hover:border-tedx-red md:hover:shadow-[0_0_30px_rgba(255,45,45,0.5)]'
-								}`}
+									}`}
 							>
 								<div className="flex flex-col gap-4">
 									<div className="overflow-hidden rounded-xl h-48">
 										<img
 											src="/events/event_poster.webp"
 											alt="Love at First Idea"
-											className={`w-full h-full object-cover object-[50%_25%] transition-all duration-500 ${
-												focusedCard === 'love-at-first-idea'
+											className={`w-full h-full object-cover object-[50%_25%] transition-all duration-500 ${focusedCard === 'love-at-first-idea'
 													? 'scale-105 md:scale-100 md:group-hover:scale-105'
 													: 'md:group-hover:scale-105'
-											}`}
+												}`}
 										/>
 									</div>
 									<div className="px-2 pb-2 space-y-2">
-										<h4 className={`text-lg sm:text-xl font-bold leading-snug transition-colors duration-300 ${
-											focusedCard === 'love-at-first-idea' ? 'text-tedx-red md:text-white md:group-hover:text-tedx-red' : 'group-hover:text-tedx-red'
-										}`}>
+										<h4 className={`text-lg sm:text-xl font-bold leading-snug transition-colors duration-300 ${focusedCard === 'love-at-first-idea' ? 'text-tedx-red md:text-white md:group-hover:text-tedx-red' : 'group-hover:text-tedx-red'
+											}`}>
 											Love at First Idea
 										</h4>
 										<p className="text-gray-400 text-xs">Feb 13, 2026 · The Astbury, Makati City</p>
@@ -168,11 +165,10 @@ const Events = () => {
 												target="_blank"
 												rel="noopener noreferrer"
 												aria-label="View Facebook post"
-												className={`inline-flex h-7 w-7 items-center justify-center rounded-full text-white border transition-all ${
-													focusedCard === 'love-at-first-idea'
+												className={`inline-flex h-7 w-7 items-center justify-center rounded-full text-white border transition-all ${focusedCard === 'love-at-first-idea'
 														? 'bg-tedx-red border-tedx-red shadow-[0_0_16px_rgba(230,43,31,0.7)] scale-105 md:bg-black md:border-white/20 md:shadow-none md:scale-100 md:group-hover:bg-tedx-red md:group-hover:border-tedx-red md:group-hover:scale-105 md:group-hover:shadow-[0_0_16px_rgba(230,43,31,0.7)]'
 														: 'bg-black border-white/20 group-hover:bg-tedx-red group-hover:border-tedx-red group-hover:scale-105 group-hover:shadow-[0_0_16px_rgba(230,43,31,0.7)]'
-												}`}
+													}`}
 											>
 												<svg viewBox="0 0 24 24" width="12" height="12" fill="none" aria-hidden="true" className="transition-transform origin-center group-hover:rotate-45">
 													<path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
