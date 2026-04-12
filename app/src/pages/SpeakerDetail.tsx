@@ -1,6 +1,7 @@
 import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect, useCallback } from 'react';
 import Navbar from '../components/features/Navbar';
+import XBackground from '../components/ui/XBackground';
 import speakersData from '../data/speakers.json';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaGlobe, FaSquareXTwitter, FaYoutube } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
@@ -79,7 +80,8 @@ const SpeakerDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-tedx-red selection:text-white font-sans">
+    <div className="relative min-h-screen bg-black text-white selection:bg-tedx-red selection:text-white font-sans">
+      <XBackground />
       <Navbar />
 
       <main className="container max-w-7xl mx-auto px-6 py-32 flex flex-col md:flex-row gap-12 items-start">
@@ -89,7 +91,7 @@ const SpeakerDetail = () => {
         </button>
 
         <div className="w-full md:w-1/3 aspect-[3/4] bg-gray-900 rounded-xl overflow-hidden border border-white/10">
-          <img src={speaker.image} alt={speaker.name} className="w-full h-full object-cover" />
+          <img src={speaker.image} alt={speaker.name} loading="eager" decoding="async" className="w-full h-full object-cover" />
         </div>
 
         <div className="w-full md:w-2/3 space-y-6">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Button from "../ui/Button";
+// import Button from "../ui/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,19 +11,23 @@ const Navbar = () => {
 
   const handleLogoClick = () => {
     if (location.pathname === "/") {
+      navigate("/", { replace: true });
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      navigate("/");
+      navigate("/", { replace: true });
       window.scrollTo(0, 0);
     }
   };
 
-  const navLinks = ["ABOUT", "SPEAKERS", "PROGRAM", "CREATIVE WRITING ENTRIES", "FAQs"];
+  const navLinks = ["ABOUT","EVENTS", "SPEAKERS", "CREATIVE WRITING ENTRIES", "SPONSORS & PARTNERS", "FAQs"];
 
   // Map display names to section IDs
   const getLinkId = (link: string) => {
     if (link === "CREATIVE WRITING ENTRIES") {
       return "creative-writing";
+    }
+    if (link === "SPONSORS & PARTNERS") {
+      return "sponsors-partners";
     }
     return link.toLowerCase().replace(/ /g, "-");
   };
@@ -64,8 +68,8 @@ const Navbar = () => {
       setActiveSection(current);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]); // Update dependency
 
@@ -113,7 +117,7 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation (Centered) */}
-          <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6 absolute left-1/2 -translate-x-1/2 w-max">
             {navLinks.map((link) => {
               const linkId = getLinkId(link);
               return (
@@ -131,8 +135,8 @@ const Navbar = () => {
             })}
           </div>
 
-          {/* CTA Button (Right) */}
-          <div className="hidden lg:block">
+          {/* CTA Button (Right) - Hidden as event ended */}
+          {/* <div className="hidden lg:block">
             <Button
               href="https://ti.to/tedxpup/tedxpup2026"
               target="_blank"
@@ -141,7 +145,7 @@ const Navbar = () => {
             >
               Get Tickets
             </Button>
-          </div>
+          </div> */}
         </div>
       </nav>
 
@@ -150,17 +154,22 @@ const Navbar = () => {
         className={`fixed inset-0 bg-black z-40 flex flex-col pt-24 pb-8 overflow-y-auto duration-500 lg:hidden ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}
       >
         <div className="flex flex-col items-center space-y-6 px-6 w-full min-h-0">
-          {navLinks.map((link) => (
-            <a
-              key={link}
-              href={`/#${getLinkId(link)}`}
-              onClick={() => setIsOpen(false)}
-              className="text-white text-xl font-semibold hover:text-tedx-red transition-colors text-center w-full py-2 border-b border-white/10 last:border-0"
-            >
-              {link}
-            </a>
-          ))}
-          <div className="pt-4 w-full max-w-xs mx-auto">
+          {navLinks.map((link) => {
+            const linkId = getLinkId(link);
+            return (
+              <a
+                key={link}
+                href={`/#${linkId}`}
+                onClick={() => setIsOpen(false)}
+                className={`text-xl font-semibold transition-colors text-center w-full py-2 border-b border-white/10 last:border-0 ${
+                  activeSection === linkId ? "text-tedx-red" : "text-white hover:text-tedx-red"
+                }`}
+              >
+                {link}
+              </a>
+            );
+          })}
+          {/* <div className="pt-4 w-full max-w-xs mx-auto">
             <Button
               href="https://ti.to/tedxpup/tedxpup2026"
               target="_blank"
@@ -170,7 +179,7 @@ const Navbar = () => {
             >
               Get Tickets
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

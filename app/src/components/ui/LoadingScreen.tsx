@@ -6,7 +6,7 @@ const LoadingScreen = () => {
         <motion.div
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 1.2, ease: "easeInOut" } }}
-            className="fixed inset-0 z-[100] bg-black flex items-center justify-center"
+            className="fixed inset-0 z-[10000] bg-black flex items-center justify-center"
         >
             <motion.div
                 animate={{
@@ -22,7 +22,9 @@ const LoadingScreen = () => {
                 <img
                     src={logo}
                     alt="TEDxPUP Loading"
-                    className="w-32 md:w-48 h-auto object-contain"
+                    fetchPriority="high"
+                    decoding="sync"
+                    className="w-[101px] md:w-[151px] h-auto object-contain"
                 />
             </motion.div>
         </motion.div>

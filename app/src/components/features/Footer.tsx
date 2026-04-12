@@ -3,14 +3,13 @@ import { useEffect, type FC } from 'react';
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 
-const NAV_LINKS = [
-    { label: 'About', href: '#about' },
-    { label: 'Event Location', href: '#location' },
-    { label: 'Speakers', href: '#speakers' },
-    { label: 'Program', href: '#program' },
-    { label: 'Creative Writing Entries', href: '#creative-writing' },
-    { label: 'Sponsors & Partners', href: '#sponsors-partners' },
-    { label: 'FAQs', href: '#faqs' },
+const footerLinks = [
+    { label: 'About', href: '/#about' },
+    { label: 'Events', href: '/#events' },
+    { label: 'Speakers', href: '/#speakers' },
+    { label: 'Creative Writing Entries', href: '/#creative-writing' },
+    { label: 'Sponsors & Partners', href: '/#sponsors-partners' },
+    { label: 'FAQs', href: '/#faqs' },
 ];
 
 const Footer: FC = () => {
@@ -33,10 +32,10 @@ const Footer: FC = () => {
     }, []);
 
     return (
-        <footer id="footer" className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-16 pb-0 overflow-hidden font-sans relative">
+        <footer id="footer" className="bg-gradient-to-b from-black via-black/80 to-[#7a0000] text-white pt-12 pb-0 overflow-hidden font-sans relative">
             {/* Top Content */}
-            <div className="container mx-auto px-6 md:px-12 relative z-10 mb-24">
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12 justify-items-start">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 justify-items-start">
 
                     {/* Brand Column (Left) */}
                     <div className="col-span-2 md:col-span-1 flex flex-col space-y-6">
@@ -61,7 +60,7 @@ const Footer: FC = () => {
                     <div className="flex flex-col space-y-4">
                         <h3 className="text-white font-semibold text-base mb-2">NAVIGATION</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            {NAV_LINKS.map((link) => (
+                            {footerLinks.map((link) => (
                                 <li key={link.label}>
                                     <a href={link.href} className="hover:text-tedx-red transition-colors">
                                         {link.label}
