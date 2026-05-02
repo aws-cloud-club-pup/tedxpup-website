@@ -36,7 +36,8 @@
       "Creative Leadership: successfully led marketing and creative initiatives for university organizations, blending branding strategies with student advocacy.",
       "Advocacy: Proponent of \"Fashion with Purpose,\" using personal style as a tool for empowerment and professional branding."
     ],
-    "image": "/speakers/Chanelle-Peru.webp"
+    "image": "/speakers/Chanelle-Peru.webp",
+    "videoUrl": "https://www.youtube.com/embed/3ICc9iLEfIc"
   },
   {
     "id": "eva-le-queen",
@@ -77,7 +78,8 @@
       "CEO & Founder: Established Drag Playhouse PH, a premier drag talent agency and content production house that professionalizes drag entertainment in the Philippines.",
       "Advocacy: A vocal champion for the \"Drag is Political\" movement, she uses her platform to advocate for LGBTQ+ rights, fair labor practices for queer artists, and mental health awareness in the creative industry."
     ],
-    "image": "/speakers/Eva-Le-Queen.webp"
+    "image": "/speakers/Eva-Le-Queen.webp",
+    "videoUrl": "https://www.youtube.com/embed/HezPpN9s774"
   },
   {
     "id": "haven-mosquito",
@@ -117,7 +119,8 @@
       "DOST-SEI Scholar: Awarded the Merit Scholarship for exceptional aptitude in science and mathematics.",
       "Student Leader: Served as Year Representative and Membership Committee Head, overseeing welfare and conflict resolution for hundreds of students."
     ],
-    "image": "/speakers/Haven-Mosquito.webp"
+    "image": "/speakers/Haven-Mosquito.webp",
+    "videoUrl": "https://www.youtube.com/embed/NF7FY__EenI"
   },
   {
     "id": "isaeus-asi-guiang",
@@ -156,7 +159,8 @@
       "Tech Educator & Mentor:  Personally mentored hundreds of students in cloud computing, helping them achieve AWS certifications and guiding them through the AWS re/Start program at Edukasyon.ph.",
       "Technical Writer: Publishes educational content on cybersecurity and cloud architecture on DEV.to and Tutorials Dojo, simplifying complex topics like \"Zero-Trust Architecture\" and \"Malware Detection\" for beginners."
     ],
-    "image": "/speakers/Asi-Guiang.webp"
+    "image": "/speakers/Asi-Guiang.webp",
+    "videoUrl": "https://www.youtube.com/embed/cAlC4lVCsNw"
   },
   {
     "id": "kristine-jane-atienza",
@@ -189,7 +193,8 @@
       "Technical Author: Key contributor to the Manual on the Management of Moderate Acute Malnutrition, a critical resource for health workers in the Philippines.",
       "Space Advocate:  A vocal proponent for Space Nutrition, conducting research on sustainable food systems in extreme environments."
     ],
-    "image": "/speakers/Kristine-Atienza.webp"
+    "image": "/speakers/Kristine-Atienza.webp",
+    "videoUrl": "https://www.youtube.com/embed/plB5SnYidCg"
   },
   {
     "id": "nabbe-francisco",
@@ -228,7 +233,8 @@
       "Academic Excellence: Graduated Magna Cum Laude from PUP (Advertising and Public Relations), setting a standard for academic and professional rigor.",
       "Agency Growth: Scaled Uno Graphiko into a recognized agency managing seven brands remotely, demonstrating the viability of the \"work-from-anywhere\" agency model."
     ],
-    "image": "/speakers/Nabbe-Francisco.webp"
+    "image": "/speakers/Nabbe-Francisco.webp",
+    "videoUrl": "https://www.youtube.com/embed/gSLVJD99Cyc"
   },
   {
     "id": "nicole-redding-wilhelm",
@@ -268,7 +274,8 @@
       "Top Real Estate Leader: Co-led one of the highest-producing real estate teams in the US, proving that inclusive leadership drives tangible financial results.",
       "Tech Executive: Rose from entry-level to Vice President of Marketing in the competitive tech sector."
     ],
-    "image": "/speakers/Nicole-Redding-Wilhelm.webp"
+    "image": "/speakers/Nicole-Redding-Wilhelm.webp",
+    "videoUrl": "https://www.youtube.com/embed/Uz5PUlXPi6Q"
   },
   {
     "id": "paul-john-hernandez",
@@ -305,7 +312,8 @@
       "HWPL Award for Community Service (2015): Awarded in Seoul, South Korea, for peace-building and cultural advocacy.",
       "LEAD Fellow: Leadership and Democracy Fellow under The Asia Foundation and USAID’s YouthLed program."
     ],
-    "image": "/speakers/Paul-John-Hernandez.webp"
+    "image": "/speakers/Paul-John-Hernandez.webp",
+    "videoUrl": "https://www.youtube.com/embed/C3bCmL63-Ms"
   },
   {
     "id": "riyan-portuguez",
@@ -358,6 +366,7 @@
       "Digital Influence: Built a massive following across Facebook, TikTok, and YouTube, creating one of the largest mental health-focused communities in the Philippines.",
       "Leadership: Appointed Co-Chairperson for the PAP LGBT Psychology Special Interest Group, influencing policy and practice for gender-inclusive therapy in the country."
     ],
-    "image": "/speakers/Riyan-Portuguez.webp"
+    "image": "/speakers/Riyan-Portuguez.webp",
+    "videoUrl": "https://www.youtube.com/embed/UnoKnw5lYR0"
   }
 ]

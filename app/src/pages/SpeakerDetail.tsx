@@ -32,6 +32,7 @@ interface Speaker {
   achievements?: string[];
   socials?: { name: string; url: string }[];
   photoPlaceholder?: string;
+  videoUrl?: string;
 }
 
 const SpeakerDetail = () => {
@@ -90,8 +91,21 @@ const SpeakerDetail = () => {
           Back
         </button>
 
-        <div className="w-full md:w-1/3 aspect-[3/4] bg-gray-900 rounded-xl overflow-hidden border border-white/10">
-          <img src={speaker.image} alt={speaker.name} loading="eager" decoding="async" className="w-full h-full object-cover" />
+        <div className="w-full md:w-1/3 flex flex-col gap-4 relative z-10">
+          <div className="w-full aspect-[3/4] bg-gray-900 rounded-xl overflow-hidden border border-white/10">
+            <img src={speaker.image} alt={speaker.name} loading="eager" decoding="async" className="w-full h-full object-cover" />
+          </div>
+          {speaker.videoUrl && (
+            <div className="w-full aspect-video rounded-xl overflow-hidden border border-white/10">
+              <iframe
+                src={speaker.videoUrl}
+                title={`${speaker.name} video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          )}
         </div>
 
         <div className="w-full md:w-2/3 space-y-6">
